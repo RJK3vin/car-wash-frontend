@@ -16,6 +16,7 @@ export default function AppRoutes() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/aboutus" element = {<AboutSection />} />
+                <Route path="/quote" element = {<Contact />} />
             </Routes>
         </main>
         <Footer />
