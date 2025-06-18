@@ -92,7 +92,7 @@ const Footer = () => {
               <li key={item} className="relative group">
                 <div className="inline-block">
                   <a
-                    href={`/${item.toLowerCase().replace(/\s+/g, '')}`}
+                    href={`/${item.toLowerCase().replace(/[\s-]+/g, '')}`}
                     className="block py-1 hover:text-white transition"
                   >
                     {item}
@@ -115,7 +115,7 @@ const Footer = () => {
               "Clarksburg mobile detailing",
               "Gaithersburg Mobile Detailing",
               "Rockville MD Mobile Detailing",
-              "Olney Md Mobile Detailing",
+              "Olney MD Mobile Detailing",
               "Columbia Mobile Detailing",
               "Potomac MD Mobile Detailing"
             ].map((item) => (

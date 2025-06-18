@@ -39,12 +39,11 @@ const Navbar = () => {
 
           <nav className="hidden lg:flex items-center gap-6 text-sm font-medium">
             <a href="/" className={isActive('/') ? "text-orange-500" : ""}>Home</a>
-
             <Dropdown title="Film Service" items={["Window Tinting", "Paint Protection Film", "Vehicle Wraps"]} isActive={isDropdownActive(["Window Tinting", "Paint Protection Film", "Vehicle Wraps"])} currentPath={currentPath} />
             <Dropdown title="Exterior" items={["Paint Correction", "Ceramic Coating", "Paint Overspray Removal", "Wash and Wax", "Engine Cleaning", "Headlight Restoration", "Premium Wash"]} isActive={isDropdownActive(["Paint Correction", "Ceramic Coating", "Paint Overspray Removal", "Wash and Wax", "Engine Cleaning", "Headlight Restoration", "Premium Wash"])} currentPath={currentPath} />
             <Dropdown title="Interior" items={["Full Interior Cleaning", "Mini-Interior Detail", "Smoke Odor Removal", "Restorative Interior Cleaning"]} isActive={isDropdownActive(["Full Interior Cleaning", "Mini-Interior Detail", "Smoke Odor Removal", "Restorative Interior Cleaning"])} currentPath={currentPath} />
             <Dropdown title="Gallery" items={["Engine Cleaning Gallery", "Wash and Wax Gallery", "Full Interior Cleaning Gallery", "Paint Correction Gallery"]} isActive={isDropdownActive(["Engine Cleaning Gallery", "Wash and Wax Gallery", "Full Interior Cleaning Gallery", "Paint Correction Gallery"])} currentPath={currentPath} />
-            <Dropdown title="Service Areas" items={["Wellness Detailing Shop", "Poolesville MD Mobile Detailing", "Columbia Mobile Detailing", "College Park Mobile Detailing", "Damascus MD Mobile Detailing", "Laurel MD Mobile Detailing", "Beltsville MD Mobile Detailing", "Silver Spring MD Mobile Detailing", "Bethesda MD Mobile Detailing", "Potomac MD Mobile Detailing", "Clarksburg Mobile Detailing", "Gaithersburg Mobile Detailing", "Rockville MD Mobile Detailing", "Olney MD Mobile Detailing"]} isActive={isDropdownActive(["Wellness Detailing Shop", "Poolesville MD Mobile Detailing", "Columbia Mobile Detailing", "College Park Mobile Detailing", "Damascus MD Mobile Detailing", "Laurel MD Mobile Detailing", "Beltsville MD Mobile Detailing", "Silver Spring MD Mobile Detailing", "Bethesda MD Mobile Detailing", "Potomac MD Mobile Detailing", "Clarksburg Mobile Detailing", "Gaithersburg Mobile Detailing", "Rockville MD Mobile Detailing", "Olney MD Mobile Detailing"])} currentPath={currentPath} />
+            <Dropdown title="Service Area" items={["Wellness Detailing Shop", "Poolesville MD Mobile Detailing", "Columbia Mobile Detailing", "College Park Mobile Detailing", "Damascus MD Mobile Detailing", "Laurel MD Mobile Detailing", "Beltsville MD Mobile Detailing", "Silver Spring MD Mobile Detailing", "Bethesda MD Mobile Detailing", "Potomac MD Mobile Detailing", "Clarksburg Mobile Detailing", "Gaithersburg Mobile Detailing", "Rockville MD Mobile Detailing", "Olney MD Mobile Detailing"]} isActive={isDropdownActive(["Wellness Detailing Shop", "Poolesville MD Mobile Detailing", "Columbia Mobile Detailing", "College Park Mobile Detailing", "Damascus MD Mobile Detailing", "Laurel MD Mobile Detailing", "Beltsville MD Mobile Detailing", "Silver Spring MD Mobile Detailing", "Bethesda MD Mobile Detailing", "Potomac MD Mobile Detailing", "Clarksburg Mobile Detailing", "Gaithersburg Mobile Detailing", "Rockville MD Mobile Detailing", "Olney MD Mobile Detailing"])} currentPath={currentPath} />
 
             <div className="relative group">
 
@@ -132,7 +131,7 @@ const Dropdown = ({ title, items, isActive, currentPath }: { title: string; item
           <li key={item}>
             <a
               href={`/${slugify(item)}`}
-              className={`block px-4 py-2 hover:bg-gray-100 text-xs ${currentPath === `/${slugify(item)}` ? 'text-orange-600 bg-orange-50' : ''}`}
+              className={`block px-4 py-2 hover:bg-gray-100 text-xs whitespace-nowrap ${currentPath === `/${slugify(item)}` ? 'text-orange-600 bg-orange-50' : ''}`}
             >
               {item}
             </a>
