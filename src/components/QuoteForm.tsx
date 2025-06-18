@@ -1,3 +1,5 @@
+import { FaFacebookF, FaInstagram, FaYelp } from "react-icons/fa";
+
 export default function QuoteForm() {
   return (
     <section className="bg-white py-16 px-4">
@@ -64,10 +66,10 @@ export default function QuoteForm() {
           <p>We're a fully equipped mobile detailing unit. Contact us today. Simple and hassle-free.</p>
           <p><strong>📞 (240) 630-0211</strong></p>
           <p><strong>📧 WellnessDetailing@gmail.com</strong></p>
-          <div className="flex gap-3 text-lg">
-            <a href="#"><i className="fab fa-facebook-square"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-yelp"></i></a>
+          <div className="flex gap-3 text-xl text-orange-500">
+            <a href="https://www.facebook.com/WellnessDetailing/" target="_blank"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/wellnessdetailing/#" target="_blank"><FaInstagram /></a>
+            <a href="https://www.yelp.com/biz/wellness-detailing-potomac?osq=wellness+detailing" target="_blank"><FaYelp /></a>
           </div>
         </div>
       </div>
