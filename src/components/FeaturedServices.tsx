@@ -9,7 +9,7 @@ const services = [
       "Transform your vehicle's appearance with our premium vinyl car wraps. Whether you desire a sleek matte finish or a vibrant color change, our expert team will bring your vision to life.",
       "Discover the ultimate customization for your vehicle with our vinyl car wraps. From bold graphics to subtle accents, our expert team can create a look that's uniquely yours.",
     ],
-    imageAlt: "A bright blue car hood showcases vinyl wrap and samples.",
+    src: "placeholder"
   },
   {
     title: "Paint Correction",
@@ -18,7 +18,7 @@ const services = [
       "Restore your car's paintwork to perfection with our meticulous paint correction process.",
       "Say goodbye to dull, damaged paint and hello to a showroom-quality finish that will make your car stand out from the crowd.",
     ],
-    imageAlt: "Polishing a black car with a blue pad.",
+    src: "placeholder",
   },
   {
     title: "Ceramic Coatings",
@@ -27,16 +27,16 @@ const services = [
       "Experience superior protection and shine with our ceramic coatings.",
       "Our advanced formulas create a durable shield that guards against the elements.",
     ],
-    imageAlt: "A black Ford SUV on a driveway.",
+    src: "placeholder",
   },
   {
     title: "Paint Protection Film (PPF)",
     href: "/paintprotectionfilm",
     description: [
       "Preserve your car's paint with our industry-leading paint protection film.",
-      "Say goodbye to scratches and chips – with PPF, your car will always look its best.",
+      "Say goodbye to scratches and chips - with PPF, your car will always look its best.",
     ],
-    imageAlt: "Applying clear PPF with a pink squeegee.",
+    src: "placeholder"
   },
   {
     title: "Window Tinting",
@@ -45,51 +45,105 @@ const services = [
       "Enhance both style and functionality with our professional window tinting services.",
       "Say hello to a cooler, more comfortable ride while protecting your privacy.",
     ],
-    imageAlt: "Installing window tint on a car.",
+    src: "placeholder",
   },
 ];
 
 const locations = [
-  "Olney, MD",
-  "Rockville, MD",
-  "Gaithersburg, MD",
-  "Clarksburg, MD",
-  "Potomac, MD",
-  "Bethesda, MD",
-  "Silver Spring, MD",
-  "Beltsville, MD",
-  "Laurel, MD",
-  "Damascus, MD",
-  "Collage Park, MD",
-  "Columbia, MD",
-  "Poolesville, MD",
+  {
+    title: "Olney, MD",
+    loc: "olneymdmobiledetailing"
+  },
+  {
+    title: "Rockville, MD",
+    loc: "rockvillemdmobiledetailing"
+  },
+  {
+    title: "Gaithersburg, MD",
+    loc: "gaithersburgmobiledetailing"
+  },
+  {
+    title: "Clarksburg, MD",
+    loc: "clarksburgmobiledetailing"
+  },
+  {
+    title: "Potomac, MD",
+    loc: "potomacmdmobiledetailing"
+  },
+  {
+    title: "Bethesda, MD",
+    loc: "bethesdamdmobiledetailing"
+  },
+  {
+    title: "Silver Spring, MD",
+    loc: "silverspringmdmobiledetailing"
+  },
+  {
+    title: "Beltsville, MD",
+    loc: "beltsvillemdmobiledetailing"
+  },
+  {
+    title: "Laurel, MD",
+    loc: "laurelmdmobiledetailing"
+  },
+  {
+    title: "Damascus, MD",
+    loc: "damascusmdmobiledetailing"
+  },
+  {
+    title: "College Park, MD",
+    loc: "collegeparkmobiledetailing"
+  },
+  {
+    title: "Columbia, MD",
+    loc: "columbiamobiledetailing"
+  },
+  {
+    title: "Poolesville, MD",
+    loc: "poolesvillemdmobiledetailing"
+  }
 ];
 
 const FeaturedServices = () => {
   return (
     <section className="bg-white">
-      <div className="bg-black text-white flex flex-col md:flex-row justify-between items-center px-6 py-8 max-w-7xl mx-auto">
-        <div className="flex items-center gap-4 mb-6 md:mb-0">
-          <Phone className="text-orange-500 w-8 h-8" />
-          <div>
-            <p className="text-sm font-semibold text-orange-500">
-              Give Us A Call
-            </p>
-            <p className="text-2xl font-bold text-white">(240) 630-0211</p>
+      <div className="bg-black text-white px-6 py-8 max-w-4xl mx-auto rounded-md">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex items-center gap-2">
+            <Phone className="text-orange-500 w-8 h-8" />
+            <div>
+              <p className="text-sm font-semibold text-orange-500">Give Us A Call</p>
+              <p className="text-2xl font-bold text-white">(240) 630-0211</p>
+            </div>
           </div>
-        </div>
-        <div className="flex items-center gap-4">
-          <div className="text-right">
-            <p className="text-sm font-semibold text-orange-500">
-              Working Hours
-            </p>
-            <p className="text-sm text-white">Mon - Sat: 7 AM - 7 PM</p>
-            <p className="text-sm text-white">Sun - Closed</p>
+          <div className="flex items-center gap-2">
+            <div className="text-right">
+              <p className="text-sm font-semibold text-orange-500">Working Hours</p>
+              <p className="text-sm text-white">Mon - Sat: 7 AM - 7 PM</p>
+              <p className="text-sm text-white">Sun - Closed</p>
+            </div>
+            <Clock className="text-orange-500 w-8 h-8" />
           </div>
-          <Clock className="text-orange-500 w-8 h-8" />
         </div>
       </div>
 
+      <div className="flex gap-4 justify-center max-w-4xl mx-auto mt-8 px-6">
+        <img
+          src="https://placehold.co/1000x500"
+          alt="Placeholder 1"
+          className="w-64 h-auto object-cover"
+        />
+        <img
+          src="https://placehold.co/1000x500"
+          alt="Placeholder 2"
+          className="w-64 h-auto object-cover"
+        />
+        <img
+          src="https://placehold.co/1000x500"
+          alt="Placeholder 3"
+          className="w-64 h-auto object-cover"
+        />
+      </div>
       <div className="max-w-7xl mx-auto px-6 py-8">
         <h2 className="text-3xl font-bold text-center mb-10 text-black">
           Our Featured Detailing and Film Services
@@ -104,8 +158,7 @@ const FeaturedServices = () => {
             className="grid md:grid-cols-2 gap-8 items-center"
           >
             <img
-              src="https://via.placeholder.com/600x400"
-              alt={service.imageAlt}
+              src={service.src}
               className="rounded shadow w-full h-full object-cover"
             />
             <div>
@@ -127,7 +180,7 @@ const FeaturedServices = () => {
 
         <div className="text-center">
           <a
-            href="/quote"
+            href="/contact"
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded transition"
           >
             Get A Free Quote
@@ -185,34 +238,45 @@ const FeaturedServices = () => {
 
 
         <div className="border-t pt-12">
-          <h3 className="text-xl font-bold mb-4 text-center">
-            Servicing The Maryland's Area - At Your Home, Apartment or Office
-            Location
+          <h3 className="text-3xl font-bold text-center mb-10">
+            Servicing The Maryland's Area - At Your Home, Apartment or Office Location
           </h3>
-          <p className="text-center max-w-3xl mx-auto text-gray-600 mb-8">
-            At Wellness Detailing, we proudly serve a wide area across Maryland, bringing our professional mobile car detailing services directly to your doorstep.
-          </p>
-          <p className="text-center max-w-3xl mx-auto text-gray-600 mb-8">
-            Our service area includes Bethesda, Rockville, Silver Spring, Gaithersburg, and surrounding areas like Olney, Potomac, and Laurel.
-          </p>
-          <p className="text-center max-w-3xl mx-auto text-gray-600 mb-8">
-            No matter where you are in Maryland, you can trust Wellness Detailing to deliver exceptional service with a smile.
-          </p>
-
-          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            {locations.map((loc) => (
-              <li key={loc} className="flex items-center gap-2 text-gray-700">
-                <MapPin className="text-orange-500 w-4 h-4" />
-                <a
-                  href={`/${loc.toLowerCase().replace(/\s+/g, '').replace(/,/g, '')}`}
-                  className="hover:underline"
-                >
-                  {loc}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div className="flex flex-col md:flex-row items-stretch max-w-7xl mx-auto gap-8">
+            <div className="md:w-1/2 flex flex-col justify-center">
+              <img
+                src="https://via.placeholder.com/400x600?text=Service+Area+Map"
+                alt="Service area placeholder"
+                className="rounded-md shadow-md object-cover h-full w-auto"
+                style={{ minHeight: '500px' }} 
+              />
+            </div>
+            <div className="md:w-1/2 flex flex-col justify-between">
+              <div>
+                <p className="text-center md:text-left max-w-3xl mx-auto md:mx-0 text-gray-600 mb-6">
+                  At Wellness Detailing, we proudly serve a wide area across Maryland, bringing our professional mobile car detailing services directly to your doorstep. From bustling urban centers to scenic suburban neighborhoods, we cover a diverse range of locations to accommodate our valued customers.
+                </p>
+                <p className="text-center md:text-left max-w-3xl mx-auto md:mx-0 text-gray-600 mb-6">
+                  Our service area includes Bethesda, Rockville, Silver Spring, Gaithersburg, and surrounding areas like Olney, Potomac, and Laurel. Whether you're located in the heart of the city or nestled in a quiet residential area, our dedicated team is committed to providing you with the highest level of confidence and quality.
+                </p>
+                <p className="text-center md:text-left max-w-3xl mx-auto md:mx-0 text-gray-600 mb-8">
+                  No matter where you are in Maryland, you can trust Wellness Detailing to deliver exceptional service with a smile. Contact us today to schedule your appointment and experience the convenience of mobile car detailing at its finest.
+                </p>
+              </div>
+              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-1 max-w-5xl mx-auto md:mx-0">
+                {locations.map(({ title, loc }) => (
+                  <li key={title} className="flex items-center gap-2 text-gray-700">
+                    <MapPin className="text-orange-500 w-4 h-4" />
+                    <a href={loc} className="hover:underline">
+                      {title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
+
+
         <TestimonialSlider />
 
         <div className="grid md:grid-cols-3 gap-8">

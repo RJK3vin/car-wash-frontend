@@ -14,7 +14,9 @@ export default function Hero({ scrollToRef }: HeroProps) {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center text-center bg-gradient-to-br from-white to-slate-100 overflow-hidden px-4">
+    <section className="relative min-h-[90vh] flex items-center justify-center text-center overflow-hidden px-4 bg-cover bg-center" style={{
+      backgroundImage: `url('https://placehold.co/1920x1080')`
+    }}>
       <motion.div
         className="z-10 max-w-3xl"
         initial={{ opacity: 0, y: 40 }}
@@ -25,26 +27,26 @@ export default function Hero({ scrollToRef }: HeroProps) {
           Elevate Your Drive with Wellness Detailing
         </h1>
         <p className="mt-3 text-4xl font-bold text-gray-900">
-          Maryland&apos;s Best Mobile Car Detailing Service Comes to You
+          Maryland's Best Mobile Car Detailing Service Comes to You
         </p>
         <p className="mt-4 text-md text-gray-600">
           At Wellness Detailing, we're dedicated to bringing professional-grade detailing right to your doorstep.
           Experience ultimate convenience and quality as we revitalize your car, inside and out.
         </p>
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
-            <button
-              onClick = {handleScroll}
-              className="bg-orange-500 text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600"
-            >
-              Learn More
-            </button>
-            <Link
-              to="/contact"
-              className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
-            >
-              Get A Free Quote
-            </Link>
-          </div>
+          <button
+            onClick={handleScroll}
+            className="bg-orange-500 text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600"
+          >
+            Learn More
+          </button>
+          <Link
+            to="/contact"
+            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+          >
+            Get A Free Quote
+          </Link>
+        </div>
       </motion.div>
     </section>
   );

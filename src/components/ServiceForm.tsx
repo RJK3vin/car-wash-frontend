@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaYelp } from "react-icons/fa";
+import { MailOpen, Phone } from "lucide-react";
 
 export default function ServiceForm() {
   return (
@@ -64,8 +65,18 @@ export default function ServiceForm() {
         <div className="text-sm text-gray-700 space-y-4">
           <h3 className="text-2xl font-bold">Contact Now</h3>
           <p>We're a fully equipped mobile detailing unit with our own power and water that brings the detailing services to you. Contact us today. Simple and hassle-free</p>
-          <p><strong>📞 (240) 630-0211</strong></p>
-          <p><strong>📧 WellnessDetailing@gmail.com</strong></p>
+          <div className="hidden lg:flex items-center gap-1">
+            <a href="tel:2406300211" className="flex items-center gap-1">
+              <Phone className="w-4 h-4 text-orange-500" />
+              <span>(240) 630-0211</span>
+            </a>
+          </div>
+          <div className="flex items-center gap-1 text-sm">
+            <a href="mailto:WellnessDetailing@gmail.com" className="flex items-center gap-1 hover:underline">
+              <MailOpen className="w-4 h-4 text-orange-500" />
+              <span>WellnessDetailing@gmail.com</span>
+            </a>
+          </div>
           <div className="flex gap-3 text-xl text-orange-500">
             <a href="https://www.facebook.com/WellnessDetailing/" target="_blank"><FaFacebookF /></a>
             <a href="https://www.instagram.com/wellnessdetailing/#" target="_blank"><FaInstagram /></a>

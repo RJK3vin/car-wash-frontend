@@ -9,17 +9,16 @@ import Navbar from "./components/NavBar";
 export default function AppRoutes() {
     return (
         <BrowserRouter>
-        <Navbar />
-        <main className="min-h-screen">
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/aboutus" element = {<AboutSection />} />
-                <Route path="/quote" element = {<Contact />} />
-            </Routes>
-        </main>
-        <Footer />
-    </BrowserRouter>
+            <Navbar />
+            <main className="min-h-screen">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/services" element={<Services />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/aboutus" element={<AboutSection />} />
+                </Routes>
+            </main>
+            <Footer />
+        </BrowserRouter>
     );
 }
