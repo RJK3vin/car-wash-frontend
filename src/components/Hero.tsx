@@ -1,7 +1,18 @@
 import { motion } from 'framer-motion';
+import type { RefObject } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Hero() {
+interface HeroProps {
+  scrollToRef: RefObject<HTMLDivElement | null>;
+}
+
+export default function Hero({ scrollToRef }: HeroProps) {
+  const handleScroll = () => {
+    if (scrollToRef?.current) {
+      scrollToRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center text-center bg-gradient-to-br from-white to-slate-100 overflow-hidden px-4">
       <motion.div
@@ -21,12 +32,12 @@ export default function Hero() {
           Experience ultimate convenience and quality as we revitalize your car, inside and out.
         </p>
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
-            <Link
-              to="/about"
+            <button
+              onClick = {handleScroll}
               className="bg-orange-500 text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600"
             >
               Learn More
-            </Link>
+            </button>
             <Link
               to="/contact"
               className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
