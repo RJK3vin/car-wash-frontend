@@ -168,7 +168,7 @@ export default function HeadlightRestoration() {
                   </p>
                 </div>
                 <p className="text-lg font-semibold">
-                  Ready to restore clarity and safety to your nighttime driving? <Link to="/contact" className="text-blue-600 underline">Get a Free Headlight Restoration Quote Today!</Link>
+                  Ready to restore clarity and safety to your nighttime driving? Get a Free Headlight Restoration Quote Today!
                 </p>
                 <p className="font-bold">We're here to answer any further questions you may have! Contact Wellness Detailing today!</p>
               </div>
