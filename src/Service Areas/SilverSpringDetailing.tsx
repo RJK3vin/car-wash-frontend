@@ -60,7 +60,7 @@ export default function SilverSpringDetailing() {
                 </div>
 
                 <Link
-                    to="/Quote"
+                    to="/contact"
                     className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition-colors"
                 >
                     Get A Free Quote
@@ -95,7 +95,7 @@ export default function SilverSpringDetailing() {
                 </p>
 
                 <Link
-                    to="/Quote"
+                    to="/contact"
                     className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition-colors"
                 >
                     Get A Free Quote
@@ -215,7 +215,7 @@ export default function SilverSpringDetailing() {
                 </p>
 
                 <Link
-                    to="/Quote"
+                    to="/contact"
                     className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded transition"
                 >
                     Get A Free Quote
@@ -247,7 +247,7 @@ export default function SilverSpringDetailing() {
 
                 <div className="mt-12 text-center">
                     <Link
-                        to="/Quote"
+                        to="/contact"
                         className="inline-block text-white bg-blue-500 hover:bg-blue-600 font-semibold px-6 py-3 rounded transition-colors"
                     >
                         Get A Free Quote
