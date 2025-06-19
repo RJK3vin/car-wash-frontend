@@ -1,12 +1,9 @@
 import { ChevronDown, Phone } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-  const [currentPath, setCurrentPath] = useState('/');
-
-  useEffect(() => {
-    setCurrentPath(window.location.pathname);
-  }, []);
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   const isActive = (path: string) => {
     return currentPath === path || currentPath.startsWith(path + '/');
