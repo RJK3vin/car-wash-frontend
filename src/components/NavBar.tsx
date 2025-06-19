@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   const isFaqActive = () => {
-    const faqItems = ["Detailing FAQs", "FAQ - Smoke Odor Removal", "FAQ - Full Interior Cleaning", "FAQ - Engine Cleaning"];
+    const faqItems = ["FAQs"];
     return faqItems.some(item => isActive(`/${slugify(item)}`));
   };
 
@@ -50,31 +50,9 @@ const Navbar = () => {
               <div className="absolute left-0 top-full mt-2 w-56 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50">
                 <div className="p-2 space-y-1">
                   <div className="relative group/faq">
-                    <div className={`flex justify-between items-center px-3 py-2 rounded hover:bg-gray-100 cursor-pointer text-xs ${isFaqActive() ? 'text-orange-600 bg-orange-50' : ''}`}>
-                      FAQs
-                      <ChevronDown className="w-4 h-4 -rotate-90" />
-                    </div>
-                    <div className="absolute left-full top-0 ml-1 w-64 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover/faq:visible group-hover/faq:opacity-100 transition-all duration-200 z-50">
-                      <ul className="py-2">
-                        {[
-                          "Detailing FAQs",
-                          "FAQ - Smoke Odor Removal",
-                          "FAQ - Full Interior Cleaning",
-                          "FAQ - Engine Cleaning"
-                        ].map((faq) => (
-                          <li key={faq}>
-                            <a
-                              href={`/${slugify(faq)}`}
-                              className={`block px-4 py-2 hover:bg-gray-100 text-xs ${isActive(`/${slugify(faq)}`) ? 'text-orange-600 bg-orange-50' : ''}`}
-                            >
-                              {faq}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
                   </div>
                   {[
+                    "FAQs",
                     "Our Team",
                     "Reviews",
                     "Detailing Methodology",

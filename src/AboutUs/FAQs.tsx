@@ -2,7 +2,7 @@ import GalleryHero from "../components/GalleryHero"
 import QuoteForm from "../components/QuoteForm"
 import { Link } from "react-router-dom"
 
-export default function DetailingFAQs() {
+export default function FAQs() {
     return (
         <>
             <GalleryHero header="Detailing FAQ" button="Get A Free Quote" url="https://placehold.co/1920x1080" loc="contact" />

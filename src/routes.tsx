@@ -36,10 +36,7 @@ import PotomacDetailing from "./Service Areas/PotomacDetailing";
 import RockvilleDetailing from "./Service Areas/RockvilleDetailing";
 import SilverSpringDetailing from "./Service Areas/SilverSpringDetailing";
 import WellnessDetailing from "./Service Areas/WellnessDetailing";
-import DetailingFAQs from "./AboutUs/DetailingFAQs";
-import FAQEngineCleaning from "./AboutUs/FAQEngineCleaning";
-import FAQFullInteriorCleaning from "./AboutUs/FAQFullInteriorCleaning";
-import FAQSmokeOdorRemoval from "./AboutUs/FAQSmokeOdorRemoval";
+import FAQs from "./AboutUs/FAQs";
 import OurTeam from "./AboutUs/OurTeam";
 import Reviews from "./AboutUs/Reviews";
 import DetailingMethodology from "./AboutUs/DetailingMethodology";
@@ -86,10 +83,7 @@ export default function AppRoutes() {
                     <Route path="/gaithersburgmobiledetailing" element={<GaithersburgDetailing/>} />
                     <Route path="/rockvillemdmobiledetailing" element={<RockvilleDetailing />} />
                     <Route path="/olneymdmobiledetailing" element={<OlneyDetailing/>} />     
-                    <Route path="/detailingfaqs" element={<DetailingFAQs/>} />   
-                    <Route path="/faqsmokeodorremoval" element={<FAQSmokeOdorRemoval/>} />  
-                    <Route path="/faqfullinteriorcleaning" element={<FAQFullInteriorCleaning/>} />    
-                    <Route path="/faqenginecleaning" element={<FAQEngineCleaning/>} /> 
+                    <Route path="/faqs" element={<FAQs/>} />   
                     <Route path="/ourteam" element={<OurTeam/>} />  
                     <Route path="/reviews" element={<Reviews/>} />       
                     <Route path="/detailingmethodology" element={<DetailingMethodology/>} /> 
