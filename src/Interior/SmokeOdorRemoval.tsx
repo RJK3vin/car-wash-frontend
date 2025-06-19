@@ -22,7 +22,7 @@ export default function SmokeOdorRemoval() {
                         <li><strong>Deep Cleaning & Odor Source Removal:</strong> We meticulously clean all interior surfaces, including carpets, upholstery, headliners, and air vents, to remove embedded smoke particles.</li>
                         <li><strong>Ozone Treatment (Optional):</strong> For heavily smoke-infested cars, we offer ozone treatment as an add-on service. Ozone effectively eliminates smoke odors and kills bacteria.</li>
                     </ul>
-                    <Link to="/quote" className="inline-block bg-orange-500 text-white font-medium px-6 py-3 rounded shadow">Get A Free Quote</Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
                 </section>
 
                 <section className="space-y-6 text-center">
@@ -36,7 +36,7 @@ export default function SmokeOdorRemoval() {
                         <li><strong>Air Vent Cleaning:</strong> Air vents are cleaned and deodorized to eliminate smoke odor trapped within the ventilation system.</li>
                         <li><strong>Ozone Treatment (Optional Add-On):</strong> In severe cases, ozone treatment can be used to further neutralize odors and eliminate lingering smoke particles.</li>
                     </ul>
-                    <Link to="/quote" className="inline-block bg-orange-500 text-white font-medium px-6 py-3 rounded shadow">Get A Free Quote</Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
                 </section>
 
                 <section className="space-y-6 text-center">
@@ -50,7 +50,7 @@ export default function SmokeOdorRemoval() {
                             <div>Schedule Your Smoke Odor Removal Service Today!</div>
                         </div>
                     </div>
-                    <Link to="/quote" className="inline-block bg-orange-500 text-white font-medium px-6 py-3 rounded shadow">Get A Free Quote</Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
                 </section>
 
                 <section className="space-y-8 text-center">
@@ -75,24 +75,25 @@ export default function SmokeOdorRemoval() {
                         </div>
                     </div>
 
-                    <Link
-                        to="/quote"
-                        className="inline-block bg-orange-500 text-white font-medium px-6 py-3 rounded shadow"
-                    >
-                        Get A Free Quote
-                    </Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
                 </section>
 
 
-                <section className="space-y-6 text-center">
-                    <h2 className="text-3xl font-bold">Car Wrap Gallery</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
-                        <img src="/placeholder1.jpg" alt="Wrap 1" className="w-full h-64 object-cover border" />
-                        <img src="/placeholder2.jpg" alt="Wrap 2" className="w-full h-64 object-cover border" />
-                        <img src="/placeholder3.jpg" alt="Wrap 3" className="w-full h-64 object-cover border" />
+                <div className="mt-20">
+                    <h2 className="text-3xl font-bold text-center mb-6">
+                        Restorative Cleaning Gallery
+                    </h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
+                        {[1, 2, 3, 4].map((_, i) => (
+                            <div
+                                key={i}
+                                className="w-[300px] h-[220px] border border-black bg-white rounded-lg flex items-center justify-center text-sm text-gray-400"
+                            >
+                                Image Placeholder
+                            </div>
+                        ))}
                     </div>
-                    <Link to="/quote" className="inline-block bg-orange-500 text-white font-medium px-6 py-3 rounded shadow">Get A Free Quote</Link>
-                </section>
+                </div>
             </div>
             <QuoteForm />
         </>

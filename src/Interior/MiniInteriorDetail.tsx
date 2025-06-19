@@ -48,12 +48,7 @@ export default function MiniInteriorDetail() {
                         Image Placeholder
                     </div>
 
-                    <Link
-                        to="/contact"
-                        className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold mt-6"
-                    >
-                        Get A Free Quote
-                    </Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
                 </div>
 
 
@@ -151,9 +146,7 @@ export default function MiniInteriorDetail() {
                         Ready to give your car's interior a quick and effective refresh? Get a Mini Interior Detail Quote Today!
                     </p>
                     <br></br>
-                    <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold">
-                        Get A Free Quote
-                    </Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
                 </div>
 
                 <div className="mt-20">
