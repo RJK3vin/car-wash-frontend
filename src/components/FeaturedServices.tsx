@@ -275,10 +275,15 @@ const FeaturedServices = () => {
             </div>
           </div>
         </div>
-
-
         <TestimonialSlider />
-
+        <div className="text-center">
+          <a
+            href="/contact"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded transition"
+          >
+            Get A Free Quote
+          </a>
+        </div>
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {

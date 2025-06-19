@@ -34,17 +34,17 @@ export default function WindowTinting() {
                         <p>
                             This description provides a more comprehensive explanation of window tint's benefits and functionality. It also emphasizes Wellness Detailing's commitment to customization and legal compliance.
                         </p>
-                        <div className="pt-2">
-                            <Link
-                                to="/contact"
-                                className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
-                            >
-                                Get A Free Quote
-                            </Link>
-                        </div>
                     </div>
                     <img src="/placeholder1.jpg" alt="Window tinting protection" className="flex-1 rounded-lg shadow object-cover w-full h-[550px]" />
                 </section>
+                <div className="text-center">
+                    <Link
+                        to="/contact"
+                        className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                    >
+                        Get A Free Quote
+                    </Link>
+                </div>
                 <section className="flex flex-col md:flex-row items-center gap-8">
                     <img src="/placeholder2.jpg" alt="Benefits of window tint" className="flex-1 rounded-lg shadow object-cover w-full h-[550px]" />
                     <div className="flex-1 space-y-4">
@@ -55,16 +55,16 @@ export default function WindowTinting() {
                             <li><strong>Enhanced Privacy & Security:</strong> Window tint creates a veil of privacy, obscuring the view into your car. This discourages unwanted attention and deters potential theft by making valuables less visible. Furthermore, window tint adds a layer of strength to your car windows, making them more resistant to shattering in case of accidents or attempted break-ins.</li>
                             <li><strong>A Touch of Class & Style:</strong> Window tint offers a sleek and sophisticated aesthetic, adding a touch of personalization to your car's overall appearance. Choose from a variety of film options to achieve the perfect level of darkness and style that complements your vehicle.</li>
                         </ul>
-                        <div className="pt-2">
-                            <Link
-                                to="/contact"
-                                className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
-                            >
-                                Get A Free Quote
-                            </Link>
-                        </div>
                     </div>
                 </section>
+                <div className="text-center">
+                    <Link
+                        to="/contact"
+                        className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                    >
+                        Get A Free Quote
+                    </Link>
+                </div>
                 <section className="space-y-6 max-w-5xl mx-auto text-center">
                     <h2 className="text-3xl font-bold">Tired of Subpar Window Tint? Experience the Wellness Detailing Difference!</h2>
                     <div className="space-y-4 text-left">
