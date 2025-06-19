@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 interface Props{
     header: string,
     subheader: string
+    url: string
 }
 
-export default function ServiceHero({header, subheader} : Props) {
+export default function ServiceHero({header, subheader, url} : Props) {
   return (
     <>
-      <section className="relative min-h-[90vh] flex items-center justify-center text-center overflow-hidden px-4 bg-cover bg-center" style={{
-      backgroundImage: `url('https://placehold.co/1920x1080')`
+      <section className="relative min-h-[70vh] flex items-center justify-center text-center overflow-hidden px-4 bg-cover bg-center" style={{
+      backgroundImage: `url(${url})`
     }}>
       <motion.div
         className="z-10 max-w-3xl"
@@ -18,10 +19,10 @@ export default function ServiceHero({header, subheader} : Props) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <p className="mt-3 text-4xl font-bold text-gray-900">
+        <p className="mt-3 text-4xl font-bold text-white">
           {header}
         </p>
-        <p className="mt-4 text-md text-gray-600">
+        <p className="mt-4 text-md text-white">
           {subheader}
         </p>
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
