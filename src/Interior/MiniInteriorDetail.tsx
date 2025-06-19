@@ -9,6 +9,14 @@ export default function MiniInteriorDetail() {
         <>
             <ServiceHero header="Refresh Your Ride in Minutes: Mini Interior Detail by Wellness Detailing" subheader="Don't have time for a full interior detail? Our Mini Detail is perfect for busy schedules, giving your car's interior a quick and effective refresh." url="https://placehold.co/1920x1080" />
             <section className="px-4 py-16 md:px-8 lg:px-24 bg-white text-gray-800">
+                <Helmet>
+                    <title>Mini Interior Detail | Wellness Detailing</title>
+                    <meta
+                        name="description"
+                        content="Need a quick interior refresh? Our Mini Interior Detail service offers fast, effective cleaning for busy schedules. Book now with Wellness Detailing."
+                    />
+                </Helmet>
+
                 <h1 className="text-3xl font-bold text-center mb-6">
                     Quick Clean, Big Impact: The Mini Detail Advantage
                 </h1>
