@@ -1,8 +1,13 @@
 import QuoteForm from "../components/QuoteForm"
 import MapEmbed from "../components/MapEmbed"
 import ServiceForm from "../components/ServiceForm"
+import { useEffect } from "react";
 
 export default function Contact() {
+    useEffect(() => {
+    window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <section className="bg-cover bg-center text-gray-900 py-24 px-6" style={{backgroundImage: `url('https://placehold.co/1920x1080')`}}>
