@@ -7,7 +7,7 @@ export default function DamascusDetailing() {
     const locations = [
         'Poolesville MD Mobile Detailing',
         'Columbia Mobile Detailing',
-        'Collage Park Mobile Detailing',
+        'College Park Mobile Detailing',
         'Damascus MD Mobile Detailing',
         'Laurel MD Mobile Detailing',
         'Beltsville MD Mobile Detailing',

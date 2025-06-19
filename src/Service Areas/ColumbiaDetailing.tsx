@@ -107,10 +107,10 @@ export default function ColumbiaDetailing() {
                         </li>
                         <li>
                             <Link
-                                to="/collageparkmobiledetailing"
+                                to="/collegeparkmobiledetailing"
                                 className="hover:text-orange-500 transition"
                             >
-                                Collage Park Mobile Detailing
+                                College Park Mobile Detailing
                             </Link>
                         </li>
                         <li>

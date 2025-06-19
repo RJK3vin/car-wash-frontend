@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function CollegeParkDetailing() {
     return (
         <>
-            <ServiceHero header="Revive Your Ride's Shine with College Park Mobile Detailing!" subheader="Welcome to Collage Park Mobile Detailing, your one-stop shop for professional and meticulous car detailing services in Collage Park, Maryland! We are passionate about exceeding your expectations and transforming the appearance of your car, all at the comfort of your driveway." url="https://placehold.co/1920x1080" />
+            <ServiceHero header="Revive Your Ride's Shine with College Park Mobile Detailing!" subheader="Welcome to College Park Mobile Detailing, your one-stop shop for professional and meticulous car detailing services in College Park, Maryland! We are passionate about exceeding your expectations and transforming the appearance of your car, all at the comfort of your driveway." url="https://placehold.co/1920x1080" />
             <section className="py-16 px-4 max-w-6xl mx-auto text-center">
                 <Helmet>
                     <title>About College Park Mobile Detailing | Wellness Detailing</title>
@@ -141,10 +141,10 @@ export default function CollegeParkDetailing() {
 
             <section className="py-16 px-4 max-w-4xl mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-8">
-                    Collage Park Mobile Detailing FAQs: Your Questions Answered!
+                    College Park Mobile Detailing FAQs: Your Questions Answered!
                 </h2>
                 <p className="mb-6 text-center">
-                    We understand you might have questions about our Collage Park Mobile Detailing services. Here are some frequently asked questions to help you decide if we're the right fit for you:
+                    We understand you might have questions about our College Park Mobile Detailing services. Here are some frequently asked questions to help you decide if we're the right fit for you:
                 </p>
 
                 <div className="space-y-6 text-left">
@@ -157,31 +157,31 @@ export default function CollegeParkDetailing() {
                         </p>
                     </div>
                     <div>
-                        <h3 className="font-bold">How often should I get my car detailed in Collage Park?</h3>
+                        <h3 className="font-bold">How often should I get my car detailed in College Park?</h3>
                         <p>
                             The frequency depends on your driving habits and how well you maintain your car. Generally, a
                             professional detail is recommended every 6-12 months.
                         </p>
                     </div>
                     <div>
-                        <h3 className="font-bold">Do you offer different mobile detailing packages in Collage Park?</h3>
+                        <h3 className="font-bold">Do you offer different mobile detailing packages in College Park?</h3>
                         <p>
                             Absolutely! We offer a variety of packages to suit your needs and budget. Browse our options
                             online or contact us for a free quote.
                         </p>
                     </div>
                     <div>
-                        <h3 className="font-bold">Can you remove smoke odors from my car's interior in Collage Park?</h3>
+                        <h3 className="font-bold">Can you remove smoke odors from my car's interior in College Park?</h3>
                         <p>
                             Yes! We offer professional smoke odor removal services to eliminate lingering odors and
                             restore a fresh scent.
                         </p>
                     </div>
                     <div>
-                        <h3 className="font-bold">Is Collage Park Mobile Detailing just as effective as shop detailing?</h3>
+                        <h3 className="font-bold">Is College Park Mobile Detailing just as effective as shop detailing?</h3>
                         <p>
                             Yes! Our mobile detailing services utilize top-of-the-line equipment and high-quality
-                            products to achieve exceptional results, no matter your location in Collage Park.
+                            products to achieve exceptional results, no matter your location in College Park.
                         </p>
                     </div>
                 </div>
@@ -198,7 +198,7 @@ export default function CollegeParkDetailing() {
 
             <section className="py-16 px-4 max-w-7xl mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-10">
-                    Collage Park, MD Mobile Detailing Gallery
+                    College Park, MD Mobile Detailing Gallery
                 </h2>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
