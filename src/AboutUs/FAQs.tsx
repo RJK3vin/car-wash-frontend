@@ -29,7 +29,7 @@ export default function FAQs() {
 
                         <div>
                             <p><strong>What are the benefits of detailing my car?</strong></p>
-                            <p>There are numerous benefits to detailing your car: * Enhanced Appearance: Detailing restores your car’s shine, removes imperfections, and makes it look brand new again. * Improved Value: A well-maintained car retains its resale value for longer. * Protection: Detailing services apply protective waxes and coatings that shield your car’s paint from harmful elements. * Clean and Healthy Interior: Interior detailing removes allergens, dust, and dirt, creating a healthier and more enjoyable driving experience.</p>
+                            <p>There are numerous benefits to detailing your car: * Enhanced Appearance: Detailing restores your car's shine, removes imperfections, and makes it look brand new again. * Improved Value: A well-maintained car retains its resale value for longer. * Protection: Detailing services apply protective waxes and coatings that shield your car's paint from harmful elements. * Clean and Healthy Interior: Interior detailing removes allergens, dust, and dirt, creating a healthier and more enjoyable driving experience.</p>
                         </div>
 
                         <div>
@@ -39,7 +39,7 @@ export default function FAQs() {
 
                         <div>
                             <p><strong>What is the difference between a full detail and an interior detail?</strong></p>
-                            <p>A full detail includes cleaning, polishing, and protecting both the interior and exterior of your car. An interior detail focuses solely on the car’s inside, cleaning carpets, upholstery, dashboards, and other interior surfaces.</p>
+                            <p>A full detail includes cleaning, polishing, and protecting both the interior and exterior of your car. An interior detail focuses solely on the car's inside, cleaning carpets, upholstery, dashboards, and other interior surfaces.</p>
                         </div>
 
                         <div>
@@ -56,7 +56,7 @@ export default function FAQs() {
 
                         <div>
                             <p><strong>What is paint correction?</strong></p>
-                            <p>Paint correction is a multi-step process that removes minor scratches, swirl marks, and oxidation from the paintwork. This restores the paint’s clarity and achieves a mirror-like finish.</p>
+                            <p>Paint correction is a multi-step process that removes minor scratches, swirl marks, and oxidation from the paintwork. This restores the paint's clarity and achieves a mirror-like finish.</p>
                         </div>
 
                         <div>
@@ -73,7 +73,7 @@ export default function FAQs() {
 
                         <div>
                             <p><strong>Can you remove pet hair?</strong></p>
-                            <p>Absolutely! We have specialized tools and techniques to effectively remove pet hair from your car’s interior.</p>
+                            <p>Absolutely! We have specialized tools and techniques to effectively remove pet hair from your car's interior.</p>
                         </div>
 
                         <div>
@@ -93,7 +93,7 @@ export default function FAQs() {
                             <p>You can conveniently schedule an appointment online through our website or by contacting Wellness Detailing directly.</p>
                         </div>
                         <div>
-                            <p>We look forward to transforming your car’s appearance and making it shine like new!</p>
+                            <p>We look forward to transforming your car's appearance and making it shine like new!</p>
                         </div>
                     </div>
 
