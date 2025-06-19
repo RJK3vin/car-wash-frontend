@@ -55,29 +55,29 @@ export default function PaintProtectionFilm() {
                         <div className="flex flex-col items-center space-y-2">
                             <CheckCircle className="w-10 h-10 text-orange-500" />
                             <p className="font-semibold text-lg">Ultimate Paint Protection</p>
-                            <p>PPF creates a virtually invisible barrier that safeguards your car's paint from scratches, chips, and other blemishes caused by road debris, flying rocks, and everyday wear and tear.</p>
+                            <p>PPF creates a virtually invisible barrier that safeguards your car's paint from scratches, chips, and other blemishes caused by road debris, flying rocks, and everyday wear and tear. Think of it as a suit of armor for your car's paintwork.</p>
                         </div>
                         <div className="flex flex-col items-center space-y-2">
                             <CheckCircle className="w-10 h-10 text-orange-500" />
                             <p className="font-semibold text-lg">Preserves Showroom Shine</p>
-                            <p>Harsh UV rays can cause fading and discoloration over time. PPF acts as a shield, absorbing or reflecting UV rays to prevent your car's paint from losing its vibrant color.</p>
+                            <p>Harsh UV rays can cause fading and discoloration over time. PPF acts as a shield, absorbing or reflecting UV rays to prevent your car's paint from losing its vibrant color and maintaining that showroom shine for years to come.</p>
                         </div>
                         <div className="flex flex-col items-center space-y-2">
                             <CheckCircle className="w-10 h-10 text-orange-500" />
                             <p className="font-semibold text-lg">Self-Healing Properties</p>
-                            <p>Certain PPF films boast advanced technology that allows them to self-heal from minor scratches. Applying moderate heat can minimize light scratch visibility.</p>
+                            <p>Certain PPF films boast advanced technology that allows them to "self-heal" from minor scratches. By applying moderate heat, these films can minimize the appearance of light scratches, keeping your car's paint looking flawless.</p>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 text-center pt-6">
                         <div className="flex flex-col items-center space-y-2">
                             <CheckCircle className="w-10 h-10 text-orange-500" />
                             <p className="font-semibold text-lg">Increased Resale Value</p>
-                            <p>By protecting your car's paint from damage, PPF can significantly impact resale value by preserving your car's exterior condition.</p>
+                            <p>By protecting your car's paint from damage, PPF can significantly impact its resale value down the road. Potential buyers will appreciate the well-maintained condition of the car's exterior, potentially leading to a higher selling price.</p>
                         </div>
                         <div className="flex flex-col items-center space-y-2">
                             <CheckCircle className="w-10 h-10 text-orange-500" />
                             <p className="font-semibold text-lg">Easy Maintenance</p>
-                            <p>PPF offers a smooth, hydrophobic surface that repels dirt and grime, making car washing and upkeep easier.</p>
+                            <p>PPF offers a smooth, hydrophobic surface that repels dirt and grime. This makes car washing and maintenance significantly easier, allowing you to spend less time cleaning and more time enjoying your car.</p>
                         </div>
                     </div>
                     <div className="text-center pt-2">

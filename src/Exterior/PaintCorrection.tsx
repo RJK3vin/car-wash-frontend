@@ -25,12 +25,13 @@ export default function PaintCorrection() {
                     <div className="max-w-5xl mx-auto">
                         <img src="/paint-correction-intro.png" alt="Paint correction showcase" className="w-full h-[400px] object-cover rounded-lg shadow" />
                     </div>
+                    <div className="pt-4 text-center">
+                        <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
+                            Get A Free Quote
+                        </Link>
+                    </div>
                 </section>
-                <div className="pt-4 text-center">
-                    <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
-                        Get A Free Quote
-                    </Link>
-                </div>
+                
                 <section className="space-y-6">
                     <h2 className="text-3xl font-bold text-center">Our Other Detailing Services</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

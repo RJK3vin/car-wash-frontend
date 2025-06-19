@@ -26,15 +26,15 @@ export default function VehicleWraps() {
                             <li><strong>Partial Car Wraps:</strong> Opt for a more subtle touch with partial wraps that cover specific areas like the hood, roof, or trunk. This is a great way to add accents, stripes, or logos.</li>
                             <li><strong>Fleet Branding:</strong> Enhance brand awareness and create a cohesive look for your company vehicles with professional fleet wraps.</li>
                         </ul>
-                        <div className="pt-4 text-center">
-                            <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
-                                Get A Free Quote
-                            </Link>
-                        </div>
                     </div>
                     <div className="max-w-5xl mx-auto">
                         <img src="/car-wrap-intro.png" alt="Car wrap showcase" className="w-full h-[400px] object-cover rounded-lg shadow" />
                     </div>
+                    <div className="pt-4 text-center">
+                            <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
+                                Get A Free Quote
+                            </Link>
+                        </div>
                 </section>
                 <section className="space-y-6">
                     <h2 className="text-3xl font-bold text-center">Benefits of Car Wraps</h2>
