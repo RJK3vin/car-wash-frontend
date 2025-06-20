@@ -1,4 +1,5 @@
 import QuoteForm from "../components/QuoteForm";
+import BlogNavSlider from "../components/BlogNavSlider";
 
 const BlogOne = () => {
     return (
@@ -62,6 +63,7 @@ const BlogOne = () => {
                     Professionals possess a unique skillset honed through continuous learning and adaptation to industry trends. Enhanced training methods, like VR training programs, allow technicians to refine their skills. This state-of-the-art approach underlines mobile detailing's commitment to not only meet but exceed service expectations, ensuring your car is in its best shape, all handled by those who know the art and science of vehicular care.
                 </p>
             </div>
+            <BlogNavSlider currentIndex={1} />
             <QuoteForm />
         </>
     );

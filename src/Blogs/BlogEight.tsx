@@ -1,4 +1,5 @@
 import QuoteForm from "../components/QuoteForm";
+import BlogNavSlider from "../components/BlogNavSlider";
 
 const BlogEight = () => {
     return (
@@ -110,6 +111,7 @@ const BlogEight = () => {
                     efficiency and longevity of your vehicle maintenance strategy.
                 </p>
             </div>
+            <BlogNavSlider currentIndex={8} />
             <QuoteForm />
         </>
     );

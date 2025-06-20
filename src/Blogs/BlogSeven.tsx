@@ -1,4 +1,5 @@
 import QuoteForm from "../components/QuoteForm";
+import BlogNavSlider from "../components/BlogNavSlider";
 
 const BlogSeven = () => {
     return (
@@ -91,6 +92,7 @@ const BlogSeven = () => {
                     can help in achieving a spotless and fresh-smelling car interior.
                 </p>
             </div>
+            <BlogNavSlider currentIndex={7} />
             <QuoteForm />
         </>
     );
