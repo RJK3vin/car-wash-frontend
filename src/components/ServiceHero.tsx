@@ -28,7 +28,7 @@ export default function ServiceHero({header, subheader, url} : Props) {
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
           <Link
             to="/contact"
-            className="bg-orange-500 text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600"
+            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition duration-200"
           >
             Get A Free Quote
           </Link>

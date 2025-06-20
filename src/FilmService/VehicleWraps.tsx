@@ -31,7 +31,7 @@ export default function VehicleWraps() {
                         <img src="/car-wrap-intro.png" alt="Car wrap showcase" className="w-full h-[400px] object-cover rounded-lg shadow" />
                     </div>
                     <div className="pt-4 text-center">
-                            <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
+                            <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition">
                                 Get A Free Quote
                             </Link>
                         </div>
@@ -61,7 +61,7 @@ export default function VehicleWraps() {
                         </div>
                     </div>
                     <div className="text-center pt-2">
-                        <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
+                        <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition">
                             Get A Free Quote
                         </Link>
                     </div>
@@ -78,7 +78,7 @@ export default function VehicleWraps() {
                     </ol>
                     <p className="text-center max-w-3xl mx-auto">By partnering with Wellness Detailing, you can be confident in a smooth, stress-free car wrap experience that delivers stunning results and exceeds your expectations.</p>
                     <div className="text-center pt-2">
-                        <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
+                        <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition">
                             Get A Free Quote
                         </Link>
                     </div>
@@ -93,7 +93,7 @@ export default function VehicleWraps() {
                         </div>
                         <div>
                             <p className="font-semibold mb-2">2. How long does it take to get a car wrap installed?</p>
-                            <p>The car wrap installation process typically takes 1–3 days depending on the size and complexity of your car and the design chosen. During your consultation, we'll provide a more accurate timeframe based on your project.</p>
+                            <p>The car wrap installation process typically takes 1-3 days depending on the size and complexity of your car and the design chosen. During your consultation, we'll provide a more accurate timeframe based on your project.</p>
                         </div>
                         <div>
                             <p className="font-semibold mb-2">3. Can I design my own car wrap?</p>
@@ -116,7 +116,7 @@ export default function VehicleWraps() {
                         Ready to unleash your creativity and transform your car? Schedule a Free Car Wrap Design Consultation with Wellness Detailing today!
                     </div>
                     <div className="text-center pt-4">
-                        <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
+                        <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition">
                             Get A Free Quote
                         </Link>
                     </div>
@@ -130,7 +130,7 @@ export default function VehicleWraps() {
                         <img src="/placeholder-carwrap4.jpg" alt="Car wrap 4" className="rounded-lg shadow object-cover h-48 w-full" />
                     </div>
                     <div className="text-center pt-2">
-                        <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
+                        <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition">
                             Get A Free Quote
                         </Link>
                     </div>

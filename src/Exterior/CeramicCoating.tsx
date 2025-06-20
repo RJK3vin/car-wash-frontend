@@ -8,7 +8,7 @@ export default function CeramicCoating() {
     return (
         <>
             <ServiceHero header="Ultimate Paint Protection: Ceramic Coating by Wellness Detailing" subheader="Safeguard your car's paintwork from everyday wear and tear with our professional ceramic coating installation. Maintain a showroom shine and unparalleled protection for years to come." url="https://placehold.co/1920x1080" />
-            <section className="space-y-16 px-4 md:px-8 lg:px-16 py-8 max-w-7xl mx-auto">
+            <section className="space-y-16 px-4 md:px-8 lg:px-16 py-8 max-w-7xl mx-auto text-gray-800">
                 <Helmet>
                     <title>Ceramic Coating | Wellness Detailing</title>
                     <meta
@@ -32,7 +32,7 @@ export default function CeramicCoating() {
                 <div className="text-center">
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                        className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors duration-200"
                     >
                         Get A Free Quote
                     </Link>
@@ -57,7 +57,7 @@ export default function CeramicCoating() {
                     <div className="text-center">
                         <Link
                             to="/contact"
-                            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors duration-200"
                         >
                             Get A Free Quote
                         </Link>
@@ -88,8 +88,8 @@ export default function CeramicCoating() {
                                     "We stand behind our work and offer a satisfaction guarantee on all ceramic coating installations.",
                             },
                         ].map(({ title, desc }, index) => (
-                            <div key={index} className="flex flex-col items-center space-y-2">
-                                <CheckCircle className="text-orange-500 w-6 h-6" />
+                            <div key={index} className="flex flex-col items-center space-y-2 text-gray-800">
+                                <CheckCircle className="text-blue-600 w-6 h-6" />
                                 <p className="font-medium">{title}</p>
                                 <p className="text-sm text-gray-600">{desc}</p>
                             </div>
@@ -98,7 +98,7 @@ export default function CeramicCoating() {
                     <div className="text-center">
                         <Link
                             to="/contact"
-                            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors duration-200"
                         >
                             Get A Free Quote
                         </Link>
@@ -179,7 +179,7 @@ export default function CeramicCoating() {
                     <div className="text-center pt-2">
                         <Link
                             to="/contact"
-                            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors duration-200"
                         >
                             Get A Free Quote
                         </Link>

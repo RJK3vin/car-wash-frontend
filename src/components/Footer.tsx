@@ -2,7 +2,7 @@ import { Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-white px-6 py-12">
+    <footer className="bg-slate-900 text-white px-6 py-12">
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-sm">
         <div className="space-y-6">
           <div>
@@ -13,7 +13,7 @@ const Footer = () => {
                   <div className="inline-block">
                     <a
                       href={`/${item.toLowerCase().replace(/\s+/g, '')}`}
-                      className="block py-1 hover:text-white transition"
+                      className="block py-1 hover:text-blue-400 transition"
                     >
                       {item}
                     </a>
@@ -36,7 +36,7 @@ const Footer = () => {
                     <div className="inline-block">
                       <a
                         href={href}
-                        className="block py-1 hover:text-white transition"
+                        className="block py-1 hover:text-blue-400 transition"
                       >
                         {item}
                       </a>
@@ -67,7 +67,7 @@ const Footer = () => {
                 <div className="inline-block">
                   <a
                     href={`/${item.toLowerCase().replace(/\s+/g, '')}`}
-                    className="block py-1 hover:text-white transition"
+                    className="block py-1 hover:text-blue-400 transition"
                   >
                     {item}
                   </a>
@@ -93,7 +93,7 @@ const Footer = () => {
                 <div className="inline-block">
                   <a
                     href={`/${item.toLowerCase().replace(/[\s-]+/g, '')}`}
-                    className="block py-1 hover:text-white transition"
+                    className="block py-1 hover:text-blue-400 transition"
                   >
                     {item}
                   </a>
@@ -123,7 +123,7 @@ const Footer = () => {
                 <div className="inline-block">
                   <a
                     href={`/${item.toLowerCase().replace(/\s+/g, '')}`}
-                    className="block py-1 hover:text-white transition"
+                    className="block py-1 hover:text-blue-400 transition"
                   >
                     {item}
                   </a>
@@ -140,14 +140,14 @@ const Footer = () => {
           <h3 className="font-semibold mb-2">GET IN TOUCH</h3>
           <ul className="space-y-2 text-gray-300">
             <li className="flex items-center gap-2">
-              <Mail className="w-4 h-4 text-orange-500" />
-              <a href="mailto:WellnessDetailing@gmail.com" className="hover:text-white">
+              <Mail className="w-4 h-4 text-blue-600" />
+              <a href="mailto:WellnessDetailing@gmail.com" className="hover:text-blue-400 transition">
                 WellnessDetailing@gmail.com
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <Phone className="w-4 h-4 text-orange-500" />
-              <a href="tel:2406300211" className="hover:text-white">
+              <Phone className="w-4 h-4 text-blue-600" />
+              <a href="tel:2406300211" className="hover:text-blue-400 transition">
                 (240) 630-0211
               </a>
             </li>

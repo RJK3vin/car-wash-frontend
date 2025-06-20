@@ -7,7 +7,7 @@ export default function FullInteriorCleaning() {
     return (
         <>
             <ServiceHero header="Refresh Your Ride from the Inside Out: Interior Detailing by Wellness Detailing" subheader="Restore your car's interior to its original luster with out meticulous detailing service. We banish dirt, grime, and stains, leaving your car feeling fresh, clean, and sanitized." url="https://placehold.co/1920x1080" />
-            <section className="px-4 py-12 md:px-12 lg:px-20 space-y-12">
+            <section className="px-4 py-12 md:px-12 lg:px-24 space-y-16 text-gray-800">
                 <Helmet>
                     <title>Interior Detailing | Wellness Detailing</title>
                     <meta name="description" content="Transform your car's interior with Wellness Detailing's comprehensive and professional interior detailing services." />
@@ -29,10 +29,10 @@ export default function FullInteriorCleaning() {
                     {[1, 2].map((num) => (
                         <div
                             key={num}
-                            className="w-[400px] h-[500px] border-2 border-gray-300 rounded-md overflow-hidden flex items-center justify-center bg-gray-100"
+                            className="w-[400px] h-[500px] border border-gray-300 rounded-xl shadow-sm overflow-hidden flex items-center justify-center bg-gray-50"
                         >
                             <img
-                                src={`https://placehold.co/256x160?text=Image+${num}`}
+                                src={`https://placehold.co/256x160?text=${num}`}
                                 alt={`Interior Detail ${num}`}
                                 className="object-cover w-full h-full"
                             />
@@ -41,7 +41,7 @@ export default function FullInteriorCleaning() {
                 </div>
 
                 <div className="text-center">
-                    <Link to="/contact" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium">Get A Free Quote</Link>
+                    <Link to="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition">Get A Free Quote</Link>
                 </div>
 
                 <div className="text-center">
@@ -69,7 +69,7 @@ export default function FullInteriorCleaning() {
                 </div>
 
                 <div className="text-center">
-                    <Link to="/contact" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium">Get A Free Quote</Link>
+                    <Link to="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition">Get A Free Quote</Link>
                 </div>
 
                 <div className="text-center">
@@ -78,39 +78,39 @@ export default function FullInteriorCleaning() {
                     <p className="max-w-3xl mx-auto">At Wellness Detailing, we take pride in restoring car interiors to their pristine condition. Here's a detailed look at our meticulous process, ensuring a clean, fresh, and healthy environment inside your car:</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto text-center">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto text-center font-bold">
                     <div>
-                        <div className="text-orange-500 font-bold text-xl mb-2">1</div>
+                        <div className="text-blue-600 text-xl mb-2">1</div>
                         <p>Pre-Cleaning Inspection</p>
                     </div>
                     <div>
-                        <div className="text-orange-500 font-bold text-xl mb-2">2</div>
+                        <div className="text-blue-600 text-xl mb-2">2</div>
                         <p>Thorough Vacuuming</p>
                     </div>
                     <div>
-                        <div className="text-orange-500 font-bold text-xl mb-2">3</div>
+                        <div className="text-blue-600 text-xl mb-2">3</div>
                         <p>Stain Removal & Spot Treatment</p>
                     </div>
                     <div>
-                        <div className="text-orange-500 font-bold text-xl mb-2">4</div>
+                        <div className="text-blue-600 text-xl mb-2">4</div>
                         <p>Deep Cleaning & Surface Revitalization</p>
                     </div>
                     <div>
-                        <div className="text-orange-500 font-bold text-xl mb-2">5</div>
+                        <div className="text-blue-600 text-xl mb-2">5</div>
                         <p>Optional Steam Sterilization</p>
                     </div>
                     <div>
-                        <div className="text-orange-500 font-bold text-xl mb-2">6</div>
+                        <div className="text-blue-600 text-xl mb-2">6</div>
                         <p>Final Touches & Quality Check</p>
                     </div>
                     <div>
-                        <div className="text-orange-500 font-bold text-xl mb-2">7</div>
+                        <div className="text-blue-600 text-xl mb-2">7</div>
                         <p>Delighting You with a Fresh & Clean Interior</p>
                     </div>
                 </div>
 
                 <div className="text-center mt-8">
-                    <Link to="/contact" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium">Get A Free Quote</Link>
+                    <Link to="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition">Get A Free Quote</Link>
                 </div>
 
                 <div className="text-center">
@@ -121,7 +121,7 @@ export default function FullInteriorCleaning() {
 
                 <div className="max-w-4xl mx-auto space-y-8 text-left">
                     <div>
-                        <p className="font-semibold text-lg mb-2">1. What’s included in the Interior Deluxe package?</p>
+                        <p className="font-semibold text-lg mb-2">1. What's included in the Interior Deluxe package?</p>
                         <p className="mb-2">Our Interior Deluxe package is our most popular option and includes a deep clean of all interior surfaces:</p>
                         <ul className="list-disc pl-6 space-y-1">
                             <li>Full interior and trunk vacuuming</li>
@@ -147,7 +147,7 @@ export default function FullInteriorCleaning() {
                     <div>
                         <p className="font-semibold text-lg mb-2">3. How long does an interior detailing service take?</p>
                         <p>
-                            The duration depends on the size and condition of your car’s interior. A typical Interior Deluxe service takes 2-4 hours, while a more comprehensive service with add-ons may take longer.
+                            The duration depends on the size and condition of your car's interior. A typical Interior Deluxe service takes 2-4 hours, while a more comprehensive service with add-ons may take longer.
                         </p>
                     </div>
 
@@ -173,14 +173,14 @@ export default function FullInteriorCleaning() {
                     </div>
 
                     <div>
-                        <p className="font-semibold text-lg mb-2">7. Is interior detailing good for my car’s health?</p>
+                        <p className="font-semibold text-lg mb-2">7. Is interior detailing good for my car's health?</p>
                         <p>
                             Absolutely! Regular interior detailing removes dust, allergens, and bacteria, creating a cleaner and healthier environment for you and your passengers.
                         </p>
                     </div>
 
                     <div>
-                        <p className="font-semibold text-lg mb-2">8. How often should I get my car’s interior detailed?</p>
+                        <p className="font-semibold text-lg mb-2">8. How often should I get my car's interior detailed?</p>
                         <p>
                             The frequency depends on your usage habits. For most drivers, we recommend interior detailing every 3–6 months, or more frequently if you have pets or tend to spill things in your car.
                         </p>
@@ -191,7 +191,7 @@ export default function FullInteriorCleaning() {
                 <div className="text-center mt-8">
                     <p className="font-semibold text-lg max-w-2xl mx-auto">Ready to transform your car's interior into a fresh and clean haven? Schedule Your Interior Detailing Appointment Today!</p>
                     <br></br>
-                    <Link to="/contact" className="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium">Get A Free Quote</Link>
+                    <Link to="/contact" className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition">Get A Free Quote</Link>
                 </div>
 
                 <div className="text-center">
@@ -200,14 +200,14 @@ export default function FullInteriorCleaning() {
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
                     {[...Array(14)].map((_, i) => (
-                        <div key={i} className="border h-[200px] w-full flex items-center justify-center bg-gray-100 text-gray-500 text-sm">
+                        <div key={i} className="border border-gray-300 h-[200px] w-full flex items-center justify-center bg-gray-50 text-gray-500 text-sm rounded-lg">
                             Image {i + 1}
                         </div>
                     ))}
                 </div>
 
                 <div className="text-center mt-8">
-                    <Link to="/contact" className="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium">Get A Free Quote</Link>
+                    <Link to="/contact" className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition">Get A Free Quote</Link>
                 </div>
             </section>
 

@@ -31,7 +31,7 @@ export default function PaintCorrection() {
                         </Link>
                     </div>
                 </section>
-                
+
                 <section className="space-y-6">
                     <h2 className="text-3xl font-bold text-center">Our Other Detailing Services</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -46,7 +46,7 @@ export default function PaintCorrection() {
                             <div key={i} className="bg-white p-4 rounded shadow text-left flex flex-col justify-between h-full min-h-[240px]">
                                 <h3 className="font-bold text-lg text-center">{title}</h3>
                                 <p className="mt-1">{desc}</p>
-                                <button className="mt-2 bg-orange-500 hover:bg-orange-600 text-white text-base font-bold self-center px-4 py-2 rounded shadow transition">Read more</button>
+                                <button className="mt-2 bg-blue-600 hover:bg-blue-700 text-white text-base font-bold self-center px-4 py-2 rounded shadow transition">Read more</button>
                             </div>
                         ))}
                     </div>
@@ -104,7 +104,16 @@ export default function PaintCorrection() {
                             },
                             {
                                 q: "3. What are the different types of paint correction services offered?",
-                                a: "We offer a range of paint correction services to address varying levels of paint damage: Single-stage polish, Multi-stage polish, Headlight restoration."
+                                a: (
+                                    <>
+                                        <p className="text-left mb-2">We offer a range of paint correction services to address varying levels of paint damage:</p>
+                                        <ul className="list-disc pl-5 space-y-1">
+                                            <li><strong>Single-stage polish:</strong> Ideal for mild imperfections like minor swirls or light scratches.</li>
+                                            <li><strong>Multi-stage polish:</strong> Recommended for moderate imperfections like swirls, scratches, and oxidation.</li>
+                                            <li><strong>Headlight restoration:</strong> Restores clarity and improves nighttime visibility for cloudy or discolored headlights.</li>
+                                        </ul>
+                                    </>
+                                )
                             },
                             {
                                 q: "4. Will paint correction damage my car's paint?",

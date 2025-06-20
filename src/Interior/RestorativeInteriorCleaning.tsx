@@ -7,7 +7,7 @@ export default function RestorativeInteriorCleaning() {
     return (
         <>
             <ServiceHero header="Restorative Interior Cleaning by Wellness Detailing" subheader="Has your car's interior seen better days? Our meticulous restorative cleaning service brings neglected interiors back to their original glory. We eliminate deep-seated dirt, grime, and stains, leaving your car looking and feeling brand new." url="https://placehold.co/1920x1080" />
-            <div className="px-4 py-16 space-y-16">
+            <div className="px-4 py-16 md:px-12 lg:px-24 space-y-20 text-gray-800">
                 <Helmet>
                     <title>Restorative Interior Cleaning | Wellness Detailing</title>
                 </Helmet>
@@ -20,10 +20,10 @@ export default function RestorativeInteriorCleaning() {
                         <li><strong>More Than Just Cleaning:</strong> We go beyond surface cleaning, tackling embedded dirt, reviving neglected surfaces, and restoring a like-new appearance.</li>
                         <li><strong>Long-Term Protection:</strong> Our restorative cleaning process includes protectants to help maintain the revived condition of your car's interior.</li>
                     </div>
-                    <div className="w-[600px] h-[500px] border border-gray-400 rounded-lg mx-auto flex items-center justify-center text-sm text-gray-500">
+                    <div className="w-[600px] h-[500px] border border-gray-300 rounded-lg mx-auto flex items-center justify-center text-sm text-gray-500 bg-gray-50 shadow">
                         Image Placeholder
                     </div>
-                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">Get A Free Quote</Link>
                 </section>
 
                 <section className="text-center">
@@ -40,7 +40,7 @@ export default function RestorativeInteriorCleaning() {
                         <li>
                             <strong>Agitation & Stain Removal:</strong> Stubborn stains are pre-treated and addressed with specialized cleaning solutions and agitation techniques.
                             <p className="ml-4 mt-2 mb-2">We target common stains like:</p>
-                            <ul className="ml-8 list-disc space-y-1">
+                            <ul className="ml-8 list-disc space-y-1 text-gray-700">
                                 <li>Coffee spills</li>
                                 <li>Food residue</li>
                                 <li>Pet accidents</li>
@@ -63,7 +63,7 @@ export default function RestorativeInteriorCleaning() {
                         <li><strong>Final Touches & Quality Check:</strong> Our detailers meticulously inspect the interior to ensure a flawless finish, free of streaks, smudges, or missed spots.</li>
                     </div>
 
-                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">
                         Get A Free Quote
                     </Link>
                 </section>
@@ -72,13 +72,13 @@ export default function RestorativeInteriorCleaning() {
                     <div className="max-w-4xl mx-auto mt-6 text-left space-y-6">
                         <p>
                             At Wellness Detailing, we understand you might have questions about our in-depth Restorative Interior Cleaning service.
-                            Here are answers to some of the most frequently asked questions to help you decide if it’s the right solution for your car’s interior:
+                            Here are answers to some of the most frequently asked questions to help you decide if it's the right solution for your car's interior:
                         </p>
 
                         <div className="space-y-2">
                             <strong>1. What types of cars benefit most from Restorative Cleaning?</strong>
                             <p>This service is ideal for cars that have:</p>
-                            <ul className="list-disc ml-6">
+                            <ul className="list-disc ml-8 space-y-1 text-gray-700">
                                 <li>Excessive dirt, grime, and dust buildup</li>
                                 <li>Deep-seated stains or upholstery wear</li>
                                 <li>Lingering odors from smoke, pets, or mildew</li>
@@ -89,7 +89,7 @@ export default function RestorativeInteriorCleaning() {
                         <div className="space-y-2">
                             <strong>2. Is Restorative Cleaning more extensive than a regular interior detail?</strong>
                             <p>Yes, restorative cleaning is a much more comprehensive process than a standard detail. It focuses on reviving neglected interiors by:</p>
-                            <ul className="list-disc ml-6">
+                            <ul className="list-disc ml-6 space-y-1 text-gray-700">
                                 <li>Using stronger cleaning solutions for tackling tough dirt and stains.</li>
                                 <li>Employing techniques like steam cleaning and agitation for deeper cleaning.</li>
                                 <li>Including protectants to maintain the revived condition of the interior surfaces.</li>
@@ -103,7 +103,7 @@ export default function RestorativeInteriorCleaning() {
 
                         <div className="space-y-2">
                             <strong>4. How long does Restorative Cleaning take?</strong>
-                            <p>The duration depends on the size and condition of your car’s interior. A typical service can take 4-8 hours or more, depending on the level of cleaning required.</p>
+                            <p>The duration depends on the size and condition of your car's interior. A typical service can take 4-8 hours or more, depending on the level of cleaning required.</p>
                         </div>
 
                         <div className="space-y-2">
@@ -113,7 +113,7 @@ export default function RestorativeInteriorCleaning() {
 
                         <div className="space-y-2">
                             <strong>6. Is this service safe for all interior materials?</strong>
-                            <p>We use safe and effective cleaning products suitable for various interior materials like leather, cloth, vinyl, and plastics. Our detailers are highly trained in proper cleaning techniques to ensure the safety and protection of your car’s interior.</p>
+                            <p>We use safe and effective cleaning products suitable for various interior materials like leather, cloth, vinyl, and plastics. Our detailers are highly trained in proper cleaning techniques to ensure the safety and protection of your car's interior.</p>
                         </div>
 
                         <div className="space-y-2">
@@ -130,7 +130,7 @@ export default function RestorativeInteriorCleaning() {
                     <p className="font-bold mt-6">
                         Ready to breathe new life into your car's interior? Get a Free Restorative Interior Cleaning Quote Today!
                     </p>
-                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">
                         Get A Free Quote
                     </Link>
                 </section>
@@ -141,7 +141,7 @@ export default function RestorativeInteriorCleaning() {
                         {[1, 2, 3, 4].map((i) => (
                             <div
                                 key={i}
-                                className="w-full h-[200px] border border-gray-300 rounded overflow-hidden flex items-center justify-center"
+                                className="w-full h-[200px] border border-gray-300 rounded-lg overflow-hidden shadow hover:shadow-md transition"
                             >
                                 <img
                                     src={`/images/restorative-gallery-${i}.jpg`}
@@ -153,7 +153,7 @@ export default function RestorativeInteriorCleaning() {
                     </div>
                     <Link
                         to="/contact"
-                        className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+                        className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition"
                     >
                         Get A Free Quote
                     </Link>

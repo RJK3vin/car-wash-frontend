@@ -6,7 +6,7 @@ export default function AppointmentDepositPolicy() {
     return (
         <>
             <GalleryHero header="Appointment Deposit Policy" button="Get A Free Quote" loc="contact" url="https://placehold.co/1920x1080" />
-            <section className="max-w-5xl mx-auto px-4 py-10">
+            <section className="max-w-5xl mx-auto px-4 py-10 text-gray-800">
                 <h2 className="text-3xl font-semibold mb-6">Appointment Deposit Policy: Securing Your Spot at Wellness Detailing</h2>
                 <p className="mb-4">
                     At Wellness Detailing, we appreciate your business and strive to provide the best possible scheduling experience. To ensure efficient use of our detailers' time and maintain a smooth booking process, we have an appointment deposit policy in place.
@@ -59,7 +59,7 @@ export default function AppointmentDepositPolicy() {
                 <div className="flex justify-center">
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded transition"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded transition"
                     >
                         Get A Free Quote
                     </Link>

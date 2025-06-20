@@ -7,18 +7,18 @@ export default function FAQs() {
         <>
             <GalleryHero header="Detailing FAQ" button="Get A Free Quote" url="https://placehold.co/1920x1080" loc="contact" />
 
-            <section className="w-full bg-white py-16 px-4 md:px-8 lg:px-20">
+            <section className="w-full bg-white py-16 px-4 md:px-8 lg:px-20 text-gray-800">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">
+                    <h2 className="text-3xl font-bold text-center mb-8">
                         Detailing FAQs: Unveiling a Gleaming Ride
                     </h2>
-                    <p className="text-gray-700 mb-8 text-lg text-center">
+                    <p className="mb-8 text-lg text-center">
                         At Wellness Detailing, we understand you might have questions about our professional car detailing services.
                         Here are answers to some of the most frequently asked questions to help you decide if detailing is right for
                         your car and to choose the service that best suits your needs:
                     </p>
 
-                    <div className="space-y-6 text-gray-700 text-base">
+                    <div className="space-y-6 text-base leading-relaxed">
 
                         <h3 className="text-xl font-semibold mt-8">General Detailing Services:</h3>
 
@@ -100,7 +100,7 @@ export default function FAQs() {
                     <div className="text-center mt-10">
                         <Link
                             to="/contact"
-                            className="bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-6 py-3 rounded shadow "
+                            className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-3 rounded shadow transition"
                         >
                             Get A Free Quote
                         </Link>

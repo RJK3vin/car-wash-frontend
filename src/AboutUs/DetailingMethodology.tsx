@@ -7,7 +7,7 @@ export default function DetailingMethodology() {
     return (
         <>
             <GalleryHero header="Our Cleaning & Detailing Process" button="Get A Free Quote" loc="contact" url="https://placehold.co/1920x1080" />
-            <section className="max-w-5xl mx-auto px-4 py-10">
+            <section className="max-w-5xl mx-auto px-4 py-10 text-gray-800">
                 <h2 className="text-3xl font-semibold mb-6">Our Detailing Methodology at Wellness Detailing</h2>
 
                 <p className="mb-4">
@@ -73,7 +73,7 @@ export default function DetailingMethodology() {
                 <div className="flex justify-center mt-8">
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded transition"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded transition"
                     >
                         Get A Free Quote
                     </Link>

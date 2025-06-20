@@ -23,7 +23,7 @@ export default function Hero({ scrollToRef }: HeroProps) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="md:text-x4l font-bold text-orange-500 leading-tight">
+        <h1 className="md:text-4xl font-bold text-blue-600 leading-tight">
           Elevate Your Drive with Wellness Detailing
         </h1>
         <p className="mt-3 text-4xl font-bold text-gray-900">
@@ -36,7 +36,7 @@ export default function Hero({ scrollToRef }: HeroProps) {
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
           <button
             onClick={handleScroll}
-            className="bg-orange-500 text-white px-6 py-3 rounded-md font-medium hover:bg-orange-600"
+            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
           >
             Learn More
           </button>
@@ -51,4 +51,6 @@ export default function Hero({ scrollToRef }: HeroProps) {
     </section>
   );
 }
+
+
 

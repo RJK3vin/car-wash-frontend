@@ -58,7 +58,7 @@ export default function HeadlightRestoration() {
                   key={idx}
                   className="p-4 border border-gray-300 rounded-lg flex flex-col items-center text-center space-y-2"
                 >
-                  <CheckCircle className="text-orange-500 w-6 h-6" />
+                  <CheckCircle className="text-blue-600 w-6 h-6" />
                   <p className="font-bold">{title}</p>
                   <p className="text-sm">{desc}</p>
                 </div>
@@ -92,7 +92,7 @@ export default function HeadlightRestoration() {
                   key={i}
                   className="p-4 border border-gray-300 rounded-lg flex flex-col items-center text-center space-y-2"
                 >
-                  <div className="text-orange-500 font-bold text-xl">{i + 1}</div>
+                  <div className="text-blue-600 font-bold text-xl">{i + 1}</div>
                   <p className="font-bold">{title}</p>
                   <p className="text-sm">
                     {[

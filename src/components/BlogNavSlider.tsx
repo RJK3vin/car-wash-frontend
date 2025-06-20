@@ -20,7 +20,7 @@ const BlogNavSlider = ({ currentIndex }: BlogNavSliderProps) => {
   const next = currentIndex < blogRoutes.length - 1 ? blogRoutes[currentIndex + 1] : null;
 
   return (
-    <div className="mt-6 border-t pt-4 mb-4 flex flex-col sm:flex-row justify-between gap-4 items-start sm:items-center text-base font-medium text-gray-700">
+    <div className="mt-6 border-t border-gray-200 pt-4 mb-4 flex flex-col sm:flex-row justify-between gap-4 items-start sm:items-center text-base font-medium text-gray-800">
       {prev ? (
         <Link to={prev.path} className="hover:text-blue-600 transition-colors duration-200">
           ← Previous: {prev.title}

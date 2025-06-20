@@ -1,13 +1,12 @@
 import { FaFacebookF, FaInstagram, FaYelp } from "react-icons/fa";
 import { Phone, MapPin, MailOpen } from 'lucide-react';
 
-
 export default function QuoteForm() {
   return (
     <section className="bg-white py-16 px-4" style={{ backgroundImage: `url('https://placehold.co/1920x1080')`, backgroundSize: 'cover', backgroundPosition: 'center',backgroundRepeat: 'no-repeat'}}>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         <div>
-          <h2 className="text-3xl font-bold mb-2">Request a <span className="text-orange-500">Quote</span></h2>
+          <h2 className="text-3xl font-bold mb-2">Request a <span className="text-blue-600">Quote</span></h2>
           <p className="text-sm text-gray-600 mb-6">We love our customers, so feel free to reach out for any of your needs!</p>
 
           <form className="space-y-4">
@@ -19,6 +18,7 @@ export default function QuoteForm() {
             </div>
 
             <select className="border p-2 w-full">
+              <option value="" disabled>Choose a service type</option>
               <option>Mobile - Come to me</option>
               <option>Shop - I'll bring it to you</option>
               <option>Either works for me</option>
@@ -64,21 +64,21 @@ export default function QuoteForm() {
         </div>
 
         <div className="text-sm text-gray-700 space-y-4">
-          <h3 className="text-2xl font-bold text-orange-500">Give Us A Call</h3>
+          <h3 className="text-2xl font-bold text-blue-600">Give Us A Call</h3>
           <div className="hidden lg:flex items-center gap-1">
             <a href="tel:2406300211" className="flex items-center gap-1">
-              <Phone className="w-4 h-4 text-orange-500" />
+              <Phone className="w-4 h-4 text-blue-600" />
               <span>(240) 630-0211</span>
             </a>
           </div>
           <div className="flex items-center gap-1 text-sm">
             <a href="mailto:WellnessDetailing@gmail.com" className="flex items-center gap-1 hover:underline">
-              <MailOpen className="w-4 h-4 text-orange-500" />
+              <MailOpen className="w-4 h-4 text-blue-600" />
               <span>WellnessDetailing@gmail.com</span>
             </a>
           </div>
           <div className="flex items-start gap-2 mt-4">
-            <MapPin className="w-5 h-5 mt-1 text-orange-500" />
+            <MapPin className="w-5 h-5 mt-1 text-blue-600" />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-1 text-sm">
               <span>Olney MD</span>
               <span>Rockville MD</span>
@@ -95,7 +95,7 @@ export default function QuoteForm() {
               <span>Poolesville MD</span>
             </div>
           </div>
-          <div className="flex gap-3 text-xl text-orange-500">
+          <div className="flex gap-3 text-xl text-blue-600">
             <a href="https://www.facebook.com/WellnessDetailing/" target="_blank"><FaFacebookF /></a>
             <a href="https://www.instagram.com/wellnessdetailing/#" target="_blank"><FaInstagram /></a>
             <a href="https://www.yelp.com/biz/wellness-detailing-potomac?osq=wellness+detailing" target="_blank"><FaYelp /></a>

@@ -13,7 +13,7 @@ export default function PremiumWash() {
         "Dry vehicle with soft microfiber towel and air blower to blow water out of crevices and wheels",
         "Clean exterior glass and windows",
         "Dress tires to make them shine",
-    ];
+    ]
 
     const premiumBenefits = [
         {
@@ -41,24 +41,35 @@ export default function PremiumWash() {
             description:
                 "There's nothing quite like the pride of owning a car that looks its absolute best!",
         },
-    ];
+    ]
+
     return (
         <>
-            <ServiceHero header="The Premium Wash by Wellness Detailing" subheader="Go beyond a basic wash. Our meticulous, multi-stage Premium Wash delivers a spa-like experience for your car, restoring a showroom shine and unparalleled protection." url="https://placehold.co/1920x1080" />
-            <section className="mt-16 mb-16 space-y-16">
-                <Helmet>
-                    <title>Premium Wash Service | Wellness Detailing</title>
-                    <meta
-                        name="description"
-                        content="Experience the ultimate Premium Wash at Wellness Detailing. Multi-stage hand wash, wax, clay bar, and tire revival. Get a flawless finish with long-lasting protection."
-                    />
-                </Helmet>
-                <div className="max-w-5xl mx-auto text-center space-y-6">
+            <ServiceHero
+                header="The Premium Wash by Wellness Detailing"
+                subheader="Go beyond a basic wash. Our meticulous, multi-stage Premium Wash delivers a spa-like experience for your car, restoring a showroom shine and unparalleled protection."
+                url="https://placehold.co/1920x1080"
+            />
+            <Helmet>
+                <title>Premium Wash Service | Wellness Detailing</title>
+                <meta
+                    name="description"
+                    content="Experience the ultimate Premium Wash at Wellness Detailing. Multi-stage hand wash, wax, clay bar, and tire revival. Get a flawless finish with long-lasting protection."
+                />
+            </Helmet>
+
+            <section className="mt-16 mb-24 space-y-20">
+
+                <div className="max-w-5xl mx-auto text-center px-4 space-y-6">
                     <h1 className="text-3xl font-bold">
                         The Art of a Premium Wash: More Than Just a Clean
                     </h1>
-                    <p>A regular wash keeps your car presentable, but the Premium Wash by Wellness Detailing elevates car care to an art form. Here's what sets it apart:</p>
-                    <div className="text-left space-y-4">
+                    <p>
+                        A regular wash keeps your car presentable, but the Premium Wash by
+                        Wellness Detailing elevates car care to an art form. Here's what
+                        sets it apart:
+                    </p>
+                    <ul className="text-left space-y-4">
                         {[
                             {
                                 label: "Intensive Pre-Wash Decontamination",
@@ -89,51 +100,70 @@ export default function PremiumWash() {
                                 <strong>{item.label}:</strong> {item.desc}
                             </li>
                         ))}
-                    </div>
+                    </ul>
+
                     <img
                         src="/images/premiumwash-feature.jpg"
                         alt="Premium Wash Example"
                         className="w-full h-[450px] object-cover border border-gray-300 rounded-lg"
                     />
+
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-500 text-white px-6 py-3 mt-4 rounded-md font-medium hover:bg-blue-600"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition"
                     >
                         Get A Free Quote
                     </Link>
                 </div>
-                <div className="max-w-5xl mx-auto text-center space-y-6">
-                    <h2 className="text-3xl font-bold">Beyond the Wash: Premium Protection & Shine</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                <div className="max-w-5xl mx-auto text-center space-y-6 px-4">
+                    <h2 className="text-3xl font-bold">
+                        Beyond the Wash: Premium Protection & Shine
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-4">
                         {premiumFeatures.map((text, i) => (
-                            <div key={i} className="flex flex-col items-center text-center space-y-2">
-                                <CheckCircle className="text-orange-500 w-6 h-6" />
+                            <div
+                                key={i}
+                                className="flex flex-col items-center text-center space-y-2"
+                            >
+                                <CheckCircle className="text-blue-600 w-6 h-6" />
                                 <p>{text}</p>
                             </div>
                         ))}
                     </div>
                 </div>
-                <div className="max-w-5xl mx-auto text-left space-y-4">
-                    <h2 className="text-3xl font-bold text-center">Benefits of the Premium Wash Experience</h2>
-                    <div className="space-y-4">
+
+                <div className="max-w-5xl mx-auto space-y-6 px-4">
+                    <h2 className="text-3xl font-bold text-center">
+                        Benefits of the Premium Wash Experience
+                    </h2>
+                    <ul className="space-y-4">
                         {premiumBenefits.map((item, i) => (
                             <li key={i}>
                                 <strong>{item.title}:</strong> {item.description}
                             </li>
                         ))}
-                    </div>
+                    </ul>
                     <div className="text-center pt-4">
                         <Link
                             to="/contact"
-                            className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-600"
+                            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition"
                         >
                             Get A Free Quote
                         </Link>
                     </div>
                 </div>
-                <div className="max-w-5xl mx-auto space-y-6">
-                    <h2 className="text-3xl font-bold text-center">Premium Wash FAQs: Unveiling the Details</h2>
-                    <p>At Wellness Detailing, we understand you might have questions about our luxurious Premium Wash service. Here are answers to some of the most frequently asked questions to help you decide if it's the perfect choice for your car:</p>
+
+                <div className="max-w-5xl mx-auto space-y-6 px-4">
+                    <h2 className="text-3xl font-bold text-center">
+                        Premium Wash FAQs: Unveiling the Details
+                    </h2>
+                    <p className="text-center max-w-3xl mx-auto">
+                        At Wellness Detailing, we understand you might have questions about
+                        our luxurious Premium Wash service. Here are answers to some of the
+                        most frequently asked questions to help you decide if it's the
+                        perfect choice for your car:
+                    </p>
                     <div className="space-y-6 text-left">
                         {[
                             {
@@ -170,20 +200,22 @@ export default function PremiumWash() {
                                 <p className="mt-2">{a}</p>
                             </div>
                         ))}
-                        <p className="font-bold mt-6">
-                            Ready to experience the ultimate car wash for your prized possession? Schedule Your Premium Wash Today!
+                        <p className="font-bold mt-6 text-center">
+                            Ready to experience the ultimate car wash for your prized
+                            possession? Schedule Your Premium Wash Today!
                         </p>
                         <div className="text-center pt-4">
                             <Link
                                 to="/contact"
-                                className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-600"
+                                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition"
                             >
                                 Get A Free Quote
                             </Link>
-                    </div>
+                        </div>
                     </div>
                 </div>
-                <div className="max-w-6xl mx-auto text-center space-y-6">
+
+                <div className="max-w-6xl mx-auto text-center space-y-6 px-4">
                     <h2 className="text-3xl font-bold">Premium Wash Service Gallery</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
@@ -197,7 +229,7 @@ export default function PremiumWash() {
                     </div>
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-500 text-white px-6 py-3 mt-4 rounded-md font-medium hover:bg-blue-600"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 mt-4 rounded-md font-medium transition"
                     >
                         Get A Free Quote
                     </Link>

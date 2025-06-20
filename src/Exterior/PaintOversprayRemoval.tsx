@@ -64,7 +64,7 @@ export default function PaintOversprayRemoval() {
                             }
                         ].map(({ title, desc }, i) => (
                             <div key={i} className="text-center space-y-2">
-                                <div className="text-orange-500 text-2xl font-bold">{i + 1}</div>
+                                <div className="text-blue-600 text-2xl font-bold">{i + 1}</div>
                                 <h3 className="font-bold">{title}</h3>
                                 <p className="text-sm text-gray-700">{desc}</p>
                             </div>

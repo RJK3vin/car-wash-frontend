@@ -51,9 +51,9 @@ const Blogs = () => {
           <Link
             key={index}
             to={blog.to}
-            className="bg-black text-white p-6 hover:opacity-90 transition-all duration-200"
+            className="bg-blue-600 text-white p-6 rounded-lg hover:bg-blue-700 hover:shadow-lg transition-all duration-200"
           >
-            <p className="text-sm text-gray-400 mb-2">{blog.date} | By</p>
+            <p className="text-sm text-gray-200 mb-2">{blog.date} | By</p>
             <h3 className="font-semibold text-lg leading-snug">{blog.title}</h3>
           </Link>
         ))}

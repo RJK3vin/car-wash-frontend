@@ -82,11 +82,11 @@ const TestimonialSlider = () => {
                 <Star key={i} className="w-4 h-4 fill-yellow-400" />
               ))}
             </div>
-            <p className="text-sm text-gray-500 mt-1">69 Google reviews</p>
+            <p className="text-base text-gray-500 mt-1">69 Google reviews</p>
             <a
               href="https://admin.trustindex.io/api/googleWriteReview?place-id=ChIJgdYny294ySARzwzRJQokYuc"
               target="_blank"
-              className="mt-3 bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700"
+              className="mt-3 bg-blue-600 text-white text-base px-4 py-2 rounded hover:bg-blue-700"
             >
               Write a review
             </a>
@@ -107,7 +107,7 @@ const TestimonialSlider = () => {
             const displayText = isExpanded ? review.text : (review.text.length > MAX_PREVIEW_LENGTH ? review.text.slice(0, MAX_PREVIEW_LENGTH) + '...' : review.text);
 
             return (
-              <div key={index} className="relative border rounded-lg bg-gray-50 p-4 text-left w-64 flex-shrink-0 transition-all">
+              <div key={index} className="relative border rounded-lg bg-gray-50 p-4 text-left w-64 flex-shrink-0 transition duration-200 ease-in-out">
                 <img
                   src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
                   alt="Google Logo"
@@ -118,7 +118,7 @@ const TestimonialSlider = () => {
                     {review.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="font-semibold text-sm leading-tight">{displayName}</p>
+                    <p className="font-semibold text-base leading-tight">{displayName}</p>
                     <p className="text-xs text-gray-500">{review.date}</p>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const TestimonialSlider = () => {
                     <Star key={i} className="w-4 h-4 fill-yellow-400" />
                   ))}
                 </div>
-                <p className="text-sm text-gray-700">
+                <p className="text-base text-gray-700">
                   {displayText}
                 </p>
                 {review.text.length > MAX_PREVIEW_LENGTH && (
@@ -157,4 +157,3 @@ const TestimonialSlider = () => {
 };
 
 export default TestimonialSlider;
-

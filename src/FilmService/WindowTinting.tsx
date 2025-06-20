@@ -11,7 +11,7 @@ export default function WindowTinting() {
                 subheader="Wellness Detailing offers professional mobile window tinting services through Maryland. Improve your car's comfort, security, and appearance with out high-quality films"
                 url="https://placehold.co/1920x1080"
             />
-            <div className="space-y-16 px-4 md:px-8 lg:px-16 py-8 max-w-7xl mx-auto">
+            <div className="space-y-16 px-4 md:px-8 lg:px-16 py-8 max-w-7xl mx-auto text-gray-800">
                 <Helmet>
                     <title>Window Tinting | Wellness Detailing</title>
                     <meta
@@ -35,12 +35,12 @@ export default function WindowTinting() {
                             This description provides a more comprehensive explanation of window tint's benefits and functionality. It also emphasizes Wellness Detailing's commitment to customization and legal compliance.
                         </p>
                     </div>
-                    <img src="/placeholder1.jpg" alt="Window tinting protection" className="flex-1 rounded-lg shadow object-cover w-full h-[550px]" />
+                    <img src="/placeholder1.jpg" alt="Window tinting protection" className="flex-1 rounded-lg shadow object-cover w-full h-[550px] border" />
                 </section>
                 <div className="text-center">
                     <Link
                         to="/contact"
-                        className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                        className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"
                     >
                         Get A Free Quote
                     </Link>
@@ -60,7 +60,7 @@ export default function WindowTinting() {
                 <div className="text-center">
                     <Link
                         to="/contact"
-                        className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                        className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"
                     >
                         Get A Free Quote
                     </Link>
@@ -90,7 +90,7 @@ export default function WindowTinting() {
                     <div className="pt-2">
                         <Link
                             to="/contact"
-                            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"
                         >
                             Get A Free Quote
                         </Link>
@@ -103,7 +103,7 @@ export default function WindowTinting() {
                     <p>
                         Here at Wellness Detailing, we understand you might have questions about window tinting. We've compiled answers to some of the most frequently asked questions to help you make an informed decision:
                     </p>
-                    <div className="space-y-8">
+                    <div className="space-y-8 text-left">
                         <div>
                             <p className="mb-2 font-semibold">Is window tinting legal in Maryland?</p>
                             <p>
@@ -139,7 +139,7 @@ export default function WindowTinting() {
                         <div>
                             <p className="mb-2 font-semibold">How long does it take?</p>
                             <p>
-                                The window tinting process typically takes 2–4 hours depending on the size and complexity of your vehicle. We'll provide a more accurate timeframe during your consultation.
+                                The window tinting process typically takes 2-4 hours depending on the size and complexity of your vehicle. We'll provide a more accurate timeframe during your consultation.
                             </p>
                         </div>
                         <div>
@@ -149,13 +149,13 @@ export default function WindowTinting() {
                             </p>
                         </div>
                     </div>
-                    <div className="text-lg font-semibold mt-6">
+                    <div className="text-lg font-semibold mt-6 text-center">
                         Ready to experience the many benefits of window tinting? Schedule your free consultation with Wellness Detailing today!
                     </div>
                     <div className="text-center pt-4">
                         <Link
                             to="/contact"
-                            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"
                         >
                             Get A Free Quote
                         </Link>
@@ -169,10 +169,10 @@ export default function WindowTinting() {
                         <img src="/placeholder-gallery3.jpg" alt="Tint gallery 3" className="rounded-lg shadow object-cover h-[400px] w-full" />
                         <img src="/placeholder-gallery4.jpg" alt="Tint gallery 4" className="rounded-lg shadow object-cover h-[400px] w-full" />
                     </div>
-                    <div className="text-center pt-2">
+                    <div className="text-center pt-4">
                         <Link
                             to="/contact"
-                            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700"
+                            className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"
                         >
                             Get A Free Quote
                         </Link>

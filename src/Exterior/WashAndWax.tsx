@@ -19,7 +19,7 @@ export default function WashAndWax() {
                     <h1 className="text-3xl font-bold text-center">
                         Beyond a Basic Wash: The Wellness Detailing Difference
                     </h1>
-                    <p>Your car deserves more than a quick drive-thru rinse. At Wellness Detailing, we elevate the wash and wax experience with a meticulous, multi-step process that goes deeper than surface cleaning. Here's what sets us apart:</p>
+                    <p className="text-gray-700">Your car deserves more than a quick drive-thru rinse. At Wellness Detailing, we elevate the wash and wax experience with a meticulous, multi-step process that goes deeper than surface cleaning. Here's what sets us apart:</p>
                     <ul className="list-disc pl-6 space-y-2">
                         <li><strong>Expert Hand Wash:</strong> Our detail experts gently wash your car using high-quality car wash soap and specialized mitts. This removes dirt, grime, and road film without harming the paintwork.</li>
                         <li><strong>Multi-Stage Wash Process:</strong> We believe in thoroughness. Our wash process involves multiple stages, including a pre-rinse to loosen debris, a meticulous wash with specialized solutions, and a final rinse to ensure no soap residue remains.</li>
@@ -33,7 +33,7 @@ export default function WashAndWax() {
                     <div className="text-center">
                         <Link
                             to="/contact"
-                            className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-600"
+                            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"
                         >
                             Get A Free Quote
                         </Link>
@@ -41,7 +41,7 @@ export default function WashAndWax() {
                 </section>
                 <section className="space-y-6 max-w-5xl mx-auto text-center">
                     <h2 className="text-3xl font-bold">The PPF Installation Process at Wellness Detailing</h2>
-                    <p className="max-w-3xl mx-auto">
+                    <p className="max-w-3xl mx-auto text-gray-700">
                         At Wellness Detailing, we take pride in delivering a meticulous and professional mobile PPF installation experience. Here's a glimpse into our streamlined 7-step process:
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 text-left">
@@ -66,7 +66,7 @@ export default function WashAndWax() {
                             },
                         ].map(({ step, title, desc }, i) => (
                             <div key={i} className="bg-white p-4 rounded-lg shadow space-y-2">
-                                <div className="text-orange-500 text-2xl font-bold">{step}</div>
+                                <div className="text-blue-600 text-2xl font-bold">{step}</div>
                                 <h3 className="font-bold text-lg">{title}</h3>
                                 <p className="text-sm text-gray-700">{desc}</p>
                             </div>
@@ -100,7 +100,7 @@ export default function WashAndWax() {
                             },
                         ].map(({ step, title, desc }, i) => (
                             <div key={i} className="bg-white p-4 rounded-lg shadow space-y-2">
-                                <div className="text-orange-500 text-2xl font-bold">{step}</div>
+                                <div className="text-blue-600 text-2xl font-bold">{step}</div>
                                 <h3 className="font-bold text-lg">{title}</h3>
                                 <p className="text-sm text-gray-700">{desc}</p>
                             </div>
@@ -109,7 +109,7 @@ export default function WashAndWax() {
                     <div className="text-center">
                         <Link
                             to="/contact"
-                            className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-600"
+                            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"
                         >
                             Get A Free Quote
                         </Link>
@@ -117,7 +117,7 @@ export default function WashAndWax() {
                 </section>
                 <section className="space-y-10 max-w-4xl mx-auto">
                     <h2 className="text-3xl font-bold text-center">Wash and Wax FAQ: Get Your Answers Here!</h2>
-                    <div className="space-y-6">
+                    <div className="space-y-6 text-gray-700">
                         <p>We understand you might have questions about our professional wash and wax services. Here at Wellness Detailing, we've compiled answers to some of the most frequently asked questions to help you make an informed decision:</p>
                         <div className="space-y-4">
                             <p className="font-bold">1. What are the benefits of getting a professional wash and wax compared to doing it myself?</p>
@@ -160,11 +160,11 @@ export default function WashAndWax() {
                             </p>
                         </div>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center pt-6">
                         <p className="font-bold">Ready to restore your car's shine and shield it with lasting protection? Get a Free Wash & Wax Quote Today!</p>
                         <Link
                             to="/contact"
-                            className="mt-4 inline-block bg-blue-500 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-600"
+                            className="mt-4 inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"
                         >
                             Get A Free Quote
                         </Link>
@@ -176,7 +176,7 @@ export default function WashAndWax() {
                         {[1, 2, 3, 4].map((i) => (
                             <div
                                 key={i}
-                                className="w-full h-[250px] object-cover rounded-lg border border-gray-300"
+                                className="w-full h-[250px] bg-gray-100 rounded-lg border border-gray-300 flex items-center justify-center text-gray-400 text-sm"
                             >
                                 Image {i}
                             </div>
@@ -185,7 +185,7 @@ export default function WashAndWax() {
                     <div className="text-center">
                         <Link
                             to="/contact"
-                            className="inline-block bg-blue-500 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-600"
+                            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition"
                         >
                             Get A Free Quote
                         </Link>

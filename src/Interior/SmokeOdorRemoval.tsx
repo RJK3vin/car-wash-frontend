@@ -7,7 +7,7 @@ export default function SmokeOdorRemoval() {
     return (
         <>
             <ServiceHero header="Eliminate Stubborn Smoke Odors: Breathe Easy with Wellness Detailing" subheader="Has smoke permeated your car's interior? We offer professional smoke odor removal services to eliminate lingering smells and restore a fresh, clean environment." url="https://placehold.co/1920x1080" />
-            <div className="px-4 md:px-20 py-16 space-y-16">
+            <div className="px-4 md:px-12 py-16 space-y-20 lg:px-24 text-gray-800">
                 <Helmet>
                     <title>Smoke Odor & Wrap Services | Wellness Detailing</title>
                 </Helmet>
@@ -22,7 +22,7 @@ export default function SmokeOdorRemoval() {
                         <li><strong>Deep Cleaning & Odor Source Removal:</strong> We meticulously clean all interior surfaces, including carpets, upholstery, headliners, and air vents, to remove embedded smoke particles.</li>
                         <li><strong>Ozone Treatment (Optional):</strong> For heavily smoke-infested cars, we offer ozone treatment as an add-on service. Ozone effectively eliminates smoke odors and kills bacteria.</li>
                     </ul>
-                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">Get A Free Quote</Link>
                 </section>
 
                 <section className="space-y-6 text-center">
@@ -36,21 +36,21 @@ export default function SmokeOdorRemoval() {
                         <li><strong>Air Vent Cleaning:</strong> Air vents are cleaned and deodorized to eliminate smoke odor trapped within the ventilation system.</li>
                         <li><strong>Ozone Treatment (Optional Add-On):</strong> In severe cases, ozone treatment can be used to further neutralize odors and eliminate lingering smoke particles.</li>
                     </ul>
-                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">Get A Free Quote</Link>
                 </section>
 
                 <section className="space-y-6 text-center">
                     <h2 className="text-3xl font-bold">Breathe Easy on the Road Again: Schedule Today!</h2>
                     <p className="mx-auto max-w-2xl">Don't settle for lingering smoke odors in your car. Our professional smoke odor removal service will leave your car smelling fresh and clean.</p>
                     <div className="mx-auto max-w-xl font-bold text-lg">
-                        <div className="border rounded p-6 space-y-4">
+                        <div className="border border-gray-300 bg-white rounded p-6 space-y-4 shadow max-w-xl mx-auto text-gray-700 font-semibold text-center">
                             <div>Eliminate Stubborn Smoke Smells</div>
                             <div>Enjoy a Fresh & Clean Car Interior</div>
                             <div>Breathe Easy on Every Drive</div>
                             <div>Schedule Your Smoke Odor Removal Service Today!</div>
                         </div>
                     </div>
-                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">Get A Free Quote</Link>
                 </section>
 
                 <section className="space-y-8 text-center">
@@ -75,7 +75,7 @@ export default function SmokeOdorRemoval() {
                         </div>
                     </div>
 
-                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">Get A Free Quote</Link>
                 </section>
 
 
@@ -87,7 +87,7 @@ export default function SmokeOdorRemoval() {
                         {[1, 2, 3, 4].map((_, i) => (
                             <div
                                 key={i}
-                                className="w-[300px] h-[220px] border border-black bg-white rounded-lg flex items-center justify-center text-sm text-gray-400"
+                                className="w-[300px] h-[220px] border border-gray-300 bg-gray-50 rounded-lg flex items-center justify-center text-sm text-gray-500"
                             >
                                 Image Placeholder
                             </div>

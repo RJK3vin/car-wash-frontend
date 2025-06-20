@@ -48,7 +48,7 @@ export default function MiniInteriorDetail() {
                         Image Placeholder
                     </div>
 
-                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Get A Free Quote</Link>
                 </div>
 
 
@@ -79,7 +79,7 @@ export default function MiniInteriorDetail() {
                                 key={item.title}
                                 className="w-full max-w-xs border p-6 rounded-md shadow-md"
                             >
-                                <div className="text-orange-500 flex justify-center mb-3">
+                                <div className="text-blue-600 flex justify-center mb-3">
                                     <CheckCircle size={32} />
                                 </div>
                                 <h3 className="font-bold text-lg mb-2">{item.title}</h3>
@@ -134,7 +134,7 @@ export default function MiniInteriorDetail() {
                         <div>
                             <p className="font-bold">5. How often should I get a Mini Detail?</p>
                             <p className="mt-4">
-                                The frequency depends on your usage habits. We recommend a Mini Detail every 1–2 months to maintain a clean and fresh interior, especially if you eat or drink in your car frequently.
+                                The frequency depends on your usage habits. We recommend a Mini Detail every 1-2 months to maintain a clean and fresh interior, especially if you eat or drink in your car frequently.
                             </p>
                         </div>
                     </div>
@@ -146,7 +146,7 @@ export default function MiniInteriorDetail() {
                         Ready to give your car's interior a quick and effective refresh? Get a Mini Interior Detail Quote Today!
                     </p>
                     <br></br>
-                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Get A Free Quote</Link>
+                    <Link to="/contact" className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Get A Free Quote</Link>
                 </div>
 
                 <div className="mt-20">
@@ -157,7 +157,7 @@ export default function MiniInteriorDetail() {
                         {[1, 2, 3, 4].map((_, i) => (
                             <div
                                 key={i}
-                                className="w-[300px] h-[220px] border border-gray-300 rounded-lg flex items-center justify-center text-sm text-gray-400"
+                                className="w-[300px] h-[220px] border border-gray-300 rounded-lg flex items-center justify-center text-sm text-gray-400 bg-gray-50 shadow hover:shadow-md transition"
                             >
                                 Image Placeholder
                             </div>

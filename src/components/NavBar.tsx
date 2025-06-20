@@ -24,18 +24,18 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-black/80 text-white shadow-md sticky top-0 z-50">
+    <header className="bg-white/90 backdrop-blur-sm text-gray-900 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
         <div className="flex items-center gap-6">
           <img
             src="/placeholder-logo.png"
             alt="Wellness Detailing"
-            className="w-12 h-12 rounded-full object-cover bg-gray-300"
+            className="w-10 h-10 rounded-full object-cover bg-gray-200 shadow-inner"
           />
 
-          <nav className="hidden lg:flex items-center gap-6 text-sm font-medium">
-            <a href="/" className={isActive('/') ? "text-orange-500" : ""}>Home</a>
+          <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold tracking-tight">
+            <a href="/" className={isActive('/') ? "text-blue-600 font-semibold" : ""}>Home</a>
             <Dropdown title="Film Service" items={["Window Tinting", "Paint Protection Film", "Vehicle Wraps"]} isActive={isDropdownActive(["Window Tinting", "Paint Protection Film", "Vehicle Wraps"])} currentPath={currentPath} />
             <Dropdown title="Exterior" items={["Paint Correction", "Ceramic Coating", "Paint Overspray Removal", "Wash and Wax", "Engine Cleaning", "Headlight Restoration", "Premium Wash"]} isActive={isDropdownActive(["Paint Correction", "Ceramic Coating", "Paint Overspray Removal", "Wash and Wax", "Engine Cleaning", "Headlight Restoration", "Premium Wash"])} currentPath={currentPath} />
             <Dropdown title="Interior" items={["Full Interior Cleaning", "Mini-Interior Detail", "Smoke Odor Removal", "Restorative Interior Cleaning"]} isActive={isDropdownActive(["Full Interior Cleaning", "Mini-Interior Detail", "Smoke Odor Removal", "Restorative Interior Cleaning"])} currentPath={currentPath} />
@@ -44,7 +44,7 @@ const Navbar = () => {
 
             <div className="relative group">
 
-              <div className={`flex items-center gap-1 cursor-pointer py-2 ${isAboutUsActive() ? 'text-orange-500' : ''}`}>
+              <div className={`flex items-center gap-1 cursor-pointer py-2 ${isAboutUsActive() ? 'text-blue-600 font-semibold' : ''}`}>
                 About Us <ChevronDown className="w-4 h-4" />
               </div>
               <div className="absolute left-0 top-full mt-2 w-56 bg-white text-black rounded shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50">
@@ -61,7 +61,7 @@ const Navbar = () => {
                     <a
                       key={item}
                       href={`/${slugify(item)}`}
-                      className={`block px-3 py-2 rounded hover:bg-gray-100 text-xs ${isActive(`/${slugify(item)}`) ? 'text-orange-600 bg-orange-50' : ''}`}
+                      className={`block px-3 py-2 rounded hover:bg-blue-50 transition text-xs ${isActive(`/${slugify(item)}`) ? 'text-blue-700 font-semibold bg-blue-100' : ''}`}
                     >
                       {item}
                     </a>
@@ -72,8 +72,8 @@ const Navbar = () => {
           </nav>
         </div>
 
-        <div className="flex items-center gap-4 text-sm font-medium">
-          <div className="hidden lg:flex items-center gap-1 text-orange-400">
+        <div className="flex items-center gap-4 text-sm font-semibold tracking-tight">
+          <div className="hidden lg:flex items-center gap-1 text-blue-600">
             <a href="tel:2406300211" className="flex items-center gap-1">
               <Phone className="w-4 h-4" />
               <span>(240) 630-0211</span>
@@ -81,7 +81,7 @@ const Navbar = () => {
           </div>
           <a
             href="/contact"
-            className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded shadow transition"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md transition duration-200"
           >
             GET A QUOTE
           </a>
@@ -95,7 +95,7 @@ export default Navbar;
 
 const Dropdown = ({ title, items, isActive, currentPath }: { title: string; items: string[]; isActive?: boolean; currentPath?: string }) => (
   <div className="relative group">
-    <div className={`flex items-center gap-1 cursor-pointer py-2 ${isActive ? 'text-orange-500' : ''}`}>
+    <div className={`flex items-center gap-1 cursor-pointer py-2 ${isActive ? 'text-blue-600 font-semibold' : ''}`}>
       {title} <ChevronDown className="w-4 h-4" />
     </div>
 
@@ -106,7 +106,7 @@ const Dropdown = ({ title, items, isActive, currentPath }: { title: string; item
           <li key={item}>
             <a
               href={`/${slugify(item)}`}
-              className={`block px-4 py-2 hover:bg-gray-100 text-xs whitespace-nowrap ${currentPath === `/${slugify(item)}` ? 'text-orange-600 bg-orange-50' : ''}`}
+              className={`block px-4 py-2 hover:bg-blue-50 transition text-xs whitespace-nowrap ${currentPath === `/${slugify(item)}` ? 'text-blue-700 font-semibold bg-blue-100' : ''}`}
             >
               {item}
             </a>
