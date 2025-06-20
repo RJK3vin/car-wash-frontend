@@ -11,8 +11,11 @@ const BlogSix = () => {
                     In today's fast-paced world, maintaining the aesthetics and value of your car can be challenging.
                     However, with the rise of mobile car wash services, keeping your vehicle looking its best has never been more convenient.
                     Let's explore how this innovative service is transforming car care and why it might be the perfect solution for you.
-                    <img>Detailed view of car covered in soapy foam during a wash, highlighting cleanliness.</img>
-                </p>
+                    <img
+                        src="https://placehold.co/600x400"
+                        alt="Detailed view of car covered in soapy foam during a wash, highlighting cleanliness."
+                        className="mb-6 rounded shadow"
+                    />                </p>
 
                 <h2 className="text-xl font-semibold mb-2">Understanding the Concept of Mobile Car Wash</h2>
                 <p className="mb-6">

@@ -12,9 +12,11 @@ const BlogTwo = () => {
                 Maintaining your car's health involves more than just regular oil changes and tire rotations. One of the simplest yet most effective ways to keep your vehicle in top condition is by committing to regular car washes. Let's explore why making this seemingly small effort is actually quite essential.
             </p>
 
-            <img className="italic text-center mb-6">
-                Smiling woman in yellow shirt uses power spray to wash black car outside.
-            </img>
+            <img
+                className="mb-6 mx-auto rounded shadow"
+                src="https://placehold.co/800x400"
+                alt="Smiling woman in yellow shirt uses power spray to wash black car outside."
+            />
 
             <h2 className="text-2xl font-semibold mb-2">Protecting Your Car's Paint and Finish</h2>
             <p className="mb-4">

@@ -11,8 +11,11 @@ const BlogSeven = () => {
                     Maintaining a clean and fresh-smelling car interior is crucial for making drives more enjoyable and comfortable.
                     Many car owners often wonder if a thorough interior car cleaning can effectively tackle stubborn stains and lingering odors.
                     Let's dive into this topic and uncover the answers.
-                    <img>A man wipes the interior of a car for a thorough cleaning, focusing on detailing and maintenance.</img>
-                </p>
+                    <img
+                        src="https://placehold.co/600x400"
+                        alt="A man wipes the interior of a car for a thorough cleaning, focusing on detailing and maintenance."
+                        className="mb-6 rounded shadow"
+                    />                </p>
 
                 <h2 className="text-xl font-semibold mb-2">Understanding the Types of Stains and Odors</h2>
                 <p className="mb-6">

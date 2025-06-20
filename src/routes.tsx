@@ -41,6 +41,15 @@ import OurTeam from "./AboutUs/OurTeam";
 import Reviews from "./AboutUs/Reviews";
 import DetailingMethodology from "./AboutUs/DetailingMethodology";
 import AppointmentDepositPolicy from "./AboutUs/AppointmentDepositPolicy";
+import BlogOne from "./Blogs/BlogOne";
+import BlogTwo from "./Blogs/BlogTwo";
+import BlogThree from "./Blogs/BlogThree";
+import BlogFour from "./Blogs/BlogFour";
+import BlogFive from "./Blogs/BlogFive";
+import BlogSix from "./Blogs/BlogSix";
+import BlogSeven from "./Blogs/BlogSeven";
+import BlogEight from "./Blogs/BlogEight";
+
 
 export default function AppRoutes() {
     return (
@@ -88,6 +97,14 @@ export default function AppRoutes() {
                     <Route path="/reviews" element={<Reviews/>} />       
                     <Route path="/detailingmethodology" element={<DetailingMethodology/>} /> 
                     <Route path="/appointmentdepositpolicy" element={<AppointmentDepositPolicy/>} /> 
+                    <Route path="/blogone" element={<BlogOne />} />
+                    <Route path="/blogtwo" element={<BlogTwo />} />
+                    <Route path="/blogthree" element={<BlogThree />} />
+                    <Route path="/blogfour" element={<BlogFour />} />
+                    <Route path="/blogfive" element={<BlogFive />} />
+                    <Route path="/blogsix" element={<BlogSix />} />
+                    <Route path="/blogseven" element={<BlogSeven />} />
+                    <Route path="/blogeight" element={<BlogEight />} />
                 </Routes>
             </main>
             <Footer />

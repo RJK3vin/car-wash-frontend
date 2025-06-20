@@ -9,9 +9,11 @@ const BlogFour = () => {
                 <p className="mb-4">
                     Auto detailing goes beyond a regular car wash to leave your vehicle looking indoor and outdoor spotless. This comprehensive guide will walk you through everything that auto detailing includes so you can understand the processes involved.
                 </p>
-                <img className="italic mb-6">
-                    A person is meticulously detailing a luxury car interior under dim lighting, highlighting precision and care.
-                </img>
+                <img
+                    className="mb-6 italic"
+                    src="https://placehold.co/800x400"
+                    alt="A person is meticulously detailing a luxury car interior under dim lighting, highlighting precision and care."
+                />
                 <h2 className="text-2xl font-semibold mb-2">Exterior Wash and Dry</h2>
                 <p className="mb-4">
                     The first step in auto detailing involves a meticulous exterior wash to remove dirt, grime, and contaminants from your vehicle’s body. This includes hand washing followed by a gentle hand drying.

@@ -11,8 +11,11 @@ const BlogFive = () => {
                     Keeping your car looking as pristine as the day you drove it off the lot doesn't have to be a daunting task.
                     With a few expert detailing tips, you can maintain that showroom shine while extending the life of your vehicle's exterior and interior.
                     Here are some professional techniques to make your car stand out from the crowd without breaking the bank.
-                    <img>A man wipes the interior of a car for a thorough cleaning, focusing on detailing and maintenance.</img>
-                </p>
+                    <img
+                        className="mb-6 rounded shadow"
+                        src="https://placehold.co/800x400"
+                        alt="A man wipes the interior of a car for a thorough cleaning, focusing on detailing and maintenance."
+                    />                </p>
 
                 <h2 className="text-xl font-semibold mb-2">1. The Importance of Regular Washing</h2>
                 <p className="mb-6">

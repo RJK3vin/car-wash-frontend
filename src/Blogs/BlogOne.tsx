@@ -9,8 +9,11 @@ const BlogOne = () => {
                 <p className="mb-6">
                     In today's fast-paced world, convenience is king, especially when it comes to car care. Mobile detailing is revolutionizing the way we think about maintaining our vehicles, bringing expert services right to our doorsteps. Let's explore why mobile detailing is becoming the go-to option for car owners everywhere.
                 </p>
-                <img className="italic mb-6">A person is meticulously detailing a luxury car interior under dim lighting, highlighting precision and care.</img>
-
+                <img
+                    className="italic mb-6"
+                    src="https://placehold.co/800x400"
+                    alt="A person is meticulously detailing a luxury car interior under dim lighting, highlighting precision and care."
+                />
                 <h2 className="text-xl font-semibold mb-2">1. The Ultimate in Convenience</h2>
                 <p className="mb-4">
                     Gone are the days of waiting in line at the car wash. Mobile detailing services come to your home or office, allowing you to continue with your day uninterrupted. This convenience is especially valuable for busy professionals and families. Imagine coming home from a long day of work to find your car looking spotless without having to lift a finger. With mobile detailing, you're afforded the luxury of time—probably the most valuable commodity in modern life. The rise of mobile auto detailing services in 2024 showcases how these services are taking the consumer experience to new heights of convenience. Scheduling is typically straightforward and flexible, making it even easier to fit into your packed schedule.

@@ -7,8 +7,11 @@ const BlogThree = () => {
                 <h1 className="text-3xl font-bold mb-2">Can Interior Car Cleaning Remove Stains and Odors?</h1>
                 <p className="text-sm text-gray-500 mb-6">By<br />March 24, 2025</p>
                 <p className="mb-6">When it comes to maintaining your car's interior, stains and odors can be some of the toughest challenges to tackle. Not only do they affect the aesthetic appeal of your car, but they can also make long rides unpleasant. But can interior car cleaning effectively remove these pesky problems? Let's dive into the details.</p>
-                <img className="mb-6 italic">A man wipes the interior of a car for a thorough cleaning, focusing on detailing and maintenance.</img>
-
+                <img
+                    className="mb-6 rounded shadow"
+                    src="https://placehold.co/800x400" 
+                    alt="A man wipes the interior of a car for a thorough cleaning, focusing on detailing and maintenance."
+                />
                 <h2 className="text-xl font-semibold mb-2">Understanding Common Causes of Stains and Odors</h2>
                 <p className="mb-6">Before attempting to remove stains and odors, it's important to understand what's causing them. Spills, food debris, and smoke are common culprits. Identifying the source can help in choosing the appropriate cleaning method.</p>
                 <p className="mb-6">Spills from drinks like coffee or juice can seep deep into the fabric, while crumbs from snacks can settle into crevices. Additionally, oils or lotions from skin contact on seats can accumulate over time, contributing to a stale interior smell. Odors caused by damp areas can also be tricky to tackle unless the source of moisture is identified and addressed promptly.</p>
