@@ -89,7 +89,7 @@ const BlogSix = () => {
                     Consider giving it a try, and experience the benefits it offers firsthand.
                 </p>
             </div>
-            <BlogNavSlider currentIndex={6} />
+            <BlogNavSlider currentIndex={5} />
             <QuoteForm />
         </>
     );

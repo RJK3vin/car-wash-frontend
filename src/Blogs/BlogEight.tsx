@@ -111,7 +111,7 @@ const BlogEight = () => {
                     efficiency and longevity of your vehicle maintenance strategy.
                 </p>
             </div>
-            <BlogNavSlider currentIndex={8} />
+            <BlogNavSlider currentIndex={7} />
             <QuoteForm />
         </>
     );

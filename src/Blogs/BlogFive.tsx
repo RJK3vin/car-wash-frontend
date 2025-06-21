@@ -67,7 +67,7 @@ const BlogFive = () => {
                     Don't overlook the importance of detailing your exhaust tips; they can build up with soot and tarnish the polished finish. Use metal polish to restore them to their former glory, contributing to the overall pristine appearance. When finishing touches are done with care, your vehicle transforms into a rolling testament of pride and attention to detail, ensuring it stands out on the road. By dedicating time to these non-mechanical components during your detailing sessions, you'll create a holistic, show-worthy appearance that can take your vehicle from looking good to looking incredible, turning mundane drives into elegant journeys.
                 </p>
             </div>
-            <BlogNavSlider currentIndex={5} />
+            <BlogNavSlider currentIndex={4} />
             <QuoteForm />
         </>
     );

@@ -92,7 +92,7 @@ const BlogSeven = () => {
                     can help in achieving a spotless and fresh-smelling car interior.
                 </p>
             </div>
-            <BlogNavSlider currentIndex={7} />
+            <BlogNavSlider currentIndex={6} />
             <QuoteForm />
         </>
     );

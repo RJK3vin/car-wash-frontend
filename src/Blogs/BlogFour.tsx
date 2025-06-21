@@ -51,7 +51,7 @@ const BlogFour = () => {
                     In essence, auto detailing provides a thorough cleaning and rejuvenation of your vehicle, both inside and out. By understanding the components of detailing, you can ensure your car receives the treatment it deserves, extending its life and enhancing its aesthetic appeal.
                 </p>
             </div>
-            <BlogNavSlider currentIndex={4} />
+            <BlogNavSlider currentIndex={3} />
             <QuoteForm />
         </>
     );

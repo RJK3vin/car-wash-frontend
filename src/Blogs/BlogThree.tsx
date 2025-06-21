@@ -41,7 +41,7 @@ const BlogThree = () => {
                 <h2 className="text-xl font-semibold mb-2">Final Thoughts on Removing Stains and Odors</h2>
                 <p className="mb-6">In conclusion, interior car cleaning can be incredibly effective at removing both stains and odors when done correctly. From choosing the right cleaning products to maintaining regular cleaning habits, keeping your car's interior fresh is achievable. So, with a little effort and know-how, you can enjoy a clean and pleasant ride every time.</p>
             </div>
-            <BlogNavSlider currentIndex={3} />
+            <BlogNavSlider currentIndex={2} />
             <QuoteForm />
         </>
     );

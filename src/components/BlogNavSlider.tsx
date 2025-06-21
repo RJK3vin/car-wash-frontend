@@ -6,11 +6,11 @@ type BlogNavSliderProps = {
 
 const blogRoutes = [
   { path: "/blogone", title: "6 Reasons Why Mobile Detailing is the Future of Car Care" },
-  { path: "/blogtwo", title: "Why Regular Car Washes are Essential for Maintaining Your Car’s Health" },
+  { path: "/blogtwo", title: "Why Regular Car Washes are Essential for Maintaining Your Car's Health" },
   { path: "/blogthree", title: "Can Interior Car Cleaning Remove Stains and Odors?" },
   { path: "/blogfour", title: "What Does Auto Detailing Include?" },
   { path: "/blogfive", title: "7 Professional Detailing Tips to Keep Your Car Looking New" },
-  { path: "/blogsix", title: "Mobile Car Wash: A Game-Changer in Preserving Your Car’s Aesthetics and Value" },
+  { path: "/blogsix", title: "Mobile Car Wash: A Game-Changer in Preserving Your Car's Aesthetics and Value" },
   { path: "/blogseven", title: "Can Interior Car Cleaning Remove Stains and Odors?" },
   { path: "/blogeight", title: "6 Reasons Why Mobile Detailing is the Future of Car Care" },
 ];

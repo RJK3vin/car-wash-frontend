@@ -67,7 +67,7 @@ const BlogTwo = () => {
                     Regular car washes go a long way in preserving your vehicle's health, aesthetics, and value. It's not just about keeping it clean—it's a preventive measure that safeguards your car from various elements. By establishing a routine, you're setting your car up for a longer, smoother journey on the road. To learn more about how our services can help you in maintaining your vehicle, check out our <Link to="/" className="text-blue-500 hover:underline">homepage</Link>.
                 </p>
             </div>
-            <BlogNavSlider currentIndex={2} />
+            <BlogNavSlider currentIndex={1} />
             <QuoteForm />
         </>
     );
