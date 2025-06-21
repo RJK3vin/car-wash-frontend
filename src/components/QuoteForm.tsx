@@ -1,24 +1,61 @@
 import { FaFacebookF, FaInstagram, FaYelp } from "react-icons/fa";
 import { Phone, MapPin, MailOpen } from 'lucide-react';
+import React from "react";
 
 export default function QuoteForm() {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    if (checkedBoxes.length === 0) {
+      alert("Please select at least one service.");
+      return;
+    }
+
+    const name = (document.querySelector('input[placeholder="Name"]') as HTMLInputElement)?.value;
+    const email = (document.querySelector('input[placeholder="Email"]') as HTMLInputElement)?.value;
+    const phone = (document.querySelector('input[placeholder="Phone"]') as HTMLInputElement)?.value;
+    const vehicle = (document.querySelector('input[placeholder*="Year"]') as HTMLInputElement)?.value;
+    const location = (document.querySelector('select') as HTMLSelectElement)?.value;
+
+    const selectedServices = Array.from(checkedBoxes)
+      .map((el) => (el as HTMLInputElement).parentElement?.innerText.trim())
+      .filter(Boolean)
+      .join(", ");
+
+    const emailBody = `
+🚗 New Car Wash Quote Request
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Vehicle: ${vehicle}
+Location: ${location}
+Selected Services: ${selectedServices}
+    `.trim();
+
+    console.log(emailBody);
+    alert("Form is valid — see console for email preview!");
+  };
+
+
   return (
-    <section className="bg-white py-16 px-4" style={{ backgroundImage: `url('https://placehold.co/1920x1080')`, backgroundSize: 'cover', backgroundPosition: 'center',backgroundRepeat: 'no-repeat'}}>
+    <section className="bg-white py-16 px-4" style={{ backgroundImage: `url('https://placehold.co/1920x1080')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         <div>
           <h2 className="text-3xl font-bold mb-2">Request a <span className="text-blue-600">Quote</span></h2>
           <p className="text-sm text-gray-600 mb-6">We love our customers, so feel free to reach out for any of your needs!</p>
 
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="grid sm:grid-cols-2 gap-4">
-              <input type="text" placeholder="Name" className="border p-2 w-full" />
-              <input type="email" placeholder="Email" className="border p-2 w-full" />
-              <input type="text" placeholder="Year, Make & Model of Vehicle" className="border p-2 w-full" />
-              <input type="tel" placeholder="Phone" className="border p-2 w-full" />
+              <input type="text" placeholder="Name" required className="border p-2 w-full" />
+              <input type="email" placeholder="Email" required className="border p-2 w-full" />
+              <input type="text" placeholder="Year, Make & Model of Vehicle" required className="border p-2 w-full" />
+              <input type="tel" placeholder="Phone" required className="border p-2 w-full" />
             </div>
 
-            <select className="border p-2 w-full">
-              <option value="" disabled>Choose a service type</option>
+            <select className="border p-2 w-full" required>
+              <option value="">Choose a service type</option>
               <option>Mobile - Come to me</option>
               <option>Shop - I'll bring it to you</option>
               <option>Either works for me</option>
