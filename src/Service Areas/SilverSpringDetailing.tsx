@@ -58,13 +58,14 @@ export default function SilverSpringDetailing() {
                         Image 2
                     </div>
                 </div>
-
-                <Link
-                    to="/contact"
-                    className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition-colors"
-                >
-                    Get A Free Quote
-                </Link>
+                <div className="text-center">
+                    <Link
+                        to="/contact"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition"
+                    >
+                        Get A Free Quote
+                    </Link>
+                </div>
             </section>
             <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-16">
                 <h2 className="text-2xl font-bold mb-6">
@@ -93,13 +94,14 @@ export default function SilverSpringDetailing() {
                 <p className="mb-6">
                     Contact us today to request a free quote and experience the Silver Spring Mobile Detailing difference. We guarantee exceptional results, right at your convenience in Silver Spring, MD.
                 </p>
-
-                <Link
-                    to="/contact"
-                    className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition-colors"
-                >
-                    Get A Free Quote
-                </Link>
+                <div className="text-center">
+                    <Link
+                        to="/contact"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition"
+                    >
+                        Get A Free Quote
+                    </Link>
+                </div>
             </section>
             <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-16">
                 <Helmet>
@@ -130,8 +132,8 @@ export default function SilverSpringDetailing() {
                                         <Link
                                             to={`/${route}`}
                                             className={`${isCurrent
-                                                ? "text-orange-500 font-semibold"
-                                                : "text-black hover:text-orange-500 transition-colors"
+                                                ? "text-blue-600 font-semibold"
+                                                : "text-black hover:text-blue-600 transition-colors"
                                                 }`}
                                         >
                                             {area}
@@ -142,11 +144,11 @@ export default function SilverSpringDetailing() {
                         </ul>
 
                         <p className="mb-2">
-                            Not sure if we service your specific area? <strong>Not to worry!</strong> Contact us today! We'd be happy to discuss your detailing needs and answer any questions you may have. We're always looking for ways to expand our service coverage in Poolesville, MD and surrounding areas, so there's a good chance we can brighten your car's day!
+                            <strong>Not sure if we service your specific area? Not to worry!</strong> Contact us today! We'd be happy to discuss your detailing needs and answer any questions you may have. We're always looking for ways to expand our service coverage in Poolesville, MD and surrounding areas, so there's a good chance we can brighten your car's day!
                         </p>
                     </div>
 
-                    <div className="lg:w-1/2 w-full aspect-video bg-gray-200 border flex items-center justify-center text-gray-500 text-sm">
+                    <div className="lg:w-1/2 w-full h-[600px] aspect-video bg-gray-200 border flex items-center justify-center text-gray-500 text-sm">
                         Image Placeholder
                     </div>
                 </div>
@@ -213,13 +215,14 @@ export default function SilverSpringDetailing() {
                 <p className="mb-6">
                     We guarantee exceptional results delivered conveniently at your location in Silver Spring, MD. Request a free quote
                 </p>
-
-                <Link
-                    to="/contact"
-                    className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded transition"
-                >
-                    Get A Free Quote
-                </Link>
+                <div className="text-center">
+                    <Link
+                        to="/contact"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition"
+                    >
+                        Get A Free Quote
+                    </Link>
+                </div>
             </section>
             <section className="px-4 md:px-12 py-16 bg-white">
                 <Helmet>
@@ -248,7 +251,7 @@ export default function SilverSpringDetailing() {
                 <div className="mt-12 text-center">
                     <Link
                         to="/contact"
-                        className="inline-block text-white bg-blue-500 hover:bg-blue-600 font-semibold px-6 py-3 rounded transition-colors"
+                        className="inline-block text-white bg-blue-600 hover:bg-blue-700 font-semibold px-6 py-3 rounded transition-colors"
                     >
                         Get A Free Quote
                     </Link>

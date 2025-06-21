@@ -34,10 +34,10 @@ export default function LaurelDetailing() {
                 </Helmet>
 
                 <section className="space-y-6 text-center">
-                    <h2 className="text-2xl font-bold">
+                    <h2 className="text-3xl font-bold">
                         Skip the wait and stress - Laurel Mobile Detailing comes to you!
                     </h2>
-                    <p>
+                    <p className="mx-auto max-w-4xl text-left">
                         detailers are experts in their craft, wielding top-of-the-line equipment and premium products to deliver
                         exceptional results. We'll leave your car gleaming, protected, and ready to turn heads as you cruise through
                         Laurel
@@ -64,23 +64,23 @@ export default function LaurelDetailing() {
 
                 <section className="space-y-6 text-center">
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <div className="w-full sm:w-1/2 h-48 bg-gray-200 border border-gray-400 flex items-center justify-center text-gray-500">
+                        <div className="w-full sm:w-1/2 h-[500px] bg-gray-200 border border-gray-400 flex items-center justify-center text-gray-500">
                             [ Image Placeholder 1 ]
                         </div>
-                        <div className="w-full sm:w-1/2 h-48 bg-gray-200 border border-gray-400 flex items-center justify-center text-gray-500">
+                        <div className="w-full sm:w-1/2 h-[500px] bg-gray-200 border border-gray-400 flex items-center justify-center text-gray-500">
                             [ Image Placeholder 2 ]
                         </div>
                     </div>
                     <Link
                         to="/contact"
-                        className="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded transition-colors"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-semibold"
                     >
                         Get A Free Quote
                     </Link>
                 </section>
             </div>
             <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-12 space-y-10">
-                <h2 className="text-2xl font-bold text-center">
+                <h2 className="text-3xl font-bold text-center">
                     Services We Offer: Tailored Detailing Solutions for Your Laurel Car
                 </h2>
 
@@ -151,7 +151,7 @@ export default function LaurelDetailing() {
                 <div className="text-center">
                     <Link
                         to="/contact"
-                        className="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded transition-colors"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-semibold"
                     >
                         Get A Free Quote
                     </Link>
@@ -161,7 +161,7 @@ export default function LaurelDetailing() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
 
                     <div>
-                        <h2 className="text-2xl font-bold mb-4">
+                        <h2 className="text-3xl font-bold mb-4">
                             Laurel Mobile Detailing Service Areas: Bringing the Shine Throughout Laurel, MD
                         </h2>
                         <p className="mb-4">
@@ -180,8 +180,8 @@ export default function LaurelDetailing() {
                                         <Link
                                             to={`/${to}`}
                                             className={`transition-colors ${isActive
-                                                    ? 'text-orange-500 font-semibold'
-                                                    : 'text-gray-700 hover:text-orange-500'
+                                                ? 'text-blue-600 font-semibold'
+                                                : 'text-gray-700 hover:text-blue-600'
                                                 }`}
                                         >
                                             {location}
@@ -192,7 +192,7 @@ export default function LaurelDetailing() {
                         </ul>
 
                         <p className="mb-2">
-                            Not sure if we service your specific area?
+                            <strong>Not sure if we service your specific area?</strong>
                         </p>
                         <p>
                             Contact us today! We are always expanding our service coverage in Laurel, MD and surrounding areas. We'd be
@@ -200,13 +200,13 @@ export default function LaurelDetailing() {
                         </p>
                     </div>
 
-                    <div className="w-full h-[300px] bg-gray-200 border rounded flex items-center justify-center text-gray-500">
+                    <div className="w-full h-[700px] bg-gray-200 border rounded flex items-center justify-center text-gray-500">
                         Image Placeholder
                     </div>
                 </div>
             </div>
             <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-16">
-                <h2 className="text-2xl font-bold mb-6">
+                <h2 className="text-3xl font-bold mb-6">
                     Laurel Mobile Detailing FAQs: Your Laurel Car Detailing Questions Answered!
                 </h2>
 
@@ -244,17 +244,17 @@ export default function LaurelDetailing() {
                     </div>
                 </div>
 
-                <div className="mt-8">
+                <div className="mt-8 text-center">
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded transition"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-semibold"
                     >
                         Get A Free Quote
                     </Link>
                 </div>
             </div>
             <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-16">
-                <h2 className="text-2xl font-bold mb-8">
+                <h2 className="text-3xl font-bold mb-8 text-center">
                     Laurel, MD Mobile detailing Gallery
                 </h2>
 
@@ -268,16 +268,17 @@ export default function LaurelDetailing() {
                         </div>
                     ))}
                 </div>
-
-            </div>
-            <div className="text-center">
+                <br></br>
+                <div className="text-center">
                 <Link
                     to="/contact"
-                    className="inline-block mb-20 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded transition-colors"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-semibold"
                 >
                     Get A Free Quote
                 </Link>
             </div>
+            </div>
+            
             <QuoteForm />
         </>
     )

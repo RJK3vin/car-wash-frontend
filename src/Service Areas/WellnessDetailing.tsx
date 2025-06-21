@@ -38,7 +38,7 @@ export default function WellnessDetailing() {
                     
                 </section>
                 <div className="pt-4 text-center">
-                    <Link to="/contact" className="bg-blue-500 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-600">
+                    <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
                         Get A Free Quote
                     </Link>
                 </div>
@@ -57,7 +57,7 @@ export default function WellnessDetailing() {
                     />
                 </section>
                 <div className="pt-2 text-center">
-                    <Link to="/contact" className="bg-blue-500 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-600">
+                    <Link to="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700">
                             Get A Free Quote
                     </Link>
                 </div>
@@ -81,32 +81,32 @@ export default function WellnessDetailing() {
                     <div className="grid md:grid-cols-3 gap-10 text-center">
                         {[
                             {
-                                icon: <FaHandshake className="text-orange-500 w-10 h-10 mx-auto mb-4" />,
+                                icon: <FaHandshake className="text-blue-600 w-10 h-10 mx-auto mb-4" />,
                                 title: "Exceptional Convenience",
                                 desc: "From booking to service completion, we streamline every step to ensure a hassle-free experience for our customers."
                             },
                             {
-                                icon: <FaCar className="text-orange-500 w-10 h-10 mx-auto mb-4" />,
+                                icon: <FaCar className="text-blue-600 w-10 h-10 mx-auto mb-4" />,
                                 title: "Personalized Attention",
                                 desc: "Our team is dedicated to understanding your unique needs and preferences, delivering tailored solutions with care and precision."
                             },
                             {
-                                icon: <FaPhoneAlt className="text-orange-500 w-10 h-10 mx-auto mb-4" />,
+                                icon: <FaPhoneAlt className="text-blue-600 w-10 h-10 mx-auto mb-4" />,
                                 title: "Transparent Communication",
                                 desc: "We believe in keeping our customers informed every step of the way, providing clear and honest communication for peace of mind."
                             },
                             {
-                                icon: <FaHardHat className="text-orange-500 w-10 h-10 mx-auto mb-4" />,
+                                icon: <FaHardHat className="text-blue-600 w-10 h-10 mx-auto mb-4" />,
                                 title: "Professional Expertise",
                                 desc: "With years of experience and expertise in the industry, our skilled technicians strive to exceed expectations with every detail."
                             },
                             {
-                                icon: <FaCarAlt className="text-orange-500 w-10 h-10 mx-auto mb-4" />,
+                                icon: <FaCarAlt className="text-blue-600 w-10 h-10 mx-auto mb-4" />,
                                 title: "Attention to Detail",
                                 desc: "We take pride in our meticulous approach, ensuring that every aspect of our service is carried out with the utmost precision and care."
                             },
                             {
-                                icon: <FaSmile className="text-orange-500 w-10 h-10 mx-auto mb-4" />,
+                                icon: <FaSmile className="text-blue-600 w-10 h-10 mx-auto mb-4" />,
                                 title: "Commitment to Satisfaction",
                                 desc: "Customer satisfaction is our top priority, and we go above and beyond to ensure that every customer leaves with a smile on their face."
                             }
@@ -143,7 +143,7 @@ export default function WellnessDetailing() {
                                 </p>
                                 <Link
                                     to={`/${title.toLowerCase().replace(/\s+/g, '')}`}
-                                    className="bg-orange-500 text-white px-5 py-2 rounded-md font-medium hover:bg-orange-600"
+                                    className="bg-blue-600 text-white px-5 py-2 rounded-md font-medium hover:bg-blue-700"
                                 >
                                     Read more
                                 </Link>
@@ -192,7 +192,7 @@ export default function WellnessDetailing() {
             </p>
             <Link
               to="/contact"
-              className="inline-block bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-6 py-3 rounded shadow"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-6 py-3 rounded shadow"
             >
               Get A Free Quote
             </Link>

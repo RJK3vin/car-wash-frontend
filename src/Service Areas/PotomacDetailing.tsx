@@ -50,21 +50,21 @@ export default function PotomacDetailing() {
                         Detailing become your trusted partner in keeping your car looking its absolute best!
                     </p>
                     <p className="mb-10">
-                        Experience the Potomac Mobile Detailing difference - exceptional service at your doorstep! Our certified detailers are
+                        <strong>Experience the Potomac Mobile Detailing difference - exceptional service at your doorstep!</strong> Our certified detailers are
                         passionate artisans, meticulously wielding cutting-edge equipment and premium products to achieve unparalleled
                         results. We'll leave your car gleaming, protected, and ready to turn heads as you navigate the prestigious streets of
                         Potomac.
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
-                        <div className="w-full sm:w-1/2 h-52 bg-gray-300 rounded-md" />
-                        <div className="w-full sm:w-1/2 h-52 bg-gray-300 rounded-md" />
+                        <div className="w-full sm:w-1/2 bg-gray-300 rounded-md h-[400px]" />
+                        <div className="w-full sm:w-1/2 bg-gray-300 rounded-md h-[400px]" />
                     </div>
 
                     <div className="text-center">
                         <Link
                             to="/contact"
-                            className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold"
+                            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-lg font-semibold"
                         >
                             Get A Free Quote
                         </Link>
@@ -82,7 +82,7 @@ export default function PotomacDetailing() {
                                 to your specific car's needs and your budget. Here's a glimpse into what we can do for you:
                             </p>
 
-                            <ul className="list-disc list-inside space-y-3">
+                            <ul className="list-disc list-outside pl-6 space-y-3">
                                 <li>
                                     <strong>Full Interior Cleaning:</strong> This in-depth cleaning service tackles every inch of your car's
                                     interior, leaving no spot untouched. We thoroughly clean carpets, upholstery, leather seats (conditioning
@@ -131,7 +131,7 @@ export default function PotomacDetailing() {
                             </ul>
 
                             <p className="mt-6">
-                                <strong>Potomac Mobile Detailing:</strong> Let us make your car shine!
+                                <strong>Potomac Mobile Detailing: Let us make your car shine!</strong>
                             </p>
                             <p>
                                 Contact us today to request a free quote and experience the Potomac Mobile Detailing difference. We guarantee
@@ -142,7 +142,7 @@ export default function PotomacDetailing() {
                         <div className="text-center mt-10">
                             <Link
                                 to="/contact"
-                                className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold"
+                                className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-lg font-semibold"
                             >
                                 Get A Free Quote
                             </Link>
@@ -174,7 +174,7 @@ export default function PotomacDetailing() {
                                     <li key={location}>
                                         <Link
                                             to={route}
-                                            className={`text-sm md:text-base ${isCurrent ? 'text-orange-500 font-semibold' : 'text-black hover:text-orange-500 transition-colors'
+                                            className={`text-sm md:text-base ${isCurrent ? 'text-blue-600 font-semibold' : 'text-black hover:text-blue-600 transition-colors'
                                                 }`}
                                         >
                                             {location}
@@ -185,43 +185,77 @@ export default function PotomacDetailing() {
                         </ul>
 
                         <p className="text-gray-700 mt-6">
-                            Not sure if we service your specific area? Not to worry! Contact us today! We'd be happy to discuss your detailing needs and answer any questions you may have. We're always looking for ways to expand our service coverage in Bethesda, MD and surrounding areas, so there's a good chance we can brighten your car's day!
+                            <strong>Not sure if we service your specific area? Not to worry!</strong> Contact us today! We'd be happy to discuss your detailing needs and answer any questions you may have. We're always looking for ways to expand our service coverage in Bethesda, MD and surrounding areas, so there's a good chance we can brighten your car's day!
                         </p>
                     </div>
 
                     <div className="w-full h-64 md:h-full bg-gray-200 rounded-lg shadow-md" />
                 </div>
             </section>
+            <div className="max-w-3xl mx-auto text-left space-y-4">
+                <p className="text-3xl font-bold">Potomac Mobile Detailing: Your Local Authority in Car Care</p>
+                <p>
+                    Potomac Mobile Detailing is a Potomac-based, family-owned business with deep roots in the community. We understand the unique challenges Potomac cars face, from the relentless summer sun to the abrasive winter salt. That’s why we provide the highest quality detailing services specifically designed to restore your car’s brilliance, shield it from the elements, and ensure it maintains its timeless elegance for years to come.
+                </p>
+                <p>
+                    Our team of certified detailers is highly trained and experienced in all aspects of car restoration. We use only the finest car care products and equipment to achieve exceptional, long-lasting results. We are committed to providing exceptional service, convenience, and competitive pricing to our valued customers in Potomac. Let Potomac Mobile Detailing become your trusted partner in keeping your car looking its absolute best!
+                </p>
+            </div>
+
             <section className="bg-white text-gray-800">
                 <div className="max-w-6xl mx-auto px-4 py-16">
                     <h2 className="text-3xl font-bold mb-8">Potomac Mobile Detailing FAQs: Your Potomac Car Detailing Questions Answered!</h2>
+                    <p className="mb-4 text-left">
+                        We understand you might have questions about our mobile detailing services in Rockville, MD. Here are some frequently asked questions to help you decide if Rockville Mobile Detailing is right for you:
+                    </p>
                     <div className="space-y-6">
-                        <p><strong>What sets Potomac Mobile Detailing apart from a car wash?</strong><br />
-                            Mobile detailing is significantly more comprehensive than a car wash. We provide a meticulous cleaning, polishing, and protection process for both the interior and exterior of your car, unlike a car wash that focuses primarily on a quick exterior clean.
+                        <li className="list-disc list-inside">
+                            <span className="font-semibold">{`What sets Potomac Mobile Detailing apart from a car wash?`}</span><br />
+                            <span className="block mt-1 ml-5">
+                                Mobile detailing is significantly more comprehensive than a car wash. We provide a meticulous cleaning, polishing, and protection process for both the interior and exterior of your car, unlike a car wash that focuses primarily on a quick exterior clean.
+                            </span>
+                        </li>
+
+                        <li className="list-disc list-inside">
+                            <span className="font-semibold">{`How often should I get my car detailed in Potomac?`}</span><br />
+                            <span className="block mt-1 ml-5">
+                                The frequency depends on your driving habits and how well you maintain your car. Generally, a professional detail every 6–12 months is recommended in Potomac, MD to maintain a fresh look and protect your car's finish.
+                            </span>
+                        </li>
+
+                        <li className="list-disc list-inside">
+                            <span className="font-semibold">{`Do you offer mobile detailing packages in Potomac?`}</span><br />
+                            <span className="block mt-1 ml-5">
+                                Absolutely! We understand that every car has unique needs. That's why we offer a variety of mobile detailing packages in Potomac, MD to fit your specific budget and requirements. Browse our options online or contact us for a free quote.
+                            </span>
+                        </li>
+
+                        <li className="list-disc list-inside">
+                            <span className="font-semibold">{`Can you restore leather seats in my car's interior?`}</span><br />
+                            <span className="block mt-1 ml-5">
+                                Yes! We offer leather conditioning services using proven techniques to revitalize your leather seats and restore their original luster.
+                            </span>
+                        </li>
+
+                        <p className="font-semibold text-lg mb-1">
+                            Let Potomac Mobile Detailing Rejuvenate the Elegance of Your Car!
                         </p>
-                        <p><strong>How often should I get my car detailed in Potomac?</strong><br />
-                            The frequency depends on your driving habits and how well you maintain your car. Generally, a professional detail every 6-12 months is recommended in Potomac, MD to maintain a fresh look and protect your car's finish.
+                        <p>
+                            We guarantee exceptional results delivered conveniently at your location.
                         </p>
-                        <p><strong>Do you offer mobile detailing packages in Potomac?</strong><br />
-                            Absolutely! We understand that every car has unique needs. That's why we offer a variety of mobile detailing packages in Potomac, MD to fit your specific budget and requirements. Browse our options online or contact us for a free quote.
-                        </p>
-                        <p><strong>Can you restore leather seats in my car's interior?</strong><br />
-                            Yes! We offer leather conditioning services using proven techniques to revitalize your leather seats and restore their original luster.
-                        </p>
-                        <p className="font-semibold text-lg pt-6">Let Potomac Mobile Detailing Rejuvenate the Elegance of Your Car!</p>
-                        <p>We guarantee exceptional results delivered conveniently at your location.</p>
                     </div>
+
                     <div className="text-center">
                         <Link
                             to="/contact"
-                            className="inline-block mt-8 bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-6 py-3 rounded shadow"
+                            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-lg font-semibold mt-4"
                         >
                             Get A Free Quote
                         </Link>
                     </div>
 
                     <div className="mt-20">
-                        <h3 className="text-2xl font-bold mb-8 text-center">Potomac, MD Mobile Detailing Gallery</h3>
+                        <h3 className="text-3xl font-bold mb-8 text-center">Potomac, MD Mobile Detailing Gallery</h3>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                             {Array.from({ length: 24 }).map((_, i) => (
                                 <div
@@ -240,11 +274,11 @@ export default function PotomacDetailing() {
 
                         <div className="mt-10 text-center">
                             <Link
-                                to="/contact"
-                                className="inline-block bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium px-6 py-3 rounded shadow"
-                            >
-                                Get A Free Quote
-                            </Link>
+                            to="/contact"
+                            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-lg font-semibold mt-4"
+                        >
+                            Get A Free Quote
+                        </Link>
                         </div>
                     </div>
                 </div>
