@@ -25,7 +25,7 @@ export default function GaithersburgDetailing() {
         <>
             <ServiceHero header="Gaithersburg Mobile Detailing: Revive Your Ride's Shine at Your Place" subheader="Welcome to Gaithersburg Mobile Detailing, your trusted source for professional and meticulous car detailing in Gaithersburg, MD! We combine a passion for exceeding expectations with the utmost convenience." url="https://placehold.co/1920x1080" />
             <section className="px-4 md:px-12 py-12 max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold mb-6">Gaithersburg Mobile Detailing: Your Local Car Care Authority</h2>
+                <h2 className="text-3xl font-bold mb-6 text-center">Gaithersburg Mobile Detailing: Your Local Car Care Authority</h2>
                 <p className="mb-4">
                     Gaithersburg Mobile Detailing is a locally owned and operated business with deep roots in the Gaithersburg community.
                     We understand the unique challenges Gaithersburg cars face, from enduring summer heat and humidity to occasional winter snowstorms.
@@ -39,7 +39,7 @@ export default function GaithersburgDetailing() {
                     Let Gaithersburg Mobile Detailing become your trusted partner in keeping your car looking amazing!
                 </p>
                 <p className="mb-8">
-                    Skip the wait and stress - Gaithersburg Mobile Detailing comes to you!
+                    <strong>Skip the wait and stress - Gaithersburg Mobile Detailing comes to you!</strong>
                     Our certified detailers are experts in their craft, wielding top-of-the-line equipment and premium products to deliver exceptional results.
                     We'll leave your car gleaming, protected, and ready to turn heads as you navigate the vibrant streets of Gaithersburg.
                 </p>
@@ -48,24 +48,24 @@ export default function GaithersburgDetailing() {
                     <div className="w-full md:w-1/2 border rounded-md overflow-hidden">
                         <img src="/images/gaithersburg1.jpg" alt="Gaithersburg detailing service 1" className="w-full h-auto" />
                     </div>
-                    <div className="w-full md:w-1/2 border rounded-md overflow-hidden">
+                    <div className="w-full md:w-1/2 border rounded-md overflow-hidden h-[500px]">
                         <img src="/images/gaithersburg2.jpg" alt="Gaithersburg detailing service 2" className="w-full h-auto" />
                     </div>
                 </div>
 
-                <div className="mt-6">
+                <div className="mt-6 text-center">
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded transition"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition"
                     >
                         Get A Free Quote
                     </Link>
                 </div>
             </section>
             <section className="px-4 md:px-12 py-12 max-w-6xl mx-auto">
-                <h3 className="text-2xl font-bold mb-6">Services Offered: Personalized Detailing Solutions for Your Gaithersburg Car</h3>
+                <h3 className="text-3xl font-bold mb-6 text-center">Services Offered: Personalized Detailing Solutions for Your Gaithersburg Car</h3>
 
-                <ul className="list-disc list-inside space-y-3 mb-6">
+                <ul className="list-disc list-outside space-y-3 mb-6">
                     <p>At Gaithersburg Mobile Detailing, we offer a comprehensive menu of mobile detailing services in Gaithersburg, MD to cater to your specific car's needs and your budget. Here's a glimpse into what we can do for you:</p>
                     <li><strong>Full Interior Cleaning:</strong> This in-depth cleaning service tackles every inch of your car's interior, leaving no spot untouched. We thoroughly clean carpets, upholstery, leather seats (conditioning included), hard surfaces, and windows, and remove any unwanted trash.</li>
                     <li><strong>Mini-Interior Detail:</strong> Short on time? Our mini detail is a perfect pick-me-up for busy schedules, including vacuuming, surface wiping, window cleaning, and trash removal.</li>
@@ -82,13 +82,15 @@ export default function GaithersburgDetailing() {
 
                 <p className="mb-4 font-semibold">Gaithersburg Mobile Detailing: Let us make your car shine!</p>
                 <p className="mb-6">Contact us today to request a free quote and experience the Gaithersburg Mobile Detailing difference. We guarantee exceptional results, right at your convenience in Gaithersburg, MD.</p>
-
-                <Link
+                <div className="text-center">
+                    <Link
                     to="/contact"
-                    className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded transition"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition"
                 >
                     Get A Free Quote
                 </Link>
+                </div>
+                
             </section>
 
             <section className="w-full bg-white py-16">
@@ -106,8 +108,8 @@ export default function GaithersburgDetailing() {
                                     <Link
                                         to={`/${slug}`}
                                         className={`transition-colors duration-200 ${current
-                                                ? 'text-orange-500 font-semibold'
-                                                : 'text-black hover:text-orange-500'
+                                                ? 'text-blue-600 font-semibold'
+                                                : 'text-black hover:text-blue-600'
                                             }`}
                                     >
                                         {name}
@@ -116,12 +118,14 @@ export default function GaithersburgDetailing() {
                             ))}
                         </ul>
                         <p className="mt-6">
-                            Not sure if we service your specific area? Not to worry! Contact us today! We'd be happy to discuss your detailing needs and answer any questions you may have. We're always looking for ways to expand our service coverage in Montgomery Village and surrounding areas, so there's a good chance we can brighten your car's day!
+                            <strong className="mb-4">Not sure if we service your specific area? Not to worry!</strong> 
+                            <span className="block mt-2">
+                                Contact us today! We'd be happy to discuss your detailing needs and answer any questions you may have. We're always looking for ways to expand our service coverage in Montgomery Village and surrounding areas, so there's a good chance we can brighten your car's day!
+                            </span>    
                         </p>
                     </div>
                     <div className="flex-1">
-
-                        <div className="w-full h-64 bg-gray-200 rounded-lg shadow-md" />
+                        <div className="w-full h-[700px] bg-gray-200 rounded-lg shadow-md" />
                     </div>
                 </div>
             </section>
@@ -132,42 +136,49 @@ export default function GaithersburgDetailing() {
                 </Helmet>
 
                 <section className="mb-16">
-                    <h2 className="text-3xl font-bold mb-6">Gaithersburg Mobile Detailing FAQs: Your Gaithersburg Car Detailing Questions Answered!</h2>
+                    <h2 className="text-3xl font-bold mb-6 text-center">Gaithersburg Mobile Detailing FAQs: Your Gaithersburg Car Detailing Questions Answered!</h2>
                     <p className="mb-4">We understand you might have questions about our mobile detailing services in Gaithersburg, MD. Here are some frequently asked questions to help you decide if Gaithersburg Mobile Detailing is right for you:</p>
 
                     <div className="space-y-6">
                         <div>
-                            <h3 className="font-semibold text-xl">What sets Gaithersburg Mobile Detailing apart from a car wash?</h3>
+                            <h3 className="font-semibold text-xl mb-4">What sets Gaithersburg Mobile Detailing apart from a car wash?</h3>
                             <p>Mobile detailing is significantly more comprehensive than a car wash. We provide a meticulous cleaning, polishing, and protection process for both the interior and exterior of your car, unlike a car wash that focuses primarily on a quick exterior clean.</p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-xl">How often should I get my car detailed in Gaithersburg?</h3>
+                            <h3 className="font-semibold text-xl mb-4">How often should I get my car detailed in Gaithersburg?</h3>
                             <p>The frequency depends on your driving habits and how well you maintain your car. Generally, a professional detail every 6-12 months is recommended in Gaithersburg, MD to maintain a fresh look and protect your car's finish.</p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-xl">Do you offer mobile detailing packages in Gaithersburg?</h3>
+                            <h3 className="font-semibold text-xl mb-4">Do you offer mobile detailing packages in Gaithersburg?</h3>
                             <p>Absolutely! We understand that every car has unique needs. That's why we offer a variety of mobile detailing packages in Gaithersburg, MD to fit your specific budget and requirements. Browse our options online or contact us for a free quote.</p>
                         </div>
                     </div>
 
-                    <div className="mt-8">
-                        <Link to="/contact" className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded transition duration-300">
+                    <div className="mt-8 text-center">
+                        <Link to="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition duration-300">
                             Get A Free Quote
                         </Link>
                     </div>
                 </section>
-
-                <section>
-                    <h2 className="text-3xl font-bold mb-6">Gaithersburg, MD Mobile Detailing Gallery</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        {Array.from({ length: 24 }).map((_, i) => (
-                            <div key={i} className="border rounded overflow-hidden">
-                                <img src={`/images/gaithersburg/gallery-${i + 1}.jpg`} alt={`Gallery ${i + 1}`} className="w-full h-auto object-cover" />
+                <section className="space-y-6 text-center">
+                    <h2 className="text-3xl font-bold text-center">
+                        Gaithersburg Mobile Detailing Gallery
+                    </h2>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                        {Array.from({ length: 24 }).map((_, index) => (
+                            <div
+                                key={index}
+                                className="w-full h-48 bg-gray-200 border border-gray-400 flex items-center justify-center text-gray-500"
+                            >
+                                [ Image Placeholder {index + 1} ]
                             </div>
                         ))}
                     </div>
-                    <div className="text-center mt-10">
-                        <Link to="/contact" className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded transition duration-300">
+                    <div className="text-center">
+                        <Link
+                            to="/contact"
+                            className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition-colors"
+                        >
                             Get A Free Quote
                         </Link>
                     </div>

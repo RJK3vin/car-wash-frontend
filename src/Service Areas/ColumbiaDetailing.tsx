@@ -4,6 +4,23 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet"
 
 export default function ColumbiaDetailing() {
+    const currentPath = location.pathname.replace("/", "");
+    const locations = [
+        'Poolesville MD Mobile Detailing',
+        'Columbia Mobile Detailing',
+        'College Park Mobile Detailing',
+        'Damascus MD Mobile Detailing',
+        'Laurel MD Mobile Detailing',
+        'Beltsville MD Mobile Detailing',
+        'Silver Spring MD Mobile Detailing',
+        'Bethesda MD Mobile Detailing',
+        'Potomac MD Mobile Detailing',
+        'Clarksburg mobile detailing',
+        'Gaithersburg Mobile Detailing',
+        'Rockville MD Mobile Detailing',
+        'Olney Md Mobile Detailing',
+    ];
+
     return (
         <>
             <ServiceHero header="Columbia Mobile Detailing: Bringing Showroom Shine to Your Driveway" subheader="Welcome to Columbia Mobile Detailing, your trusted source for professional and meticulous car detailing services in Columbia, Maryland!" url="https://placehold.co/1920x1080" />
@@ -14,17 +31,17 @@ export default function ColumbiaDetailing() {
 
             <section className="py-12 px-4 text-center space-y-6">
                 <h1 className="text-3xl font-bold">Skip the hassle of taking your car to a detail shop - we come to you!</h1>
-                <p className="max-w-2xl mx-auto text-lg">
+                <p className="max-w-2xl mx-auto text-lg text-left">
                     Our experienced and certified detailers utilize top-of-the-line equipment and premium products to deliver exceptional results, leaving your car gleaming and protected.
                 </p>
                 <div className="flex justify-center gap-4">
-                    <div className="w-[280px] h-[280px] border border-gray-300 bg-gray-100"></div>
-                    <div className="w-[280px] h-[280px] border border-gray-300 bg-gray-100"></div>
+                    <div className="w-[280px] h-[400px] border border-gray-300 bg-gray-100"></div>
+                    <div className="w-[280px] h-[400px] border border-gray-300 bg-gray-100"></div>
                 </div>
 
                 <Link
                     to="/contact"
-                    className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded transition"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded transition"
                 >
                     Get A Free Quote
                 </Link>
@@ -34,7 +51,7 @@ export default function ColumbiaDetailing() {
                 <h2 className="text-3xl font-bold text-center mb-10">
                     Our Mobile Detailing Services in Columbia, MD
                 </h2>
-                <p className="text-lg text-center max-w-3xl mx-auto mb-12">
+                <p className="text-lg text-left max-w-3xl mx-auto mb-12">
                     Columbia Mobile Detailing brings the showroom shine to you! We offer a variety of exceptional mobile detailing services in Columbia, MD to restore your car's beauty and value, all from the comfort of your driveway. Here's a glimpse of what our expert detailers can do for your car:
                 </p>
 
@@ -65,117 +82,63 @@ export default function ColumbiaDetailing() {
                 <p className="text-center text-lg font-semibold mt-10">
                     Columbia Mobile Detailing: Let us make your car shine!
                 </p>
-                <p className="text-center text-base mt-2">
+                <p className="text-center text-base mt-2 mx-auto max-w-2xl">
                     Contact us today to request a free quote and experience the Columbia Mobile Detailing difference. We guarantee exceptional results, right at your convenience in Columbia, MD.
                 </p>
 
                 <div className="mt-6 flex justify-center">
                     <Link
                         to="/contact"
-                        className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded transition"
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded transition"
                     >
                         Get A Free Quote
                     </Link>
                 </div>
             </section>
-            <section className="py-16 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <section className="px-4 py-16">
+                <div className="max-w-6xl mx-auto">
+                    <div className="flex flex-col lg:flex-row items-start gap-8">
+                        <div className="lg:w-1/2">
+                            <h2 className="text-2xl font-bold mb-6">
+                                We Detail Throughout Columbia, MD and Bring the Shine to You!
+                            </h2>
 
-                <div className="flex-1">
-                    <h2 className="text-3xl font-bold mb-6 text-center md:text-left">
-                        We Detail Throughout Columbia, MD and Bring the Shine to You!
-                    </h2>
-                    <p className="text-lg mb-6">
-                        Looking for exceptional car detailing services near you in Columbia, Maryland? Look no further than Columbia Mobile Detailing! We conveniently provide mobile detailing services throughout Columbia, MD and the surrounding areas.
-                    </p>
+                            <p className="mb-4">
+                                Looking for exceptional car detailing services near you in Columbia, Maryland? Look no further than Columbia Mobile Detailing! We conveniently provide mobile detailing services throughout Columbia, MD and the surrounding areas.
+                            </p>
 
-                    <ul className="space-y-2 text-lg font-medium">
-                        <li>
-                            <Link
-                                to="/poolesvillemdmobiledetailing"
-                                className="hover:text-orange-500 transition"
-                            >
-                                Poolesville MD Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/columbiamobiledetailing"
-                                className="text-orange-500"
-                            >
-                                Columbia Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/collegeparkmobiledetailing"
-                                className="hover:text-orange-500 transition"
-                            >
-                                College Park Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/damascusmdmobiledetailing" className="hover:text-orange-500 transition">
-                                Damascus MD Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/laurelmdmobiledetailing" className="hover:text-orange-500 transition">
-                                Laurel MD Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/beltsvillemdmobiledetailing" className="hover:text-orange-500 transition">
-                                Beltsville MD Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/silverspringmobiledetailing" className="hover:text-orange-500 transition">
-                                Silver Spring MD Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/bethesdamobiledetailing" className="hover:text-orange-500 transition">
-                                Bethesda MD Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/potomacmdmobiledetailing" className="hover:text-orange-500 transition">
-                                Potomac MD Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/clarksburgmobiledetailing" className="hover:text-orange-500 transition">
-                                Clarksburg Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/gaithersburgmobiledetailing" className="hover:text-orange-500 transition">
-                                Gaithersburg Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/rockvillemdmobiledetailing" className="hover:text-orange-500 transition">
-                                Rockville MD Mobile Detailing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/olneymdmobiledetailing" className="hover:text-orange-500 transition">
-                                Olney Md Mobile Detailing
-                            </Link>
-                        </li>
-                    </ul>
+                            <ul className="mb-4 list-disc list-inside space-y-1">
+                                {locations.map((area) => {
+                                    const route = area.toLowerCase().replace(/\s+/g, "");
+                                    const isCurrent = currentPath === route;
 
-                    <p className="mt-6">
-                        Not sure if we service your specific area?
-                    </p>
-                    <p className="mb-6">
-                        Contact us today! We are always expanding our service coverage in Poolesville, MD and surrounding areas. We'd be happy to discuss your detailing needs and answer any questions you may have.
-                    </p>
-                </div>
+                                    return (
+                                        <p key={route}>
+                                            <Link
+                                                to={`/${route}`}
+                                                className={`${isCurrent
+                                                    ? "text-blue-600 font-semibold"
+                                                    : "text-black hover:text-blue-600 transition-colors"
+                                                    }`}
+                                            >
+                                                {area}
+                                            </Link>
+                                        </p>
+                                    );
+                                })}
+                            </ul>
 
-                <div className="flex-1 flex justify-center">
-                    <div className="w-[350px] h-[250px] bg-gray-200 border border-gray-400 rounded flex items-center justify-center text-gray-500 text-sm">
-                        Image Placeholder
+                            <p className="mb-2">
+                                <strong>Not sure if we service your specific area? Not to worry!</strong><br />
+                                <span className="block mt-4">
+                                    Contact us today! We are always expanding our service coverage in Poolesville, MD and surrounding areas. We'd be happy to discuss your detailing needs and answer any questions you may have.
+                                </span>
+                            </p>
+                        </div>
+
+                        <div className="lg:w-1/2 w-full h-[600px] aspect-video bg-gray-200 border flex items-center justify-center text-gray-500 text-sm">
+                            Image Placeholder
+                        </div>
                     </div>
                 </div>
             </section>
@@ -195,7 +158,7 @@ export default function ColumbiaDetailing() {
 
                     <div>
                         <h3 className="font-bold text-lg mb-2">What are the benefits of choosing mobile detailing?</h3>
-                        <p>There are numerous advantages to choosing mobile detailing over traditional car washes or detail shops:</p>
+                        <p className="mb-2">There are numerous advantages to choosing mobile detailing over traditional car washes or detail shops:</p>
                         <ul className="list-disc pl-5 space-y-1">
                             <li><strong>Convenience:</strong> Skip the hassle of traveling and waiting! We come directly to your location in Columbia, MD, saving you valuable time and effort.</li>
                             <li><strong>Professional Results:</strong> Our certified detailers use top-of-the-line equipment and premium products to deliver exceptional cleaning and lasting protection for your car.</li>
@@ -238,13 +201,15 @@ export default function ColumbiaDetailing() {
                             Request a free quote today and let us make your car shine! We guarantee exceptional results delivered conveniently at your location. Let's get your car looking its best again!
                         </p>
                     </div>
+                    <div className="text-center">
+                        <Link
+                            to="/contact"
+                            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded transition"
+                        >
+                            Get A Free Quote
+                        </Link>
+                    </div>
 
-                    <Link
-                        to="/contact"
-                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded transition"
-                    >
-                        Get A Free Quote
-                    </Link>
                 </div>
             </section>
 
@@ -267,7 +232,7 @@ export default function ColumbiaDetailing() {
                 <div className="text-center mt-10">
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded transition"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded transition"
                     >
                         Get A Free Quote
                     </Link>

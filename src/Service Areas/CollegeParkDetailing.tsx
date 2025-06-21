@@ -15,30 +15,30 @@ export default function CollegeParkDetailing() {
 
                 <h2 className="text-3xl font-bold mb-6">About College Park Mobile Detailing</h2>
 
-                <p className="mb-6">
+                <p className="mb-6 text-left">
                     College Park Mobile Detailing is a locally owned and operated business with a passion for car care. We understand that your car is a valuable investment, and we take pride in providing the highest quality detailing services to restore its shine and protect it for years to come.
                 </p>
 
-                <p className="mb-6">
+                <p className="mb-6 text-left">
                     Our team of certified detailers is highly trained and experienced in all aspects of car detailing. We use only the best car care products and equipment to achieve exceptional, long-lasting results.
                 </p>
 
-                <p className="mb-10">
+                <p className="mb-10 text-left">
                     We are committed to providing our customers with exceptional service, convenience, and competitive pricing. Let us help you keep your car looking its best!
                 </p>
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-10">
-                    <div className="w-[300px] h-[200px] bg-gray-200 border border-gray-400 rounded flex items-center justify-center text-sm text-gray-500">
+                    <div className="w-[400px] h-[400px] bg-gray-200 border border-gray-400 rounded flex items-center justify-center text-sm text-gray-500">
                         Image Placeholder 1
                     </div>
-                    <div className="w-[300px] h-[200px] bg-gray-200 border border-gray-400 rounded flex items-center justify-center text-sm text-gray-500">
+                    <div className="w-[400px] h-[400px] bg-gray-200 border border-gray-400 rounded flex items-center justify-center text-sm text-gray-500">
                         Image Placeholder 2
                     </div>
                 </div>
 
                 <Link
                     to="/contact"
-                    className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded transition"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded transition"
                 >
                     Get A Free Quote
                 </Link>
@@ -73,16 +73,16 @@ export default function CollegeParkDetailing() {
                 </ul>
 
                 <p className="text-left mb-6">
-                    Columbia Mobile Detailing: Let us make your car shine!
+                    <strong>College Park Mobile Detailing: Let us make your car shine!</strong>
                 </p>
 
                 <p className="text-left mb-10">
-                    Contact us today to request a free quote and experience the Columbia Mobile Detailing difference. We guarantee exceptional results, right at your convenience in Columbia, MD.
+                    Contact us today to request a free quote and experience the College Park Mobile Detailing difference. We guarantee exceptional results, right at your convenience in College Park, MD.
                 </p>
 
                 <Link
                     to="/contact"
-                    className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded transition"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded transition"
                 >
                     Get A Free Quote
                 </Link>
@@ -117,7 +117,7 @@ export default function CollegeParkDetailing() {
                                 <Link
                                     key={location}
                                     to={path}
-                                    className={`block font-medium transition-colors ${isCurrent ? 'text-orange-500' : 'text-gray-700 hover:text-orange-500'
+                                    className={`block font-medium transition-colors ${isCurrent ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'
                                         }`}
                                 >
                                     {location}
@@ -135,7 +135,7 @@ export default function CollegeParkDetailing() {
                 </div>
 
                 <div className="w-full md:w-1/2">
-                    <div className="w-full h-[300px] bg-gray-200 border border-gray-300 rounded-lg" />
+                    <div className="w-full h-[600px] bg-gray-200 border border-gray-300 rounded-lg" />
                 </div>
             </section>
 
@@ -189,7 +189,7 @@ export default function CollegeParkDetailing() {
                 <div className="text-center mt-10">
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded transition-colors"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition-colors"
                     >
                         Get A Free Quote
                     </Link>
@@ -214,7 +214,7 @@ export default function CollegeParkDetailing() {
                 <div className="text-center mt-10">
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded transition-colors"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition-colors"
                     >
                         Get A Free Quote
                     </Link>

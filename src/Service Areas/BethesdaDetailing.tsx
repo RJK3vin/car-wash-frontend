@@ -33,40 +33,42 @@ export default function BethesdaDetailing() {
           />
         </Helmet>
 
-        <section className="max-w-6xl mx-auto px-4 py-16">
-          <h1 className="text-3xl font-bold mb-6 text-center">
-            About Bethesda Mobile Detailing: Your Local Car Care Experts
-          </h1>
-          <div className="flex flex-col lg:flex-row items-center gap-8">
-            <div className="flex-1 space-y-4">
-              <p>
-                Bethesda Mobile Detailing is a locally owned and operated business with deep roots in the Bethesda
-                community. We understand the unique challenges Bethesda cars face, from enduring summer heat to the
-                occasional winter snowstorm. That's why we provide the highest quality detailing services in Bethesda,
-                MD, tailored to restore your car's shine, shield it from the elements, and keep it looking its best
-                year-round.
-              </p>
-              <p>
-                Our team of certified detailers is highly trained and experienced in all aspects of car detailing. We use
-                only the best car care products and equipment to achieve exceptional, long-lasting results. We are
-                committed to providing exceptional service, convenience, and competitive pricing to our valued customers
-                in Bethesda. Let Bethesda Mobile Detailing be your trusted partner in keeping your car looking amazing!
-              </p>
-            </div>
-            <div className="flex-1 flex gap-4 justify-center">
-              <div className="w-64 h-40 bg-gray-200 rounded-md" />
-              <div className="w-64 h-40 bg-gray-200 rounded-md" />
-            </div>
-          </div>
-          <div className="text-center mt-10">
-            <Link
-              to="/contact"
-              className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold"
-            >
-              Get A Free Quote
-            </Link>
-          </div>
-        </section>
+        <section className="max-w-6xl mx-auto px-4 py-16 text-center">
+  <h1 className="text-3xl font-bold mb-6">
+    About Bethesda Mobile Detailing: Your Local Car Care Experts
+  </h1>
+
+  <div className="max-w-3xl mx-auto text-left space-y-6">
+    <p>
+      Bethesda Mobile Detailing is a locally owned and operated business with deep roots in the Bethesda
+      community. We understand the unique challenges Bethesda cars face, from enduring summer heat to the
+      occasional winter snowstorm. That's why we provide the highest quality detailing services in Bethesda,
+      MD, tailored to restore your car's shine, shield it from the elements, and keep it looking its best
+      year-round.
+    </p>
+    <p>
+      Our team of certified detailers is highly trained and experienced in all aspects of car detailing. We use
+      only the best car care products and equipment to achieve exceptional, long-lasting results. We are
+      committed to providing exceptional service, convenience, and competitive pricing to our valued customers
+      in Bethesda. Let Bethesda Mobile Detailing be your trusted partner in keeping your car looking amazing!
+    </p>
+  </div>
+
+  <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-10">
+    <div className="w-[350px] h-[400px] bg-gray-200 rounded-md" />
+    <div className="w-[350px] h-[400px] bg-gray-200 rounded-md" />
+  </div>
+
+  <div className="mt-10">
+    <Link
+      to="/contact"
+      className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-semibold"
+    >
+      Get A Free Quote
+    </Link>
+  </div>
+</section>
+
 
         <section className="max-w-6xl mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold mb-6 text-center">
@@ -77,7 +79,7 @@ export default function BethesdaDetailing() {
               At Bethesda Mobile Detailing, we offer a comprehensive menu of mobile detailing services in Bethesda, MD to
               cater to your specific car's needs and your budget. Here's a glimpse into what we can do for you:
             </p>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="list-disc list-outside space-y-2">
               <li>
                 <strong>Full Interior Cleaning:</strong> This in-depth cleaning service tackles every inch of your car's
                 interior, leaving no spot untouched. We thoroughly clean carpets, upholstery, leather seats (conditioning
@@ -125,9 +127,9 @@ export default function BethesdaDetailing() {
                 Choose from a variety of colors, designs, and finishes to express your unique style.
               </li>
             </ul>
-            <p className="mt-6 font-semibold text-lg">Bethesda Mobile Detailing: Bring Back Your Car's Shine at Home!</p>
+            <p className="mt-6">Bethesda Mobile Detailing: Bring Back Your Car's Shine at Home!</p>
             <p>
-              Contact us today for a free quote and experience the Bethesda Mobile Detailing difference! We guarantee
+              <strong>Contact us today for a free quote and experience the Bethesda Mobile Detailing difference!</strong> We guarantee
               exceptional results delivered conveniently at your location in Bethesda, MD. Let us make your car shine
               again!
             </p>
@@ -135,7 +137,7 @@ export default function BethesdaDetailing() {
           <div className="text-center mt-10">
             <Link
               to="/contact"
-              className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-semibold"
             >
               Get A Free Quote
             </Link>
@@ -173,8 +175,8 @@ export default function BethesdaDetailing() {
                       <Link
                         to={`/${route}`}
                         className={`${isCurrent
-                          ? "text-orange-500 font-semibold"
-                          : "text-black hover:text-orange-500 transition-colors"
+                          ? "text-blue-600 font-semibold"
+                          : "text-black hover:text-blue-600 transition-colors"
                           }`}
                       >
                         {area}
@@ -185,7 +187,7 @@ export default function BethesdaDetailing() {
               </ul>
 
               <p>
-                Not sure if we service your specific area? Not to worry! <strong>Contact us today!</strong> We'd be happy
+                <strong>Not sure if we service your specific area? Not to worry!</strong> Contact us today! We'd be happy
                 to discuss your detailing needs and answer any questions you may have. We're always looking for ways to
                 expand our service coverage in Potomac and Chevy Chase, MD, so there's a good chance we can brighten your
                 car's day!
@@ -193,7 +195,7 @@ export default function BethesdaDetailing() {
             </div>
 
             <div className="flex-1">
-              <div className="w-full h-64 bg-gray-200 rounded-md" />
+              <div className="w-full h-[600px] bg-gray-200 rounded-md" />
             </div>
           </div>
 
@@ -219,7 +221,7 @@ export default function BethesdaDetailing() {
             </p>
 
             <div>
-              <h3 className="font-semibold">What sets Bethesda Mobile Detailing apart from a car wash?</h3>
+              <h3 className="font-semibold mb-2">What sets Bethesda Mobile Detailing apart from a car wash?</h3>
               <p>
                 Mobile detailing is significantly more comprehensive than a car wash. We provide a meticulous cleaning,
                 polishing, and protection process for both the interior and exterior of your car, unlike a car wash that
@@ -228,7 +230,7 @@ export default function BethesdaDetailing() {
             </div>
 
             <div>
-              <h3 className="font-semibold">How often should I get my car detailed in Bethesda?</h3>
+              <h3 className="font-semibold mb-2">How often should I get my car detailed in Bethesda?</h3>
               <p>
                 The frequency depends on your driving habits and how well you maintain your car. Generally, a professional
                 detail every 6-12 months is recommended in Bethesda, MD to maintain a fresh look and protect your car's
@@ -237,7 +239,7 @@ export default function BethesdaDetailing() {
             </div>
 
             <div>
-              <h3 className="font-semibold">Do you offer mobile detailing packages in Bethesda?</h3>
+              <h3 className="font-semibold mb-2">Do you offer mobile detailing packages in Bethesda?</h3>
               <p>
                 Absolutely! We understand that every car has unique needs. That's why we offer a variety of mobile
                 detailing packages in Bethesda, MD to fit your specific budget and requirements. Browse our options online
@@ -246,7 +248,7 @@ export default function BethesdaDetailing() {
             </div>
 
             <div>
-              <h3 className="font-semibold">Can you remove pet hair from my car's interior in Bethesda?</h3>
+              <h3 className="font-semibold mb-2">Can you remove pet hair from my car's interior in Bethesda?</h3>
               <p>
                 Yes! We offer specialized pet hair removal services using proven techniques to eliminate embedded fur and
                 restore your vehicle's interior.
@@ -257,7 +259,7 @@ export default function BethesdaDetailing() {
           <div className="text-center mt-10">
             <Link
               to="/contact"
-              className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg font-semibold"
             >
               Get A Free Quote
             </Link>

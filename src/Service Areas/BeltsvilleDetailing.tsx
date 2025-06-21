@@ -38,7 +38,7 @@ export default function BeltsvilleDetailing() {
                     <meta name="description" content="Beltsville Mobile Detailing - High quality mobile car detailing in Beltsville, MD. We come to you!" />
                 </Helmet>
 
-                <h2 className="text-2xl font-bold mb-6">
+                <h2 className="text-3xl font-bold mb-6 text-center">
                     About Beltsville Mobile Detailing: Your Local Car Care Experts
                 </h2>
 
@@ -49,27 +49,29 @@ export default function BeltsvilleDetailing() {
                     Our certified detailers are highly trained and experienced in all aspects of car care. We use only the best car care products and equipment to ensure exceptional, long-lasting results. We are committed to providing exceptional service, convenience, and competitive pricing to our valued customers in Beltsville. Let Beltsville Mobile Detailing be your trusted partner in keeping your car looking its best!
                 </p>
                 <p className="mb-8">
-                    Skip the wait and travel - we come to you! Our Beltsville detailers are certified professionals wielding top-of-the-line equipment and premium products. We'll leave your car gleaming, protected, and ready to turn heads as you cruise through Beltsville.
+                    <strong>Skip the wait and travel - we come to you!</strong> Our Beltsville detailers are certified professionals wielding top-of-the-line equipment and premium products. We'll leave your car gleaming, protected, and ready to turn heads as you cruise through Beltsville.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                    <div className="w-full sm:w-1/2 h-48 bg-gray-200 border flex items-center justify-center text-gray-500 text-sm">
+                    <div className="w-full sm:w-1/2 h-[400px] bg-gray-200 border flex items-center justify-center text-gray-500 text-sm">
                         Image 1 Placeholder
                     </div>
-                    <div className="w-full sm:w-1/2 h-48 bg-gray-200 border flex items-center justify-center text-gray-500 text-sm">
+                    <div className="w-full sm:w-1/2 h-[400px] bg-gray-200 border flex items-center justify-center text-gray-500 text-sm">
                         Image 2 Placeholder
                     </div>
                 </div>
-
-                <Link
-                    to="/contact"
-                    className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded transition"
-                >
-                    Get A Free Quote
-                </Link>
+                <div className="text-center">
+                    <Link
+                        to="/contact"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded transition"
+                    >
+                        Get A Free Quote
+                    </Link>
+                </div>
+                
             </div>
             <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-16">
-                <h2 className="text-2xl font-bold mb-6">
+                <h2 className="text-3 font-bold mb-6 text-center">
                     Services We Offer: Tailored Detailing Solutions for Your Beltsville Car
                 </h2>
 
@@ -106,17 +108,19 @@ export default function BeltsvilleDetailing() {
                 <p className="mb-8">
                     Contact us today to request a free quote and experience the Columbia Mobile Detailing difference. We guarantee exceptional results, right at your convenience in Columbia, MD.
                 </p>
-
-                <Link
+                <div className="text-center">
+                    <Link
                     to="/contact"
-                    className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded transition"
-                >
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded transition"
+                    >
                     Get A Free Quote
-                </Link>
+                    </Link>
+                </div>
+                
             </div>
             <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-16 flex flex-col lg:flex-row items-start gap-8">
                 <div className="lg:w-1/2">
-                    <h2 className="text-2xl font-bold mb-6">
+                    <h2 className="text-3xl font-bold mb-6">
                         Beltsville Mobile Detailing Service Areas: Bringing the Shine Throughout Beltsville, MD
                     </h2>
                     <p className="mb-4">
@@ -132,8 +136,8 @@ export default function BeltsvilleDetailing() {
                                     <Link
                                         to={path}
                                         className={`transition-colors ${isActive
-                                                ? 'text-orange-500 font-semibold'
-                                                : 'text-black hover:text-orange-500'
+                                                ? 'text-blue-600 font-semibold'
+                                                : 'text-black hover:text-blue-600'
                                             }`}
                                     >
                                         {area}
@@ -144,7 +148,7 @@ export default function BeltsvilleDetailing() {
                     </ul>
 
                     <p className="mb-2">
-                        Not sure if we service your specific area?
+                        <strong>Not sure if we service your specific area?</strong>
                     </p>
                     <p className="mb-6">
                         Contact us today! We are always expanding our service coverage in Beltsville, MD and surrounding areas. We'd be happy to discuss your detailing needs and answer any questions you may have.
@@ -152,13 +156,13 @@ export default function BeltsvilleDetailing() {
                 </div>
 
                 <div className="lg:w-1/2">
-                    <div className="w-full h-64 bg-gray-200 border flex items-center justify-center text-gray-500 text-sm">
+                    <div className="w-full h-[600px] bg-gray-200 border flex items-center justify-center text-gray-500 text-sm">
                         Image Placeholder
                     </div>
                 </div>
             </div>
             <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-16">
-                <h2 className="text-2xl font-bold mb-6">
+                <h2 className="text-3xl font-bold mb-6 text-center">
                     Beltsville Mobile Detailing FAQs: Your Beltsville Car Detailing Questions Answered!
                 </h2>
 
@@ -202,13 +206,14 @@ export default function BeltsvilleDetailing() {
                 <p className="mb-6">
                     We guarantee exceptional results delivered conveniently at your location in Beltsville, MD. Request a free quote today and let our experts create a customized detailing plan for your car. It's time to experience the Beltsville Mobile
                 </p>
-
-                <Link to="/contact" className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition-colors">
+                <div className="text-center">
+                    <Link to="/contact" className="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition-colors">
                     Get A Free Quote
-                </Link>
+                    </Link>
+                </div>
             </section>
             <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-16">
-                <h2 className="text-2xl font-bold mb-6">Beltsville, MD Mobile Detailing Gallery</h2>
+                <h2 className="text-3xl font-bold mb-6 text-center">Beltsville, MD Mobile Detailing Gallery</h2>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                     {images.map((_, i) => (
@@ -221,7 +226,7 @@ export default function BeltsvilleDetailing() {
                     ))}
                 </div>
                 <div className="text-center">
-                    <Link to="/contact" className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition-colors mt-8">
+                    <Link to="/contact" className="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition-colors mt-8">
                     Get A Free Quote
                 </Link>
                 </div>

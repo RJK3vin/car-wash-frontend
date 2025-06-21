@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet"
 
 export default function DamascusDetailing() {
+    const currentPath = location.pathname.replace("/", "");
     const locations = [
         'Poolesville MD Mobile Detailing',
         'Columbia Mobile Detailing',
@@ -38,31 +39,31 @@ export default function DamascusDetailing() {
                     About Damascus Mobile Detailing
                 </h1>
 
-                <p className="mb-6 text-center max-w-3xl mx-auto">
+                <p className="mb-6 text-left max-w-3xl mx-auto">
                     Damascus Mobile Detailing is a locally owned and operated business with a passion for car care. We understand that your car is a valuable investment, and we take pride in providing the highest quality detailing services in Damascus, MD to restore its shine and protect it for years to come.
                 </p>
 
-                <p className="mb-6 text-center max-w-3xl mx-auto">
+                <p className="mb-6 text-left max-w-3xl mx-auto">
                     Our team of certified detailers is highly trained and experienced in all aspects of car detailing. We use only the best car care products and equipment to achieve exceptional, long-lasting results.
                 </p>
 
-                <p className="mb-6 text-center max-w-3xl mx-auto">
+                <p className="mb-6 text-left max-w-3xl mx-auto">
                     We are committed to providing our customers in Damascus with exceptional service, convenience, and competitive pricing. Let us help you keep your car looking its best!
                 </p>
 
-                <p className="mb-10 text-center max-w-3xl mx-auto">
-                    Skip the hassle of taking your car to a detail shop - we come to you! Our experienced and certified detailers utilize top-of-the-line equipment and premium products to deliver exceptional results, leaving your car gleaming and protected.
+                <p className="mb-10 text-left max-w-3xl mx-auto">
+                    <strong>Skip the hassle of taking your car to a detail shop - we come to you!</strong> Our experienced and certified detailers utilize top-of-the-line equipment and premium products to deliver exceptional results, leaving your car gleaming and protected.
                 </p>
 
                 <div className="flex justify-center gap-4 mb-10 flex-wrap">
-                    <div className="w-[300px] h-[200px] bg-gray-200 border border-gray-300 rounded-lg" />
-                    <div className="w-[300px] h-[200px] bg-gray-200 border border-gray-300 rounded-lg" />
+                    <div className="w-[350px] h-[400px] bg-gray-200 border border-gray-300 rounded-lg" />
+                    <div className="w-[350px] h-[400px] bg-gray-200 border border-gray-300 rounded-lg" />
                 </div>
 
                 <div className="text-center">
                     <Link
                         to="/contact"
-                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded transition-colors"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition-colors"
                     >
                         Get A Free Quote
                     </Link>
@@ -117,17 +118,17 @@ export default function DamascusDetailing() {
                     </ul>
 
                     <p className="pt-4">
-                        <strong>Columbia Mobile Detailing:</strong> Let us make your car shine!
+                        <strong>Damascus Mobile Detailing:</strong> Let us make your car shine!
                     </p>
 
                     <p>
-                        Contact us today to request a free quote and experience the Columbia Mobile Detailing difference. We guarantee exceptional results, right at your convenience in Columbia, MD.
+                        Contact us today to request a free quote and experience the Damascus Mobile Detailing difference. We guarantee exceptional results, right at your convenience in Damascus, MD.
                     </p>
 
-                    <div className="pt-6">
+                    <div className="pt-6 text-center">
                         <Link
                             to="/contact"
-                            className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded font-semibold transition"
+                            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold transition"
                         >
                             Get A Free Quote
                         </Link>
@@ -143,41 +144,50 @@ export default function DamascusDetailing() {
                     />
                 </Helmet>
 
-                <section className="flex flex-col lg:flex-row items-center gap-10">
-                    <div className="lg:w-1/2 space-y-4">
-                        <h2 className="text-3xl font-bold">
-                            Damascus Mobile Detailing Service Areas: Bringing the Shine to Damascus, MD and Beyond!
-                        </h2>
-                        <p>
-                            Damascus Mobile Detailing proudly serves Damascus, Maryland, and the surrounding areas. We bring the
-                            convenience of mobile detailing to your driveway, saving you time and hassle. Not in Damascus? Don't worry,
-                            we can still help! We service a wide range of locations in Maryland. Contact us today to see if your area is
-                            included!
-                        </p>
+                <section className="px-4 py-16">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="flex flex-col lg:flex-row items-start gap-8">
+                            <div className="lg:w-1/2">
+                                <h2 className="text-3xl font-bold mb-6">
+                                    Damascus Mobile Detailing Service Areas: Bringing the Shine to Damascus, MD and Beyond!
+                                </h2>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
-                            {locations.map((location) => {
-                                const to = location.toLowerCase().replace(/\s+/g, '');
-                                const isCurrent = to === 'damascusmdmobiledetailing';
-                                return (
-                                    <Link
-                                        key={location}
-                                        to={`/${to}`}
-                                        className={`block text-base font-medium transition-colors ${isCurrent
-                                                ? 'text-orange-500'
-                                                : 'text-gray-700 hover:text-orange-500'
-                                            }`}
-                                    >
-                                        {location}
-                                    </Link>
-                                );
-                            })}
-                        </div>
-                    </div>
+                                <p className="mb-4">
+                                    Damascus Mobile Detailing proudly serves Damascus, Maryland, and the surrounding areas. We bring the convenience of mobile detailing to your driveway, saving you time and hassle. Not in Damascus? Don’t worry, we can still help! We service a wide range of locations in Maryland. Contact us today to see if your area is included!
+                                </p>
 
-                    <div className="lg:w-1/2 flex justify-center">
-                        <div className="w-full max-w-md h-64 bg-gray-200 border border-gray-400 rounded flex items-center justify-center">
-                            <span className="text-gray-500">[ Image Placeholder ]</span>
+                                <ul className="mb-4 list-disc list-inside space-y-1">
+                                    {locations.map((area) => {
+                                        const route = area.toLowerCase().replace(/\s+/g, "");
+                                        const isCurrent = currentPath === route;
+
+                                        return (
+                                            <p key={route}>
+                                                <Link
+                                                    to={`/${route}`}
+                                                    className={`${isCurrent
+                                                        ? "text-blue-600 font-semibold"
+                                                        : "text-black hover:text-blue-600 transition-colors"
+                                                        }`}
+                                                >
+                                                    {area}
+                                                </Link>
+                                            </p>
+                                        );
+                                    })}
+                                </ul>
+
+                                <p className="mb-2">
+                                    <strong>Not sure if we service your specific area? Not to worry!</strong><br />
+                                    <span className="block mt-4">
+                                        Contact us today! We are always expanding our service coverage in Poolesville, MD and surrounding areas. We'd be happy to discuss your detailing needs and answer any questions you may have.
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div className="lg:w-1/2 w-full h-[600px] aspect-video bg-gray-200 border flex items-center justify-center text-gray-500 text-sm">
+                                Image Placeholder
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -203,7 +213,7 @@ export default function DamascusDetailing() {
 
                     <div className="space-y-4">
                         <div>
-                            <p className="font-semibold">
+                            <p className="font-semibold mb-2">
                                 How can a mobile detailing service be just as good as a shop detail in Damascus?
                             </p>
                             <p>
@@ -214,7 +224,7 @@ export default function DamascusDetailing() {
                         </div>
 
                         <div>
-                            <p className="font-semibold">
+                            <p className="font-semibold mb-2">
                                 What if my car needs extensive work in Damascus?
                             </p>
                             <p>
@@ -225,7 +235,7 @@ export default function DamascusDetailing() {
                         </div>
 
                         <div>
-                            <p className="font-semibold">
+                            <p className="font-semibold mb-2">
                                 Can I schedule a mobile detail in Damascus short notice?
                             </p>
                             <p>
@@ -236,7 +246,7 @@ export default function DamascusDetailing() {
                         </div>
 
                         <div>
-                            <p className="font-semibold">
+                            <p className="font-semibold mb-2">
                                 Do you offer any eco-friendly detailing options in Damascus?
                             </p>
                             <p>
@@ -246,7 +256,7 @@ export default function DamascusDetailing() {
                         </div>
 
                         <div>
-                            <p className="font-semibold">
+                            <p className="font-semibold mb-2">
                                 How can I keep my car looking great between details in Damascus?
                             </p>
                             <p>
@@ -257,7 +267,7 @@ export default function DamascusDetailing() {
                     </div>
 
                     <div className="text-center mt-6">
-                        <p className="font-semibold">
+                        <p className="font-semibold mb-2">
                             Ready to experience the Damascus Mobile Detailing difference?
                         </p>
                         <p>
@@ -267,14 +277,14 @@ export default function DamascusDetailing() {
                         </p>
                         <Link
                             to="/contact"
-                            className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded transition-colors"
+                            className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition-colors"
                         >
                             Get A Free Quote
                         </Link>
                     </div>
                 </section>
 
-                <section className="space-y-6">
+                <section className="space-y-6 text-center">
                     <h2 className="text-3xl font-bold text-center">
                         Damascus, MD Mobile detailing Gallery
                     </h2>
@@ -288,7 +298,17 @@ export default function DamascusDetailing() {
                             </div>
                         ))}
                     </div>
+                    <div>
+                        <Link
+                            to="/contact"
+                            className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded transition-colors"
+                        >
+                            Get A Free Quote
+                        </Link>
+                    </div>
+
                 </section>
+
             </div>
             <QuoteForm />
         </>
