@@ -1,42 +1,10 @@
 import { FaFacebookF, FaInstagram, FaYelp } from "react-icons/fa";
 import { MailOpen, Phone } from "lucide-react";
 import React from "react";
+import { handleFormSubmit } from "../utils/handleFormSubmit";
 
 export default function ServiceForm() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
-    if (checkedBoxes.length === 0) {
-      alert("Please select at least one service.");
-      return;
-    }
-
-    const name = (document.querySelector('input[placeholder="Name"]') as HTMLInputElement)?.value;
-    const email = (document.querySelector('input[placeholder="Email"]') as HTMLInputElement)?.value;
-    const phone = (document.querySelector('input[placeholder="Phone"]') as HTMLInputElement)?.value;
-    const vehicle = (document.querySelector('input[placeholder*="Year"]') as HTMLInputElement)?.value;
-    const location = (document.querySelector('select') as HTMLSelectElement)?.value;
-
-    const selectedServices = Array.from(checkedBoxes)
-      .map((el) => (el as HTMLInputElement).parentElement?.innerText.trim())
-      .filter(Boolean)
-      .join(", ");
-
-    const emailBody = `
-🚗 New Car Wash Service Request
-
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-Vehicle: ${vehicle}
-Location: ${location}
-Selected Services: ${selectedServices}
-    `.trim();
-
-    console.log(emailBody);
-    alert("Form is valid — see console for email preview!");
-  };
+  const handleSubmit = (e: React.FormEvent) => handleFormSubmit(e, "service")
 
   return (
     <section className="bg-white py-16 px-4">
