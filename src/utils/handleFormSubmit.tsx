@@ -1,3 +1,5 @@
+import { showSuccessToast, showErrorToast } from "./toast";
+
 export async function handleFormSubmit(
     e: React.FormEvent,
     formType: "quote" | "service"
@@ -6,7 +8,7 @@ export async function handleFormSubmit(
 
     const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
     if (checkedBoxes.length === 0) {
-        alert("Please select at least one service.");
+        showErrorToast("Please select at least one service.")
         return;
     }
 
@@ -41,14 +43,14 @@ export async function handleFormSubmit(
         });
 
         if (response.ok) {
-            alert(`Your ${formType} request was sent successfully!`);
+            showSuccessToast(`Your ${formType} request was sent successfully!`);
         } else {
             const errorText = await response.text();
-            alert("Failed to send email: " + errorText);
+            showErrorToast("Failed to send email: " + errorText);
         }
     } catch (err) {
         console.error("Error sending form:", err);
-        alert("An error occurred. Check console for details.");
+        showErrorToast("An error occurred. Check console for details.");
     }
 }
 
