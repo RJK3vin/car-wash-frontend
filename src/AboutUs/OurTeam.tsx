@@ -5,8 +5,8 @@ export default function OurTeam() {
     const team = [
         { name: 'David Castillo', img: '/images/david.jpg' },
         { name: 'Isai Castillo', img: '/images/isai.jpg' },
-        { name: 'Junior Gbego', img: '/images/junior.jpg' },
         { name: 'Joe El Khatib', img: '/images/joe.jpg' },
+        { name: 'Miguel Parada', img: '/images/miguel.jpg'},
     ];
 
     return (
