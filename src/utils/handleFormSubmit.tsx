@@ -1,13 +1,11 @@
-import { showSuccessToast, showErrorToast } from "./toast";
+import toast from "react-hot-toast";
 
-export async function handleFormSubmit(
-    e: React.FormEvent,
-) {
+export async function handleFormSubmit(e: React.FormEvent,) {
     e.preventDefault();
 
     const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
     if (checkedBoxes.length === 0) {
-        showErrorToast("Please select at least one service.")
+        toast.error("Please select at least one service.");
         return;
     }
 
@@ -35,6 +33,8 @@ export async function handleFormSubmit(
         message,
     };
 
+    const toastId = toast.loading("Sending your request...");
+
     try {
         const response = await fetch("http://localhost:5001/api/contact", {
             method: "POST",
@@ -43,14 +43,14 @@ export async function handleFormSubmit(
         });
 
         if (response.ok) {
-            showSuccessToast(`Your quote request was sent successfully!`);
+            toast.success("Your quote request was sent successfully!", { id: toastId });
         } else {
             const errorText = await response.text();
-            showErrorToast("Failed to send email: " + errorText);
+            toast.error("Failed to send email: " + errorText, { id: toastId });
         }
     } catch (err) {
         console.error("Error sending form:", err);
-        showErrorToast("An error occurred. Check console for details.");
+        toast.error("An error occurred. Check console for details.", { id: toastId });
     }
 }
 
