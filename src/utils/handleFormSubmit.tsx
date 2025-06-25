@@ -6,10 +6,7 @@ export async function handleFormSubmit(e: React.FormEvent,) {
 
     if (isProduction) {
         toast.error("🚧 This is a preview version of the website. Form submission is disabled while development is in progress. It will be fully functional upon completion.", {
-            duration: Infinity,
-            style: {
-            cursor: "pointer",
-            },
+            duration: 10000,
         });
         return;
     }
