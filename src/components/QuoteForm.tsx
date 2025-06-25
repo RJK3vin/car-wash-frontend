@@ -111,8 +111,8 @@ export default function QuoteForm() {
             </a>
           </div>
           <div className="flex items-start gap-2 mt-4">
-            <MapPin className="w-5 h-5 text-blue-600 translate-y-[1px]" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-1 text-sm">
+            <MapPin className="w-5 h-5 text-blue-600 -ml-[1px]" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-1 text-sm -ml-[5px]">
               <span>Olney MD</span>
               <span>Rockville MD</span>
               <span>Gaithersburg MD</span>
