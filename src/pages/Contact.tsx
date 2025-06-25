@@ -1,6 +1,5 @@
 import QuoteForm from "../components/QuoteForm"
 import MapEmbed from "../components/MapEmbed"
-import ServiceForm from "../components/ServiceForm"
 import { useEffect } from "react";
 
 export default function Contact() {
@@ -16,9 +15,8 @@ export default function Contact() {
                     <p className="text-lg max-w-2xl mx-auto">We'd love to hear from you to find out how we can help. Fill out the form or give us a call to get more information.</p>
                 </div>
             </section>
-            <ServiceForm />
-            <MapEmbed />
             <QuoteForm />
+            <MapEmbed />
         </>
     )
 }

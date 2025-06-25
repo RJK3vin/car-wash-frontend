@@ -2,7 +2,6 @@ import { showSuccessToast, showErrorToast } from "./toast";
 
 export async function handleFormSubmit(
     e: React.FormEvent,
-    formType: "quote" | "service"
 ) {
     e.preventDefault();
 
@@ -17,6 +16,7 @@ export async function handleFormSubmit(
     const phone = (document.querySelector('input[placeholder="Phone"]') as HTMLInputElement)?.value;
     const vehicle = (document.querySelector('input[placeholder*="Year"]') as HTMLInputElement)?.value;
     const location = (document.querySelector('select') as HTMLSelectElement)?.value;
+    const address = (document.querySelector('input[placeholder*="address"]') as HTMLInputElement)?.value
     const message = (document.querySelector('textarea') as HTMLTextAreaElement)?.value;
 
     const selectedServices = Array.from(checkedBoxes)
@@ -30,9 +30,9 @@ export async function handleFormSubmit(
         phone,
         vehicle,
         location,
+        address,
         selectedServices,
         message,
-        type: formType,
     };
 
     try {
@@ -43,7 +43,7 @@ export async function handleFormSubmit(
         });
 
         if (response.ok) {
-            showSuccessToast(`Your ${formType} request was sent successfully!`);
+            showSuccessToast(`Your quote request was sent successfully!`);
         } else {
             const errorText = await response.text();
             showErrorToast("Failed to send email: " + errorText);
