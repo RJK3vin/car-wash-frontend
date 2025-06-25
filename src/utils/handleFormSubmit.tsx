@@ -5,13 +5,18 @@ export async function handleFormSubmit(e: React.FormEvent,) {
     const isProduction = window.location.hostname !== "localhost";
 
     if (isProduction) {
-        toast.error("🚧 This is a preview version of the website. Form submission is disabled while development is in progress. It will be fully functional upon completion.");
+        toast.error("🚧 This is a preview version of the website. Form submission is disabled while development is in progress. It will be fully functional upon completion.", {
+            duration: Infinity,
+            style: {
+            cursor: "pointer",
+            },
+        });
         return;
     }
 
     const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
     if (checkedBoxes.length === 0) {
-        toast.error("Please select at least one service.");
+        toast.error("Please select at least one service.", { duration: 7000 });
         return;
     }
 
@@ -49,14 +54,14 @@ export async function handleFormSubmit(e: React.FormEvent,) {
         });
 
         if (response.ok) {
-            toast.success("Your quote request was sent successfully!", { id: toastId });
+            toast.success("Your quote request was sent successfully!", { id: toastId, duration: 5000, });
         } else {
             const errorText = await response.text();
-            toast.error("Failed to send email: " + errorText, { id: toastId });
+            toast.error("Failed to send email: " + errorText, { id: toastId, duration: 7000, });
         }
     } catch (err) {
         console.error("Error sending form:", err);
-        toast.error("An error occurred. Check console for details.", { id: toastId });
+        toast.error("An error occurred. Check console for details.", { id: toastId, duration: 7000, });
     }
 }
 
