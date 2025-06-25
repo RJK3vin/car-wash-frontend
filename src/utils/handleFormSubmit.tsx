@@ -2,6 +2,12 @@ import toast from "react-hot-toast";
 
 export async function handleFormSubmit(e: React.FormEvent,) {
     e.preventDefault();
+    const isProduction = window.location.hostname !== "localhost";
+
+    if (isProduction) {
+        toast.error("🚧 This is a preview version of the website. Form submission is disabled while development is in progress. It will be fully functional upon completion.");
+        return;
+    }
 
     const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
     if (checkedBoxes.length === 0) {
