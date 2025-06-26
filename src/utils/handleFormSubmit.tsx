@@ -1,19 +1,21 @@
-import toast from "react-hot-toast";
+import { toast } from "react-toastify";
+import { showPreviewToast } from "./toast";
 
 export async function handleFormSubmit(e: React.FormEvent,) {
     e.preventDefault();
-    const isProduction = window.location.hostname !== "localhost";
 
-    if (isProduction) {
-        toast.error("🚧 This is a preview version of the website. Form submission is disabled while development is in progress. It will be fully functional upon completion.", {
-            duration: 10000,
-        });
+    const isLocalPreview = true;
+
+    if (isLocalPreview || window.location.hostname !== "localhost") {
+        showPreviewToast();
         return;
     }
 
     const checkedBoxes = document.querySelectorAll('input[type="checkbox"]:checked');
     if (checkedBoxes.length === 0) {
-        toast.error("Please select at least one service.", { duration: 7000 });
+        toast.error("Please select at least one service.", {
+            autoClose: 5000,
+        });
         return;
     }
 
@@ -51,14 +53,35 @@ export async function handleFormSubmit(e: React.FormEvent,) {
         });
 
         if (response.ok) {
-            toast.success("Your quote request was sent successfully!", { id: toastId, duration: 5000, });
+            toast.update(toastId, {
+                render: "Your quote request was sent successfully!",
+                type: "success",
+                isLoading: false,
+                closeOnClick: true,
+                autoClose: 5000,
+                closeButton: true
+            });
         } else {
             const errorText = await response.text();
-            toast.error("Failed to send email: " + errorText, { id: toastId, duration: 7000, });
+            toast.update(toastId, {
+                render: "Failed to send email: " + errorText,
+                type: "error",
+                isLoading: false,
+                closeOnClick: true,
+                autoClose: 5000,
+                closeButton: true
+            });
         }
     } catch (err) {
         console.error("Error sending form:", err);
-        toast.error("An error occurred. Check console for details.", { id: toastId, duration: 7000, });
+        toast.update(toastId, {
+            render: "An error occurred. Check console for details.",
+            type: "error",
+            isLoading: false,
+            closeOnClick: true,
+            autoClose: 5000,
+            closeButton: true
+        });
     }
 }
 
