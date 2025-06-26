@@ -31,7 +31,7 @@ const AboutSection = () => {
       <div className="mt-8">
         <a
           href="/contact"
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded transition duration-200 ease-in-out duration-200"
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded transition duration-200 ease-in-out"
         >
           Get A Free Quote
         </a>
